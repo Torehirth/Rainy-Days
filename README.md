@@ -1,1 +1,2 @@
-# Rainy-Days
+#Rainy Days
+By Tore M. Hirth
