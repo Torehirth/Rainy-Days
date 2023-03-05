@@ -1,5 +1,26 @@
+@font-face {
+  font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
+  src: url(../candara-font-family/Candara.ttf);
+}
+
 header,
 footer {
   background-color: #395a79;
   color: #fff;
+}
+
+body {
+  font-family: "verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.copyright {
+  text-align: center;
 }
