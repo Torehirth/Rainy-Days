@@ -21,6 +21,10 @@ nav li {
   display: inline-block;
 }
 
+.category-buttons {
+  text-decoration: none;
+}
+
 .copyright {
   text-align: center;
 }
