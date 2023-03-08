@@ -1,6 +1,29 @@
 @font-face {
-  font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
+  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
   src: url(../candara-font-family/Candara.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
+  src: url(../candara-font-family/Candara_Bold.ttf);
+  font-style: bold;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
+  src: url(../candara-font-family/Candara_Italic.ttf);
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
+  src: url(../candara-font-family/Candara_Bold_Italic.ttf);
+  font-style: italic;
+  font-weight: bold;
 }
 
 header,
@@ -10,7 +33,7 @@ footer {
 }
 
 body {
-  font-family: "verdana", "Geneva", "Tahoma", "sans-serif";
+  font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
 a {
