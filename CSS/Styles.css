@@ -26,14 +26,23 @@
   font-weight: bold;
 }
 
+body {
+  font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "candara";
+  font-style: normal;
+  font-weight: bold;
+}
+
 header,
 footer {
   background-color: #395a79;
   color: #fff;
-}
-
-body {
-  font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
 nav li {
@@ -46,13 +55,4 @@ nav li {
 
 .copyright {
   text-align: center;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "candara";
-  font-style: normal;
-  font-weight: bold;
 }
