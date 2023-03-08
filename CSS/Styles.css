@@ -8,7 +8,7 @@
 @font-face {
   font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
   src: url(../candara-font-family/Candara_Bold.ttf);
-  font-style: bold;
+  font-style: normal;
   font-weight: bold;
 }
 
@@ -36,10 +36,6 @@ body {
   font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-a {
-  text-decoration: none;
-}
-
 nav li {
   display: inline-block;
 }
@@ -50,4 +46,13 @@ nav li {
 
 .copyright {
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "candara";
+  font-style: italic;
+  font-weight: bold;
 }
