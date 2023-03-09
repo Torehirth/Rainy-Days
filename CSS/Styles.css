@@ -55,3 +55,20 @@ nav li {
 .copyright {
   text-align: center;
 }
+
+.about-background {
+  background-image: url(../Photos/About\ us_main\ photo.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-height: 768px;
+  min-height: 383px;
+  color: #fff;
+}
+
+.about-picture1,
+.about-picture2,
+.about-picture3,
+.about-picture4,
+.about-picture5 {
+ max-width: 15%;
+}
