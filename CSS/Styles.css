@@ -84,7 +84,9 @@ nav li {
 .to-top-button {
   font-size: 0.6rem;
   text-align: center;
-  position: absolute;
+  position: relative;
+  left: 100px;
+  bottom: 100px;
 }
 
 .fa-arrow-up {
@@ -97,7 +99,7 @@ nav li {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0px;
   padding-left: 100px;
