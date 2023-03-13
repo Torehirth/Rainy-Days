@@ -52,6 +52,7 @@ body {
   font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
   font-style: normal;
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 main {
@@ -72,6 +73,7 @@ header {
 }
 
 .header-category-buttons {
+  text-transform: uppercase;
 }
 
 .footer {
@@ -90,7 +92,8 @@ header {
   font-size: 0.6rem;
   border-top-color: #fff;
   border-top-style: outset;
-  padding: 15px;
+  border-top-width: 0.1rem;
+  padding: 1rem;
 }
 
 a {
@@ -112,8 +115,14 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 768px;
-  min-height: 383px;
+  min-height: 363px;
   color: #fff;
+}
+
+.about-background-text {
+  padding-left: 290px;
+  padding-right: 100px;
+  padding-top: 180px;
 }
 
 .about-picture1,
@@ -132,8 +141,35 @@ li {
   opacity: 70%;
 }
 
+.fa-fw {
+  font-size: 1.1em;
+}
+
+.fa-brands {
+  font-size: 1.25rem;
+}
+
+.home-button {
+  font-size: 0.65rem;
+  padding-top: 45px;
+  padding-left: 100px;
+}
+
+.home-button:hover {
+  opacity: 70%;
+}
+
+.fa-house-chimney {
+  font-size: 0.75rem;
+  color: #00838f;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+}
+
 .to-top-button {
-  font-size: 0.6rem;
+  font-size: 0.625rem;
+  font-weight: bold;
+  text-transform: lowercase;
   text-align: center;
   position: relative;
   left: 100px;
