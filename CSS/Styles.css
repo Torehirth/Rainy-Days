@@ -1,3 +1,5 @@
+/* Text fonts and font face rules */
+
 @font-face {
   font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
   src: url(../candara-font-family/Candara.ttf);
@@ -30,6 +32,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* General header/text */
+
 h1,
 h2,
 h3 {
@@ -48,33 +52,49 @@ h3 {
   font-size: 1.5rem;
 }
 
+/* Body */
+
 body {
   font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
   font-style: normal;
   font-weight: normal;
   text-transform: capitalize;
+  margin: 0;
 }
 
-main {
+/* Header */
+
+header {
+  background: linear-gradient(to top, #38818a, #0550ba);
 }
+
+.header-logo {
+  padding-top: 2.3125rem;
+  padding-bottom: 1.5625rem;
+}
+
+.product_category {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1.125rem;
+}
+
+/* Header and footer */
 
 header,
 footer {
   color: #fff;
   position: relative;
   width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-header {
-  background: linear-gradient(to top, #38818a, #0550ba);
-  text-decoration: none;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
 }
 
 .header-category-buttons {
   text-transform: uppercase;
 }
+
+/* Footer */
 
 .footer {
   background-color: #395a79;
@@ -109,13 +129,14 @@ li {
   list-style: none;
 }
 
+/* About us */
+
 .about-background {
   background-image: url(../Photos/About\ us_main\ photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 768px;
-  min-height: 363px;
+
   color: #fff;
 }
 
@@ -132,6 +153,12 @@ li {
 .about-picture4,
 .about-picture5 {
   max-width: 15%;
+}
+
+/* Icons and buttons*/
+
+.header-icon-buttons {
+  font-size: 1.0625rem;
 }
 
 .fa-solid {
