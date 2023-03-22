@@ -32,6 +32,14 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
+  text-transform: capitalize;
+  list-style: none;
+  text-decoration: none;
+}
+
 /* General header/text */
 
 h1,
@@ -54,29 +62,68 @@ h3 {
 
 /* Body */
 
-body {
-  font-family: "candara", "verdana", "Geneva", "Tahoma", "sans-serif";
-  font-style: normal;
-  font-weight: normal;
-  text-transform: capitalize;
-  margin: 0;
-}
-
 /* Header */
 
 header {
   background: linear-gradient(to top, #38818a, #0550ba);
+  padding-top: 2.3125em;
+  padding-bottom: 1.5625em;
 }
 
-.header-logo {
-  padding-top: 2.3125rem;
-  padding-bottom: 1.5625rem;
+.header-nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+  max-width: 100%;
+  top: 0.5625em;
+  background-color: grey;
+}
+
+.header-nav ul {
+  display: flex;
+  padding: 0;
+}
+
+.header-nav ul li {
 }
 
 .product_category {
-  text-transform: uppercase;
+  display: flex;
   letter-spacing: 0.05rem;
   font-size: 1.125rem;
+  margin: 0 0 5px 2rem;
+}
+
+.header-icon-buttons {
+  margin: 0 0 0 2rem;
+}
+
+.header-searchbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 5.5px;
+  margin: 0 0 0 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+#searchbox {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.header-info-pages {
+  position: absolute;
+  padding: 0;
+  display: flex;
+  text-indent: 1.0625rem;
+  font-size: 0.75rem;
+  top: 1.25rem;
+  right: 6.25rem;
 }
 
 /* Header and footer */
@@ -85,18 +132,14 @@ header,
 footer {
   color: #fff;
   position: relative;
-  width: 100%;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
-}
-
-.header-category-buttons {
-  text-transform: uppercase;
+  max-width: 100%;
+  padding-left: 6.25em;
+  padding-right: 6.25em;
 }
 
 /* Footer */
 
-.footer {
+footer {
   background-color: #395a79;
 }
 
@@ -117,16 +160,18 @@ footer {
 }
 
 a {
-  text-decoration: none;
   color: #fff;
 }
 
-ul {
-  display: inline;
+a:hover {
+  opacity: 70%;
 }
 
-li {
-  list-style: none;
+/* Index */
+
+.Landingpage-img {
+  max-width: 100%;
+  box-sizing: content-box;
 }
 
 /* About us */
@@ -158,7 +203,17 @@ li {
 /* Icons and buttons*/
 
 .header-icon-buttons {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
+  text-align: center;
+  position: relative;
+}
+
+.header-icon-text {
+  font-size: 0.625rem;
+}
+
+.fa-magnifying-glass {
+  font-size: 1rem;
 }
 
 .fa-solid {
