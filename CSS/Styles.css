@@ -66,8 +66,7 @@ h3 {
 
 header {
   background: linear-gradient(to top, #38818a, #0550ba);
-  padding-top: 2.3125em;
-  padding-bottom: 1.5625em;
+  
 }
 
 .header-nav {
@@ -77,8 +76,8 @@ header {
   align-items: flex-end;
   text-align: left;
   max-width: 100%;
-  top: 0.5625em;
-  background-color: grey;
+  background-color: gry;
+  padding-bottom: 1.5625rem;
 }
 
 .header-nav ul {
@@ -86,18 +85,17 @@ header {
   padding: 0;
 }
 
-.header-nav ul li {
-}
-
 .product_category {
   display: flex;
+  position: relative;
   letter-spacing: 0.05rem;
   font-size: 1.125rem;
-  margin: 0 0 5px 2rem;
+  margin: 0 0 0 5rem;
+  bottom: -2px;
 }
 
 .header-icon-buttons {
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 4rem;
 }
 
 .header-searchbox {
@@ -117,14 +115,15 @@ header {
 }
 
 .header-info-pages {
-  position: absolute;
-  padding: 0;
   display: flex;
-  text-indent: 1.0625rem;
+  position: relative;
+  justify-content: flex-end;
+  padding-top: 1.25rem;
+  gap: 1rem;
+  bottom: 9px;
   font-size: 0.75rem;
-  top: 1.25rem;
-  right: 6.25rem;
 }
+
 
 /* Header and footer */
 
