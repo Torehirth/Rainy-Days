@@ -61,21 +61,11 @@ h3 {
 
 /* Body */
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  max-width: 1240px;
-  width: 100%;
-}
-
 /* Header */
 
 header {
   background: linear-gradient(to top, #38818a, #0550ba);
   padding: 20px 0 25px 0;
-  
 }
 
 /* Header top menu */
@@ -102,10 +92,10 @@ header {
 
 .header_info_pages {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   gap: 30px;
   align-items: center;
-  width: 100%;  
+  width: 100%;
   font-size: 0.75rem;
   background-color: mediumpurpl;
   padding: 0;
@@ -135,16 +125,11 @@ header {
 }
 
 .header_logo {
-  width: 13em; 
+  width: 13em;
   height: 3.1875em;
 }
 
-.header_logo_container a {
-  width: 13em; 
-  height: 3.1875em;
-}
-
-.nav_menu {
+.category_menu {
   display: flex;
   justify-content: right;
   align-items: flex-end;
@@ -188,7 +173,6 @@ header {
   gap: 40px;
 }
 
-
 /* Header icons and buttons */
 
 .header_icon_buttons {
@@ -204,11 +188,19 @@ header {
   font-size: 1rem;
 }
 
+.checkbox {
+  display: none;
+}
+
+.hamburger_icon, .hamburger_menu {
+  /* display: none; */
+}
+
 /* Header and footer */
 
 header,
 footer {
-  color: #fff;  
+  color: #fff;
   display: flex;
   justify-content: center;
 }
@@ -278,8 +270,6 @@ a:hover {
 
 /* Icons and buttons*/
 
-
-
 .fa-solid {
   color: #fff;
 }
@@ -335,22 +325,10 @@ a:hover {
 /* Media queries */
 
 @media screen and (max-width: 1160px) {
-  header {
+  .header_top_bottom_menu {
     display: none;
   }
 
   header {
-    background: linear-gradient(to top, #38818a, #0550ba);
-    padding: 20px 0 25px 0;
   }
-
-
-
-
-
-
-
-
-
-
 }
