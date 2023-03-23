@@ -128,10 +128,20 @@ header {
   justify-content: space-between;
 }
 
-.header_logo {
+.header_logo_container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header_logo {
+  width: 13em; 
+  height: 3.1875em;
+}
+
+.header_logo_container a {
+  width: 13em; 
+  height: 3.1875em;
 }
 
 .nav_menu {
@@ -320,4 +330,27 @@ a:hover {
 .fa-stack:hover {
   color: #000;
   opacity: 50%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1160px) {
+  header {
+    display: none;
+  }
+
+  header {
+    background: linear-gradient(to top, #38818a, #0550ba);
+    padding: 20px 0 25px 0;
+  }
+
+
+
+
+
+
+
+
+
+
 }
