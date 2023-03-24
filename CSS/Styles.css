@@ -39,6 +39,10 @@
   scroll-behavior: smooth;
 }
 
+.mobile_version {
+  display: none;
+}
+
 /* General header/text */
 
 h1,
@@ -97,7 +101,6 @@ header {
   align-items: center;
   width: 100%;
   font-size: 0.75rem;
-  background-color: mediumpurpl;
   padding: 0;
 }
 
@@ -249,7 +252,6 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   color: #fff;
 }
 
@@ -324,11 +326,28 @@ a:hover {
 
 /* Media queries */
 
+
 @media screen and (max-width: 1160px) {
-  .header_top_bottom_menu {
+  .Desktop_version, .header_icon_text {
     display: none;
+  }
+  .mobile_version {
+    display: flex;
   }
 
   header {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+  }
+
+  .hamburger_container {
+    border: solid 1px;
+    display: flex;
+    text-align: center;
+  }
+
+  .hamburger_container ul {
+    padding: 0 50px;
   }
 }
