@@ -39,7 +39,8 @@
   scroll-behavior: smooth;
 }
 
-.mobile_version {
+.hamburger_icon,
+nav {
   display: none;
 }
 
@@ -195,7 +196,8 @@ header {
   display: none;
 }
 
-.hamburger_icon, .hamburger_menu {
+.hamburger_icon,
+.hamburger_menu {
   /* display: none; */
 }
 
@@ -326,28 +328,106 @@ a:hover {
 
 /* Media queries */
 
-
 @media screen and (max-width: 1160px) {
-  .Desktop_version, .header_icon_text {
+  .Desktop_version,
+  .header_icon_text {
     display: none;
   }
-  .mobile_version {
-    display: flex;
+
+  /* Header Logo */
+
+  .header_logo {
   }
 
   header {
     display: flex;
+    position: relative;
     flex-direction: column;
-    align-items:flex-end;
+    padding: 24px 30px 0 30px;
   }
 
-  .hamburger_container {
-    border: solid 1px;
+  .header_top_bottom_menu {    
+    padding-bottom: 20px;
+  }
+
+  .header_bottom_menu {
+    background-color: grey;
+    max-width: 1100px;
+    width: 100%;
+
+  }
+  .header_logo {
+    width: 8.75em;
+    height: 2.125em;
+  }
+
+  .header_bottom_container {
+    display: block;
+  }
+
+  .category_menu {
     display: flex;
-    text-align: center;
+    flex-direction: column-reverse;
+    position:sticky;
+    gap: 11px;
   }
 
-  .hamburger_container ul {
-    padding: 0 50px;
+  .header_searchbox {
+    background-color: mediumpurple;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+
+  .header_icons {
+    display: flex;
+    padding-left: 35px;
+    margin: 0;
+    
+  }
+
+  .header_icon_buttons {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    top: 96px;
+    right: 50px;
+  }
+
+  nav ul {
+    display: flex;
+    background-color: #c2c2c2;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  nav ul li a {
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 10px 170px;
+    color: #000;
+    font-size: 1rem;
+  }
+  nav ul li {
+    padding: 0;
+    border-radius: 5px;
+  }
+  nav ul li:hover {
+    background-color: #00838f;
+  }
+
+  nav ul li a:hover {
+    opacity: 1;
+  }
+
+  .checkbox:checked ~ nav {
+    display: block;
   }
 }
