@@ -163,7 +163,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-#searchbox {
+.searchbox {
   background-color: transparent;
   border: 0;
   color: #fff;
@@ -367,7 +367,6 @@ a:hover {
   }
 
   .header_bottom_container {
-    display: ;
   }
 
   .category_menu {
@@ -378,12 +377,16 @@ a:hover {
     display: flex;
     align-items: center;
     width: 100%;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
     border-bottom: solid 1px #fff;
   }
 
   .searchbox_mobile {
     font-size: 1.5rem;
+  }
+
+  .searchbox {
+    width: 100%;
   }
 
   .header_icons {
