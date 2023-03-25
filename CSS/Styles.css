@@ -357,8 +357,8 @@ a:hover {
 
   }
   .header_logo {
-    width: 8.75em;
-    height: 2.125em;
+    /* width: 8.75em; */
+    /* height: 2.125em; */
   }
 
   .header_bottom_container {
@@ -377,6 +377,11 @@ a:hover {
     width: 100%;
     align-items: center;
     margin: 0;
+    
+  }
+
+  .searchbox {
+    font-size: 1.5rem;
   }
 
   .header_icons {
@@ -388,6 +393,7 @@ a:hover {
 
   .header_icon_buttons {
     display: flex;
+    font-size: 1.5rem;
   }
 
   nav {
