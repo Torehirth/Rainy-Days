@@ -373,6 +373,7 @@ a:hover {
 
   .category_menu {
     align-items: center;
+    margin-left: 10px;
   }
 
   .header_searchbox_mobile {
