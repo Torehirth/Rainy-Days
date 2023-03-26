@@ -65,8 +65,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Body */
-
 /* Header */
 
 header {
@@ -86,14 +84,12 @@ header {
   align-items: center;
   justify-content: center;
   padding-bottom: 9px;
-  max-width: 1240px;
 }
 
 .header_top_container {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 1240px;
 }
 
 .header_info_pages {
@@ -113,7 +109,6 @@ header {
   align-items: center;
   justify-content: center;
   background-color: gry;
-  max-width: 1240px;
 }
 
 .header_bottom_container {
@@ -245,9 +240,56 @@ a:hover {
 /* Index */
 
 .Landingpage-img {
-  max-width: 100%;
-  box-sizing: content-box;
+  width: 100%;
 }
+
+.index_headline_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.index_headline_container h1 {
+  letter-spacing: 3px;
+  padding-bottom: 25px;
+}
+
+.index_button_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.category_button {
+  background-color: #395a79;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0;
+}
+
+.category_button a {
+  font-size: 1rem;
+  padding: auto;
+  letter-spacing: 2px;
+  width: 210px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category_button:hover {
+  opacity: 80%;
+}
+
+.category_button a:hover {
+  opacity: 1;
+}
+
+
+
+
 
 /* About us */
 
@@ -361,7 +403,6 @@ a:hover {
 
   .header_logo_container {
     float: left;
-    padding-bottom: 10px;
   }
   .header_logo {
     /* width: 8.75em; */
@@ -372,7 +413,6 @@ a:hover {
   }
 
   .category_menu {
-    align-items: center;
     margin-left: 10px;
   }
 
@@ -397,12 +437,11 @@ a:hover {
   .header_icons {
     margin: 0;
     padding-left: 0;
-    gap: 15px;
+    gap: 31px;
   }
 
   .header_icon_buttons {
     display: flex;
-    position: sticky;
     font-size: 1.5rem;
   }
 
