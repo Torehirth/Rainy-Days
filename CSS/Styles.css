@@ -390,14 +390,15 @@ a:hover {
   .searchbox {
     width: 100%;
     cursor: pointer;
+    color: #fff;
   }
 
   .header_icons {
     margin: 0;
     padding-left: 0;
+    gap: 15px;
   }
 
-  
   .header_icon_buttons {
     display: flex;
     position: sticky;
@@ -405,9 +406,9 @@ a:hover {
   }
 
   nav {
-    position:absolute;
+    position: absolute;
     top: 100%;
-    right:0;
+    right: 0;
   }
 
   nav ul {
@@ -417,20 +418,19 @@ a:hover {
     padding: 0;
     text-align: center;
     border-radius: 5px 0 0 5px;
-    
   }
 
-  nav ul li {    
+  nav ul li {
     border-radius: 5px 0 0 5px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-   nav ul li a {
+
+  nav ul li a {
     justify-content: center;
     display: flex;
-    align-items:center;
+    align-items: center;
     color: #000;
     font-size: 1rem;
     padding: 7.5px 5px;
@@ -438,7 +438,6 @@ a:hover {
     height: 36px;
     width: 170px;
   }
-  
 
   nav ul li a:active {
     background-color: #00838f;
