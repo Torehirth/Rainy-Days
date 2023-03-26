@@ -168,6 +168,7 @@ header {
   border: 0;
   color: #fff;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .header_icons {
@@ -277,6 +278,7 @@ a:hover {
 
 .fa-solid {
   color: #fff;
+  cursor: pointer;
 }
 
 .fa-solid:hover {
@@ -387,6 +389,7 @@ a:hover {
 
   .searchbox {
     width: 100%;
+    cursor: pointer;
   }
 
   .header_icons {
@@ -394,24 +397,14 @@ a:hover {
     padding-left: 0;
   }
 
-  .favorites {
-    justify-content: left;
-    left: 50px;
-  }
-
+  
   .header_icon_buttons {
     display: flex;
     position: sticky;
     font-size: 1.5rem;
   }
 
-  nav {
-    position: absolute;
-    text-align: center;
-    top: 100%;
-    top: 96px;
-    right: 50px;
-  }
+  
 
   nav ul {
     display: flex;
@@ -419,30 +412,39 @@ a:hover {
     flex-direction: column;
     padding: 0;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px 0 0 5px;
+    
   }
 
-  nav ul li a {
-    text-align: center;
-    display: block;
-    position: relative;
-    padding: 10px 170px;
-    color: #000;
-    font-size: 1rem;
+  nav ul li {    
+    border-radius: 5px 0 0 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
-  nav ul li {
-    padding: 0;
-    border-radius: 5px;
-  }
+  
   nav ul li:hover {
     background-color: #00838f;
   }
 
-  nav ul li a:hover {
-    opacity: 1;
+  nav ul li a {
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    color: #000;
+    font-size: 1rem;
+    padding: 7.5px 5px;
+    border-radius: 5px 0 0 5px;
+    height: 36px;
+    width: 170px;
+  }
+  
+
+  nav ul li::after {
+    background-color: #00838f;
   }
 
   .checkbox:checked ~ nav {
-    display: block;
+    display: flex;
   }
 }

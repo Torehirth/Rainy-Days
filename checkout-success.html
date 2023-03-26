@@ -22,37 +22,108 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img
-          src="logo/Rainy Days vector logo.svg"
-          alt="Rainy Days logo"
-          title="to home"
-      /></a>
-      <div class="header-category-buttons">
-        <ul>
-          <li><a href="men.html" title="to men's jackets">men's</a></li>
-          <li><a href="women.html" title="to women's jackets">women's</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <a href="favorites.html" title="to Favorites"
-              ><i class="fa-solid fa-heart"></i
-            ></a>
-          </li>
-          <li>
-            <a href="cart.html" title="to Cart"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="contact.html" title="to contact us">contact us</a></li>
-          <li><a href="about.html" title="to about us">about us</a></li>
-        </ul>
+      <section class="header_top_bottom_menu">
+        <div class="header_top_menu Desktop_version">
+          <div class="header_top_container">
+            <ul class="header_info_pages">
+              <li>
+                <a href="contact.html" title="to contact us">contact us</a>
+              </li>
+              <li>
+                <a href="about.html" title="to about us">about us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_bottom_menu">
+          <div class="header_bottom_container">
+            <div class="header_logo_container">
+              <a href="index.html" class="header_logo"
+                ><img
+                  src="logo/Rainy Days vector logo.svg"
+                  alt="Rainy Days logo"
+                  title="to home"
+                  class="header_logo"
+              /></a>
+            </div>
+            <div class="category_menu">
+              <ul class="header_category_container Desktop_version">
+                <li class="header_category_buttons">
+                  <a href="men.html" title="to men's jackets">men's</a>
+                </li>
+                <li class="header_category_buttons">
+                  <a href="women.html" title="to women's jackets">women's</a>
+                </li>
+              </ul>
+              <div class="header_searchbox">
+                <span
+                  class="fa-solid fa-magnifying-glass searchbox"
+                  title="search"
+                ></span>
+                <input
+                  type="search"
+                  name="Searchbox"
+                  id="searchbox"
+                  placeholder="search"
+                  title="search"
+                  class="searchbox"
+                />
+              </div>
+              <div>
+                <ul class="header_icons">
+                  <li class="header_icon_buttons favorites">
+                    <a
+                      href="favorites.html"
+                      title="to Favorites"
+                      class="fa-solid fa-heart"
+                    ></a>
+                    <p class="header_icon_text">favorites</p>
+                  </li>
+                  <li class="header_icon_buttons">
+                    <a
+                      href="cart.html"
+                      title="to Cart"
+                      class="fa-solid fa-cart-shopping"
+                    ></a>
+                    <p class="header_icon_text">cart</p>
+                  </li>
+                  <li class="header_icon_buttons hamburger_icon">
+                    <label for="checkbox" class="header_icon_buttons"
+                      ><i class="fa-solid fa-bars"></i
+                    ></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="hamburger_container">
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="men.html">men's</a></li>
+            <li><a href="women.html">women's</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="contact.html">contact us</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="header_searchbox_mobile">
+        <span
+          class="fa-solid fa-magnifying-glass searchbox_mobile"
+          title="search"
+          for="search"
+        ></span>
+        <input
+          type="search"
+          name="Searchbox"
+          id="searchbox"
+          placeholder="search"
+          title="search"
+          class="searchbox"
+        />
       </div>
     </header>
     <main>
