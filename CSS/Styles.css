@@ -291,21 +291,55 @@ a:hover {
   padding: 0 100px 0 100px;
 }
 
-.Product_container {
-  border: solid 1px #395a79;
-  width: 210px;
-  height: 285px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.slider_picture {
-  width: 188px;
-  height: 206px;
-}
-
 /* Slider / Carousel */
+
+.outer_product_container {
+  border: solid 1px #395a79;
+  max-width: 210px;
+  max-height: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.outer_product_container a {
+  padding: 10px;
+  background-color: mediumpurple;
+}
+
+.inner_product_container {
+  max-width: 188px;
+  max-width: 206px;
+  overflow: hidden;
+}
+
+.inner_product_container img {
+  
+}
+
+.slider_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_supreme_alpine_Jacket_m {
+  object-position: 0 35%;
+}
+
+.inner_product_container div {
+  background-color: #00838f;
+  width: 100%;
+  
+}
+
+.Product_container span p {
+  font-size: 0.8rem;
+  
+}
 
 #solid_circle {
   color: #000;
