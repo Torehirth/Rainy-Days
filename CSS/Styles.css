@@ -287,9 +287,32 @@ a:hover {
   opacity: 1;
 }
 
+.page_content {
+  padding: 0 100px 0 100px;
+}
 
+.Product_container {
+  border: solid 1px #395a79;
+  width: 210px;
+  height: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+.slider_picture {
+  width: 188px;
+  height: 206px;
+}
 
+/* Slider / Carousel */
+
+#solid_circle {
+  color: #000;
+}
+
+#empty_circle {
+}
 
 /* About us */
 
@@ -371,7 +394,7 @@ a:hover {
   opacity: 50%;
 }
 
-/* Media queries */
+/* Mobile version */
 
 @media screen and (max-width: 1160px) {
   .Desktop_version,
@@ -405,8 +428,8 @@ a:hover {
     float: left;
   }
   .header_logo {
-    /* width: 8.75em; */
-    /* height: 2.125em; */
+    /* width: 8.75em; */ /*activate for origin design*/
+    /* height: 2.125em; */ /*activate for origin design*/
   }
 
   .header_bottom_container {
@@ -425,7 +448,7 @@ a:hover {
   }
 
   .searchbox_mobile {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*delete for origin design*/
   }
 
   .searchbox {
@@ -442,7 +465,7 @@ a:hover {
 
   .header_icon_buttons {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*delete for origin design*/
   }
 
   nav {
