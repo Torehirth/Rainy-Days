@@ -28,7 +28,7 @@
   font-weight: bold;
 }
 
-/* General style */
+/* ------------------------General style------------------------ */
 
 * {
   margin: 0;
@@ -45,7 +45,7 @@ nav {
   display: none;
 }
 
-/* General header/text */
+/* ------------------------General header/text------------------------ */
 
 h1,
 h2,
@@ -65,14 +65,14 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Header */
+/* ------------------------Header------------------------ */
 
 header {
   background: linear-gradient(to top, #38818a, #0550ba);
   padding: 20px 0 25px 0;
 }
 
-/* Header top menu */
+/* ------------------------Header top menu------------------------ */
 
 .header_top_bottom_menu {
   display: flex;
@@ -102,13 +102,12 @@ header {
   padding: 0;
 }
 
-/* Header bottom menu */
+/* ------------------------Header bottom menu------------------------ */
 
 .header_bottom_menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: gry;
 }
 
 .header_bottom_container {
@@ -174,7 +173,7 @@ header {
   gap: 40px;
 }
 
-/* Header icons and buttons */
+/* ------------------------Header icons and buttons------------------------ */
 
 .header_icon_buttons {
   font-size: 1.125rem;
@@ -198,7 +197,7 @@ header {
   /* display: none; */
 }
 
-/* Header and footer */
+/* ------------------------Header and footer------------------------ */
 
 header,
 footer {
@@ -207,7 +206,7 @@ footer {
   justify-content: center;
 }
 
-/* Footer */
+/* ------------------------Footer------------------------ */
 
 footer {
   background-color: #395a79;
@@ -237,7 +236,11 @@ a:hover {
   opacity: 70%;
 }
 
-/* Index */
+/* ------------------------Index------------------------ */
+
+.page_content {
+  margin: 0 100px 0 100px;
+}
 
 .Landingpage-img {
   width: 100%;
@@ -287,14 +290,23 @@ a:hover {
   opacity: 1;
 }
 
-.page_content {
-  padding: 0 100px 0 100px;
+/* ------------------------Slider/Carousel------------------------ */
+
+.popular_products_container {
+  padding-top: 106px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Slider/Carousel */
-
 .popular_products_container_headline {
-  padding: 0 0 200px 0; /*NOT THE CORRECT SPACING */
+  border: #000 solid 1px;
+  text-align: center;
+}
+
+.popular_products_slider {
+  display: flex;
+  overflow: scroll;
 }
 
 .outer_product_container {
@@ -314,6 +326,7 @@ a:hover {
   margin: 10px 11px 15px 11px;
   height: 262px;
   width: 188px;
+  box-sizing: border-box;
 }
 
 .slider_image_container {
@@ -359,12 +372,23 @@ a:hover {
   transition: ease-in-out 150ms;
 }
 
-.img_supreme_alpine_Jacket_m {
+.img_supreme_alpine_Jacket_m,
+.img_light_down_jacket_w {
+  object-position: 0 35%;
+}
+
+.img_supreme_down_jacket_m {
   object-position: 0 45%;
 }
 
-.delete {
-  padding: 400px 0 0 0; /*JUST FOR ADDING SPACE BETWEEN CONTAINERS FOR EASIER VISUAL */
+.img_light_shell_jacket_m {
+  object-position: 0 5%;
+}
+
+.slider_scroll_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #solid_circle {
@@ -374,7 +398,7 @@ a:hover {
 #empty_circle {
 }
 
-/* About us */
+/* ------------------------About us ------------------------*/
 
 .about-background {
   background-image: url(../Photos/About\ us_main\ photo.jpg);
@@ -399,7 +423,7 @@ a:hover {
   max-width: 15%;
 }
 
-/* Icons and buttons*/
+/* ------------------------Icons and buttons------------------------*/
 
 .fa-solid {
   color: #fff;
@@ -456,16 +480,18 @@ a:hover {
 
 /* Mobile version */
 
-@media screen and (max-width: 1160px) {
+@media (width <= 1160px) {
   .Desktop_version,
   .header_icon_text,
   .header_searchbox {
     display: none;
   }
 
-  /* Header Logo */
+  /* ------------------------Header mobile version------------------------*/
 
   .header_logo {
+    /* width: 8.75em; */ /*activate for origin design (made bigger then Figma design)*/
+    /* height: 2.125em; */ /*activate for origin design (made bigger then Figma design)*/
   }
 
   header {
@@ -486,10 +512,6 @@ a:hover {
 
   .header_logo_container {
     float: left;
-  }
-  .header_logo {
-    /* width: 8.75em; */ /*activate for origin design (made bigger then Figma design)*/
-    /* height: 2.125em; */ /*activate for origin design (made bigger then Figma design)*/
   }
 
   .header_bottom_container {
@@ -571,3 +593,5 @@ a:hover {
     display: flex;
   }
 }
+
+/* ------------------------Footer mobile version ---------------------------*/
