@@ -262,6 +262,8 @@ a:hover {
 .index_button_container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .category_button {
@@ -300,7 +302,6 @@ a:hover {
 }
 
 .popular_products_container_headline {
-  border: #000 solid 1px;
   text-align: center;
 }
 
@@ -369,7 +370,7 @@ a:hover {
 
 .outer_product_container:hover img {
   scale: 98%;
-  transition: ease-in-out 150ms;
+  transition: ease-in-out 300ms;
 }
 
 .img_supreme_alpine_Jacket_m,
@@ -389,13 +390,67 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 17px;
 }
 
+.scroll_bar_icon,
 #solid_circle {
   color: #000;
+  font-size: 0.625rem;
+  cursor: auto;
 }
 
-#empty_circle {
+.scroll_bar_icon:hover,
+#solid_circle:hover {
+  opacity: 1;
+}
+
+.category_card_container_index {
+  padding: 121px 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.womens_category_card,
+.mens_category_card {
+  height: 14.875em;
+  width: 25.375em;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+}
+
+.womens_category_card {
+  background-image: url(../Images/women\ category\ button.jpg);
+}
+
+.mens_category_card {
+  background-image: url(../Images/mens\ category\ button.jpg);
+}
+
+.womens_category_card p,
+.mens_category_card p {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.category_card_link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.womens_category_card:hover,
+.mens_category_card:hover {
+  scale: 99%;
+  transition: ease-in-out 300ms;
 }
 
 /* ------------------------About us ------------------------*/
@@ -464,9 +519,6 @@ a:hover {
   font-weight: bold;
   text-transform: lowercase;
   text-align: center;
-  position: relative;
-  left: 100px;
-  bottom: 100px;
 }
 
 .fa-arrow-up {
