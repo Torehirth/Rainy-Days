@@ -425,7 +425,7 @@ a:hover {
 /* ------------------- Index category cards -----------*/
 
 .category_card_container_index {
-  padding: 121px 0 100px 0;
+  padding: 100px 0 100px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
