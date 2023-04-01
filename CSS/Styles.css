@@ -687,7 +687,7 @@ a:hover {
     scroll-snap-align: start;
   }
 
-  .outer_product_container:last-child {
+  .last_slider_group:last-child {
     scroll-snap-align: end;
   }
 
