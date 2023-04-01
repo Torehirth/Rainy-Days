@@ -558,6 +558,10 @@ a:hover {
     display: none;
   }
 
+  .page_content {
+    margin: 0 10px 0 10px;
+  }
+
   /* ------------------Header mobile version-------*/
 
   .header_logo {
@@ -664,8 +668,11 @@ a:hover {
     display: flex;
   }
 
-  /* ------------------------Footer mobile version ---------------------------*/
+  /* ---------------Footer mobile version ---------------------*/
 
+
+
+  /*---------- Index product card slider/carousel---------*/ 
   .popular_products_slider_mobile {
     display: grid;
     grid-auto-flow: column;
