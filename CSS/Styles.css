@@ -553,13 +553,12 @@ a:hover {
 @media (width <= 1160px) {
   .Desktop_version,
   .header_icon_text,
-  .header_searchbox,
-  .popular_products_slider_desktop {
+  .header_searchbox {
     display: none;
   }
 
   .page_content {
-    margin: 0 10px 0 10px;
+    margin: 0 20px 0 20px;
   }
 
   /* ------------------Header mobile version-------*/
@@ -673,23 +672,25 @@ a:hover {
 
 
   /*---------- Index product card slider/carousel---------*/ 
-  .popular_products_slider_mobile {
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    gap: 40px;
-    padding-bottom: 40px;
-    scroll-snap-type: inline mandatory; /*Snap behavior*/
-    /* scroll-padding-inline: 10px; */
-  
+  .popular_products_slider_desktop {
+    scroll-snap-align: start;
+    gap: 15px;
+
   }
 
-  .popular_products_slider_mobile >* {
+  .slider_group {
+    gap: 15px;
+  }
+
+  .outer_product_container {
     scroll-snap-align: start;
   }
 
-  .popular_products_slider_mobile >*:last-child {
+  /* .popular_products_slider_mobile >* { */
+    scroll-snap-align: start;
+  }
+
+  /* .popular_products_slider_mobile >*:last-child { */
     scroll-snap-align: end;
   }
 
