@@ -41,6 +41,7 @@
 
 .hamburger_icon,
 .header_searchbox_mobile,
+.popular_products_slider_mobile,
 nav {
   display: none;
 }
@@ -305,9 +306,26 @@ a:hover {
   text-align: center;
 }
 
-.popular_products_slider {
-  display: flex;
-  overflow: scroll;
+.popular_products_slider_desktop {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  gap: 40px;
+  padding-bottom: 40px;
+  scroll-snap-type: inline mandatory; /*Snap behavior*/
+  /* grid-auto-columns: 21%; */
+}
+
+.slider_group {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 35px;
+  scroll-snap-align: start;
+}
+
+.slider_group:last-child {
+  scroll-snap-align: end;
 }
 
 .outer_product_container {
@@ -450,7 +468,7 @@ a:hover {
 .womens_category_card:hover,
 .mens_category_card:hover {
   scale: 99%;
-  transition: ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
 }
 
 /* ------------------------About us ------------------------*/
@@ -530,16 +548,17 @@ a:hover {
   opacity: 50%;
 }
 
-/* Mobile version */
+/* -------------------------Mobile version----------------------- */
 
 @media (width <= 1160px) {
   .Desktop_version,
   .header_icon_text,
-  .header_searchbox {
+  .header_searchbox,
+  .popular_products_slider_desktop {
     display: none;
   }
 
-  /* ------------------------Header mobile version------------------------*/
+  /* ------------------Header mobile version-------*/
 
   .header_logo {
     /* width: 8.75em; */ /*activate for origin design (made bigger then Figma design)*/
@@ -644,6 +663,30 @@ a:hover {
   .checkbox:checked ~ nav {
     display: flex;
   }
-}
 
-/* ------------------------Footer mobile version ---------------------------*/
+  /* ------------------------Footer mobile version ---------------------------*/
+
+  .popular_products_slider_mobile {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    gap: 40px;
+    padding-bottom: 40px;
+    scroll-snap-type: inline mandatory; /*Snap behavior*/
+    /* scroll-padding-inline: 10px; */
+  
+  }
+
+  .popular_products_slider_mobile >* {
+    scroll-snap-align: start;
+  }
+
+  .popular_products_slider_mobile >*:last-child {
+    scroll-snap-align: end;
+  }
+
+
+
+
+}
