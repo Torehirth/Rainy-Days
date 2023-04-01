@@ -238,9 +238,12 @@ a:hover {
 }
 
 /* ------------------------Index------------------------ */
-
 .page_content {
   margin: 0 100px 0 100px;
+}
+
+.page_content {
+  /* margin: 0 100px 0 100px; */
 }
 
 .Landingpage-img {
@@ -313,7 +316,7 @@ a:hover {
   overscroll-behavior-inline: contain;
   gap: 40px;
   padding-bottom: 40px;
-  scroll-snap-type: inline mandatory; 
+  scroll-snap-type: inline mandatory;
 }
 
 .slider_group {
@@ -549,7 +552,7 @@ a:hover {
   opacity: 50%;
 }
 
-/* -------------------------Mobile version----------------------- */
+/* -------------------------tablet/mobile version----------------------- */
 
 @media (width <= 1160px) {
   .Desktop_version,
@@ -558,11 +561,28 @@ a:hover {
     display: none;
   }
 
-  .page_content {
-    margin: 0 20px 0 20px;
+  .header_searchbox_tab {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    left: 300px;
+    align-items: center;
+    width: 40%;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #fff;
   }
 
-  /* ------------------Header mobile version-------*/
+  .page_content {
+    margin: 0 100px 0 100px;
+  }
+
+  /* .header_searchbox  {
+    margin: 0 100px 0 100px;
+    align-items: center;
+    width: 100%;
+  } */
+
+  /* ------------------------------Header ------------------------------------------*/
 
   .header_logo {
     /* width: 8.75em; */ /*activate for origin design (made bigger then Figma design)*/
@@ -594,18 +614,6 @@ a:hover {
 
   .category_menu {
     margin-left: 10px;
-  }
-
-  .header_searchbox_mobile {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 5px;
-    border-bottom: solid 1px #fff;
-  }
-
-  .searchbox_mobile {
-    font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
   }
 
   .searchbox {
@@ -668,11 +676,9 @@ a:hover {
     display: flex;
   }
 
-  /* ---------------Footer mobile version ---------------------*/
+  /* ---------------Footer ----------------------------------------*/
 
-
-
-  /*---------- Index product card slider/carousel---------*/ 
+  /*---------- Index product card slider/carousel------*/
   .popular_products_slider {
     scroll-snap-align: start;
     gap: 15px;
@@ -692,10 +698,34 @@ a:hover {
   }
 
   /*-------------- Index Category Card ----------------*/
-  
+
   .category_card_container_index {
     padding-top: 50px;
   }
+}
 
+/* --------------------------- Media mobile version -------------------------- */
 
+@media (width <= 850px) {
+  .page_content {
+    margin: 0 20px 0 20px;
+  }
+
+  .searchbox_mobile {
+    font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
+  }
+
+  .header_searchbox_mobile {
+    display: flex;
+    position: static;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #fff;
+  }
+
+  .header_icon_buttons {
+    display: flex;
+    font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
+  }
 }
