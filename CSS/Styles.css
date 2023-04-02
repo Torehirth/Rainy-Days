@@ -779,6 +779,10 @@ footer .fa-arrow-up {
     border-bottom: solid 1px #fff;
   }
 
+  #mobile_search {
+    width: 100%;
+  }
+
   .header_icon_buttons {
     display: flex;
     font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
