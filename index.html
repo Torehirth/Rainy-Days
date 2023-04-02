@@ -13,7 +13,6 @@
       content="jacket, jackets, clothing, rainwear, shopping, buy, outdoor clothing, outdoor equipment"
     />
     <meta name="author" content="Tore M. Hirth" />
-    <meta http-equiv="refresh" content="600" />
     <meta
       name="description"
       content="Rainy Days - Buy quality outdoor jackets that handles all kind of weather, made of sustainable materials"
@@ -23,7 +22,7 @@
   <body>
     <header class="header_mobile header_tab">
       <section
-        class="header_top_bottom_menu Header_menu_tablet Header_menu_mobile"
+        class="header_top_bottom_menu header_menu_tab header_menu_mobile"
       >
         <div class="header_top_menu Desktop_version">
           <div class="header_top_container">
@@ -63,12 +62,12 @@
                 <label
                   class="fa-solid fa-magnifying-glass searchbox"
                   title="search"
-                  for="search"
+                  for="desktop_search"
                 ></label>
                 <input
                   type="search"
-                  name="Searchbox"
-                  id="search"
+                  name="search"
+                  id="desktop_search"
                   placeholder="search"
                   title="search"
                   class="searchbox"
@@ -105,7 +104,7 @@
       </section>
       <section class="hamburger_container">
         <input type="checkbox" id="checkbox" class="checkbox" />
-        <nav class="header_nav_mobile">
+        <nav class="header_nav_mobile header_nav_tab">
           <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="men.html">men's</a></li>
@@ -119,12 +118,12 @@
         <span
           class="fa-solid fa-magnifying-glass searchbox_mobile"
           title="search"
-          for="search"
+          for="mobile_search"
         ></span>
         <input
           type="search"
-          name="Searchbox"
-          id="search"
+          name="Search"
+          id="mobile_search"
           placeholder="search"
           title="search"
           class="searchbox"
@@ -330,19 +329,30 @@
       </section>
     </main>
     <footer class="footer footer_tab footer_mobile">
-      <section class="footer_top_container">
-        <div class="footer-contact-information">
-          <a href="index.html"
-            ><img
-              src="logo/Rainy Days Logo Footer Vector.svg"
-              alt="Rainy Days footer logo"
-              title="to homepage"
-              class="footer_logo"
-          /></a>
-          <a href="mailto:support@rainydays.com" title="send us an email"
-            >support@rainydays.com</a
-          >
-          <p>+47 815 493 00</p>
+      <section class="footer_top_container footer_top_container_mobile">
+        <div class="contact_top_btn">
+          <div class="footer-contact-information footer_contact_mobile">
+            <a href="index.html"
+              ><img
+                src="logo/Rainy Days Logo Footer Vector.svg"
+                alt="Rainy Days footer logo"
+                title="to homepage"
+                class="footer_logo"
+            /></a>
+            <a href="mailto:support@rainydays.com" title="send us an email"
+              >support@rainydays.com</a
+            >
+            <p>+47 815 493 00</p>
+          </div>
+          <div class="to-top-button-mobile">
+            <span class="fa-stack fa-2x">
+              <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
+              <a href="#" title="to top of page"
+                ><i class="fa-solid fa-arrow-up fa-stack-1x"></i
+              ></a>
+            </span>
+            <p>top</p>
+          </div>
         </div>
         <nav class="footer_nav">
           <ul>

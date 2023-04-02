@@ -42,7 +42,8 @@
 .hamburger_icon,
 .header_searchbox_mobile,
 .popular_products_slider_mobile,
-.header_nav_mobile {
+.header_nav_mobile,
+.to-top-button-mobile {
   display: none;
 }
 
@@ -79,7 +80,6 @@ a:hover {
 header {
   background: linear-gradient(to top, #38818a, #0550ba);
   padding: 20px 0 25px 0;
-  justify-content: center;
 }
 
 /* ------------------------Header top menu------------------------ */
@@ -115,12 +115,6 @@ header {
 }
 
 /* ------------------------Header bottom menu------------------------ */
-
-.header_bottom_menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .header_bottom_container {
   display: flex;
@@ -214,6 +208,7 @@ header,
 footer {
   color: #fff;
   display: flex;
+  justify-content: center;
 }
 
 /* ------------------------Footer------------------------ */
@@ -221,8 +216,6 @@ footer {
 footer {
   background-color: #395a79;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0 100px 0 100px;
 }
 
 .footer_top_container {
@@ -230,8 +223,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 25px 0 20px 0;
-  max-height: 100%;
-  /* gap: 100px; */
+  margin: 0 100px 0 100px;
 }
 
 .footer_logo {
@@ -277,6 +269,7 @@ footer {
   font-weight: bold;
   text-transform: lowercase;
   text-align: center;
+  gap: 5px;
 }
 
 footer .fa-arrow-up {
@@ -293,6 +286,7 @@ footer .fa-arrow-up {
   flex-direction: column;
   gap: 15px;
   padding-bottom: 15px;
+  margin: 0 100px 0 100px;
 }
 
 .horizontal_line {
@@ -631,13 +625,10 @@ footer .fa-arrow-up {
     padding: 24px 30px 0 30px;
   }
 
-  .header_menu-tab {
-    justify-content: space-between;
-    
-  }
-
   .header_bottom_menu_tab {
     padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 1100px;
   }
@@ -675,9 +666,9 @@ footer .fa-arrow-up {
     font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
   }
 
-  .header_nav_mobile {
+  .header_nav_tab {
     position: absolute;
-    top: 100%;
+    top: 125px;
     right: 0;
   }
 
@@ -714,7 +705,7 @@ footer .fa-arrow-up {
     color: #fff;
   }
 
-  .checkbox:checked ~ nav {
+  .checkbox:checked ~ .header_nav_mobile {
     display: flex;
   }
 
@@ -750,13 +741,16 @@ footer .fa-arrow-up {
 
 @media (width <= 850px) {
   .header_tab,
-  .header_bottom_menu_tab {
+  .header_bottom_menu_tab,
+  .footer_top_container,
+  .to-top-button {
     display: none;
   }
 
   .page_content {
     margin: 0 20px 0 20px;
   }
+  /* --------------header mobile version----------------- */
 
   .header_mobile {
     display: flex;
@@ -768,6 +762,12 @@ footer .fa-arrow-up {
   .header_bottom_menu_mobile {
     padding: 20px 0 20px 0;
     display: flex;
+  }
+
+  .header_nav_mobile {
+    position: absolute;
+    top: 100%;
+    right: 0;
   }
 
   .header_searchbox_mobile {
@@ -782,5 +782,40 @@ footer .fa-arrow-up {
   .header_icon_buttons {
     display: flex;
     font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
+  }
+  /* ------------Footer mobile version -------------*/
+
+  .footer_top_container_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .contact_top_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer_contact_mobile {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer_nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .so_me_container {
+    justify-content: center;
+  }
+
+  .to-top-button-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.625rem;
+    gap: 5px;
   }
 }
