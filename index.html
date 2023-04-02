@@ -21,7 +21,7 @@
     <title>Rainy Days | Home</title>
   </head>
   <body>
-    <header>
+    <header class="header_mobile header_tab">
       <section class="header_top_bottom_menu">
         <div class="header_top_menu Desktop_version">
           <div class="header_top_container">
@@ -35,7 +35,7 @@
             </ul>
           </div>
         </div>
-        <div class="header_bottom_menu">
+        <div class="header_bottom_menu header_bottom_menu_tab header_bottom_menu_mobile">
           <div class="header_bottom_container">
             <div class="header_logo_container">
               <a href="index.html" class="header_logo"
@@ -56,14 +56,15 @@
                 </li>
               </ul>
               <div class="header_searchbox">
-                <span
+                <label
                   class="fa-solid fa-magnifying-glass searchbox"
                   title="search"
-                ></span>
+                  for="search"
+                ></label>
                 <input
                   type="search"
                   name="Searchbox"
-                  id="searchbox"
+                  id="search"
                   placeholder="search"
                   title="search"
                   class="searchbox"
@@ -88,7 +89,7 @@
                     <p class="header_icon_text">cart</p>
                   </li>
                   <li class="header_icon_buttons hamburger_icon">
-                    <label for="checkbox" class="header_icon_buttons"
+                    <label for="checkbox" class="header_icon_buttons check"
                       ><i class="fa-solid fa-bars"></i
                     ></label>
                   </li>
@@ -98,7 +99,7 @@
           </div>
         </div>
       </section>
-      <aside class="hamburger_container">
+      <section class="hamburger_container">
         <input type="checkbox" id="checkbox" class="checkbox" />
         <nav>
           <ul>
@@ -109,8 +110,8 @@
             <li><a href="contact.html">contact us</a></li>
           </ul>
         </nav>
-      </aside>
-      <div class="header_searchbox_mobile">
+      </section>
+      <div class="header_searchbox_mobile header_searchbox_tab">
         <span
           class="fa-solid fa-magnifying-glass searchbox_mobile"
           title="search"
@@ -119,7 +120,7 @@
         <input
           type="search"
           name="Searchbox"
-          id="searchbox"
+          id="search"
           placeholder="search"
           title="search"
           class="searchbox"
@@ -127,74 +128,199 @@
       </div>
     </header>
     <main>
-      <section>
-        <a href="test.html" style="color: black">Testpage</a>
+      <section class="Index_image">
         <div>
-          <img src="Images/Landingpage.jpg" alt="mountain climber" />
+          <img
+            class="Landingpage-img"
+            src="Images/Landingpage.jpg"
+            alt="person climbing a mountain"
+          />
         </div>
-        <h1>Watch our collection of all weather jackets</h1>
-        <a href="men.html">men's</a>
-        <a href="women.html">women's</a>
       </section>
-      <section>
-        <div>
-          <h2>popular products</h2>
-        </div>
-        <div>
-          <img src="#" alt="supreme alpine jacket m's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="supreme alpine jacket w's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="supreme down jacket m's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="all weather jacket w's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="light shell jacket m's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="supreme down jacket w's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="all weather jacket m's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="light down jacket m's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <div>
-          <img src="#" alt="light down jacket w's" />
-          <a href="product.html">product</a>
-          supreme alpine jacket m's 279$
-        </div>
-        <section>
-          <div>
-            <img src="#" alt=" woman in nature" />
-            <h3>women's jackets</h3>
-            <a href="women.html">women's jackets</a>
+      <section class="page_content">
+        <section class="index_headline_container">
+          <h1>Watch our collection of all weather<br />jackets</h1>
+          <div class="index_button_container">
+            <div class="category_button"><a href="men.html">men's</a></div>
+            <div class="category_button"><a href="women.html">women's</a></div>
           </div>
-          <div>
-            <img src="#" alt="man in nature" />
-            <h3>men's jackets</h3>
-            <a href="men.html">men's jackets</a>
+        </section>
+        <section class="popular_products_container">
+          <div class="popular_products_container_headline">
+            <h2>popular products</h2>
+          </div>
+          <!-- Slider group/desktop container -->
+          <div class="popular_products_slider">
+            <!-- Group 1 -->
+            <div class="slider_group">
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/main product 1.jpg"
+                      alt="supreme alpine jacket m's"
+                      href="product.html"
+                      class="img_supreme_alpine_Jacket_m"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>supreme alpine jacket m's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/women blue_green alpine jacket.jpg"
+                      alt="supreme alpine jacket w's"
+                      href="product.html"
+                      class="img_supreme_alpine_jacket_w"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>supreme alpine jacket w's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/men red down jacket.jpg"
+                      alt="supreme down jacket m's"
+                      href="product.html"
+                      class="img_supreme_down_jacket_m"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>supreme down jacket m's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/women orange all weather jacket.jpg"
+                      alt="all weather jacket w's"
+                      href="product.html"
+                      class="img_all_weather_jacket_w"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>all weather jacket w's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product -->
+            <div class="slider_group last_slider_group">
+              <!-- Group 2 -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/women yellow down jacket.jpg"
+                      alt="supreme down jacket w's"
+                      href="product.html"
+                      class="img_supreme_down_jacket_w"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>supreme down jacket w's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/men yellow all weather jacket.jpg"
+                      alt="all weather jacket m's"
+                      href="product.html"
+                      class="img_all_weather_jacket_m"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>all weather jacket m's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/men red light down jacket.jpg"
+                      alt="light down jacket m's"
+                      href="product.html"
+                      class="img_light_down_jacket_m"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>light down jacket m's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Product -->
+              <div class="outer_product_container">
+                <div class="inner_product_container">
+                  <div class="slider_image_container">
+                    <img
+                      src="Images/women black down jacket.jpg"
+                      alt="light down jacket w's"
+                      href="product.html"
+                      class="img_light_down_jacket_w"
+                    />
+                  </div>
+                  <div class="slider_text_container">
+                    <p>light down jacket w's</p>
+                    <p class="slider_price">279$</p>
+                    <a href="product.html"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product -->
+          </div>
+          <!-- <div class="slider_scroll_bar">
+            <i class="fa-solid fa-circle scroll_bar_icon" id="solid_circle"></i>
+            <i
+              class="fa-regular fa-circle scroll_bar_icon"
+              id="empty_circle"
+            ></i>
+          </div> -->
+        </section>
+        <section>
+          <div class="category_card_container_index">
+            <div class="womens_category_card">
+              <p>women's jackets</p>
+              <a href="women.html" class="category_card_link"></a>
+            </div>
+            <div class="mens_category_card">
+              <p>men's jackets</p>
+              <a href="men.html" class="category_card_link"></a>
+            </div>
           </div>
         </section>
         <footer class="footer">
