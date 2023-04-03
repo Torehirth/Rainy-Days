@@ -44,7 +44,8 @@
 .header_searchbox_mobile,
 .popular_products_slider_mobile,
 .header_nav_mobile,
-.to-top-button-mobile {
+.to-top-button-mobile,
+.header_logo_mobile {
   display: none;
 }
 
@@ -108,7 +109,7 @@ header {
 .header_info_pages {
   display: flex;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 1.875rem;
   align-items: center;
   width: 100%;
   font-size: 0.75rem;
@@ -147,10 +148,10 @@ header {
 
 .header_category_container {
   display: flex;
-  gap: 120px;
+  gap: 7.5rem;
   letter-spacing: 0.05rem;
   font-size: 1.125rem;
-  padding-left: 120px;
+  padding-left: 7.5rem;
   margin-bottom: -4px;
 }
 
@@ -160,7 +161,7 @@ header {
 
 .header_searchbox {
   display: flex;
-  margin-left: 120px;
+  margin-left: 7.5rem;
   gap: 5px;
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
@@ -177,9 +178,9 @@ header {
 .header_icons {
   display: flex;
   padding: 0;
-  padding-left: 132px;
+  padding-left: 8.25em;
   margin-bottom: -2px;
-  gap: 40px;
+  gap: 2.5em;
 }
 
 /* ------------------------Header icons and buttons------------------------ */
@@ -199,11 +200,6 @@ header {
 
 .checkbox {
   display: none;
-}
-
-.hamburger_icon,
-.hamburger_menu {
-  /* display: none; */
 }
 
 /* ------------------------Header and footer------------------------ */
@@ -226,8 +222,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px 0 20px 0;
-  margin: 0 100px 0 100px;
+  padding: 1.5625em 0 1.25em 0;
+  margin: 0 6.25em 0 6.25em;
 }
 
 .footer_logo {
@@ -235,7 +231,7 @@ footer {
 }
 
 .footer-contact-information {
-  gap: 10px;
+  gap: 0.625em;
 }
 
 .footer_nav {
@@ -248,7 +244,7 @@ footer {
 .footer ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25em;
   padding: 0;
 }
 
@@ -256,7 +252,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 0.625em;
 }
 
 .footer-contact-information {
@@ -288,9 +284,9 @@ footer .fa-arrow-up {
 .footer_bottom_container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding-bottom: 15px;
-  margin: 0 100px 0 100px;
+  gap: 0.9375em;
+  padding-bottom: 0.9375em;
+  margin: 0 6.25em 0 6.25em;
 }
 
 .horizontal_line {
@@ -308,7 +304,7 @@ footer .fa-arrow-up {
 
 /* ------------------------Index------------------------ */
 .page_content {
-  margin: 0 100px 0 100px;
+  margin: 0 6.25em 0 6.25em;
 }
 
 .Landingpage-img {
@@ -320,19 +316,19 @@ footer .fa-arrow-up {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 4.375em;
 }
 
 .index_headline_container h1 {
   letter-spacing: 3px;
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 
 .index_button_container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25em;
 }
 
 .category_button {
@@ -346,8 +342,8 @@ footer .fa-arrow-up {
   font-size: 1rem;
   padding: auto;
   letter-spacing: 2px;
-  width: 210px;
-  height: 42px;
+  width: 13.125rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,10 +360,10 @@ footer .fa-arrow-up {
 /* ------------------------Slider/Carousel------------------------ */
 
 .popular_products_container {
-  padding-top: 106px;
+  padding-top: 6.625em;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25em;
 }
 
 .popular_products_container_headline {
@@ -379,15 +375,15 @@ footer .fa-arrow-up {
   grid-auto-flow: column;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 2.5em;
+  padding-bottom: 2.5em;
   scroll-snap-type: inline mandatory;
 }
 
 .slider_group {
   display: grid;
   grid-auto-flow: column;
-  gap: 35px;
+  gap: 2.1875em;
   scroll-snap-align: start;
 }
 
@@ -397,8 +393,8 @@ footer .fa-arrow-up {
 
 .outer_product_container {
   border: solid 1px #395a79;
-  width: 210px;
-  height: 285px;
+  width: 13.125em;
+  height: 17.8125em;
   position: relative; /* This is for making the whole slider frame a link */
   display: flex;
   justify-content: space-around;
@@ -409,15 +405,15 @@ footer .fa-arrow-up {
 .inner_product_container {
   display: flex;
   flex-direction: column;
-  margin: 10px 11px 15px 11px;
-  height: 262px;
-  width: 188px;
-  box-sizing: border-box;
+  margin: 0.625em 0.6875em 0.9375em 0.6875em;
+  height: 16.375em;
+  width: 11.75em;
+  /* box-sizing: border-box; */
 }
 
 .slider_image_container {
-  height: 206px;
-  width: 188px;
+  height: 12.875em;
+  width: 11.75em;
 }
 
 .slider_image_container img {
@@ -436,16 +432,16 @@ footer .fa-arrow-up {
   /* This is for making the whole slider-frame a link */
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .slider_text_container p {
   color: #000;
   font-size: 0.75rem;
-  padding: 5px 0 5px 0;
+  padding: 0.3125em 0 0.3125em 0;
 }
 
 .slider_price {
@@ -475,7 +471,7 @@ footer .fa-arrow-up {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 17px;
+  gap: 1.0625em;
 }
 
 .scroll_bar_icon,
@@ -493,11 +489,11 @@ footer .fa-arrow-up {
 /* ------------------- Index category cards -----------*/
 
 .category_card_container_index {
-  padding: 100px 0 100px 0;
+  padding: 0.625em 0 0.625em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 1.25em;
 }
 
 .womens_category_card,
@@ -577,7 +573,7 @@ footer .fa-arrow-up {
 }
 
 .fa-fw {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .fa-brands {
@@ -586,8 +582,8 @@ footer .fa-arrow-up {
 
 .home-button {
   font-size: 0.65rem;
-  padding-top: 45px;
-  padding-left: 100px;
+  padding-top: 2.8125rem;
+  padding-left: 6.25rem;
 }
 
 .home-button:hover {
@@ -612,7 +608,7 @@ footer .fa-arrow-up {
   }
 
   .page_content {
-    margin: 0 100px 0 100px;
+    margin: 0 6.25em 0 6.25em;
   }
 
   /* ------------------------------Header ------------------------------------------*/
@@ -621,15 +617,14 @@ footer .fa-arrow-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 30px 0 30px;
+    padding: 1.5em 1.875em 0 1.875em;
   }
 
   .header_bottom_menu_tab {
-    padding: 20px 0 0 0;
+    padding: 1.25em 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1100px;
   }
 
   .header_logo_container {
@@ -637,13 +632,13 @@ footer .fa-arrow-up {
   }
 
   .category_menu {
-    margin-left: 10px;
+    margin-left: 0.625em;
   }
 
   .header_searchbox_tab {
     display: flex;
     position: relative;
-    bottom: 26px;
+    bottom: 1.625em;
     align-items: center;
     width: 30%;
     padding-bottom: 5px;
@@ -657,7 +652,7 @@ footer .fa-arrow-up {
   .header_icons {
     margin: 0;
     padding-left: 0;
-    gap: 31px;
+    gap: 1.9375em;
   }
 
   .header_icon_buttons {
@@ -667,7 +662,7 @@ footer .fa-arrow-up {
 
   .header_nav_tab {
     position: absolute;
-    top: 125px;
+    top: 7.625em;
     right: 0;
   }
 
@@ -695,8 +690,8 @@ footer .fa-arrow-up {
     font-size: 1rem;
     padding: 7.5px 5px;
     border-radius: 5px 0 0 5px;
-    height: 36px;
-    width: 170px;
+    height: 1.9375rem;
+    width: 10.625rem;
   }
 
   .header_nav_mobile ul li a:active {
@@ -713,12 +708,12 @@ footer .fa-arrow-up {
   /*---------- Index product card slider/carousel------*/
   .popular_products_slider {
     scroll-snap-align: start;
-    gap: 15px;
-    padding-bottom: 20px;
+    gap: 0.9375em;
+    padding-bottom: 1.25em;
   }
 
   .slider_group {
-    gap: 15px;
+    gap: 0.9375em;
   }
 
   .outer_product_container {
@@ -732,7 +727,7 @@ footer .fa-arrow-up {
   /*-------------- Index Category Card ----------------*/
 
   .category_card_container_index {
-    padding-top: 50px;
+    padding-top: 3.125em;
   }
 }
 
@@ -743,13 +738,12 @@ footer .fa-arrow-up {
   .header_bottom_menu_tab,
   .footer_top_container,
   .to-top-button,
-  .header_logo
-   {
+  .header_logo {
     display: none;
   }
 
   .page_content {
-    margin: 0 20px 0 20px;
+    margin: 0 1.25em 0 1.25em;
   }
   /* --------------header mobile version----------------- */
 
@@ -757,11 +751,11 @@ footer .fa-arrow-up {
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 24px 30px 9px 30px;
+    padding: 1.5em 1.875em 0.5625em 1.875em;
   }
 
   .header_bottom_menu_mobile {
-    padding: 20px 0 20px 0;
+    padding: 1.25em 0 1.25em 0;
     display: flex;
   }
 
@@ -799,8 +793,8 @@ footer .fa-arrow-up {
   .footer_top_container_mobile {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin: 0 30px 0 30px;
+    gap: 3.75em;
+    margin: 0 1.875em 0 1.875em;
   }
 
   .contact_top_btn {
