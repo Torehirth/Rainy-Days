@@ -37,6 +37,7 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 .hamburger_icon,
@@ -79,7 +80,7 @@ a:hover {
 
 header {
   background: linear-gradient(to top, #38818a, #0550ba);
-  padding: 20px 0 25px 0;
+  padding: 1.25em 0 1.5625em 0;
 }
 
 /* ------------------------Header top menu------------------------ */
@@ -88,7 +89,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 100px 0 100px;
+  margin: 0 6.25em 0 6.25em;
 }
 
 .header_top_menu {
