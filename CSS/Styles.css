@@ -127,8 +127,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+.header_logo_mobile {
+  display: none;
+}
 .header_logo {
+  display: flex;
   width: 13em;
   height: 3.1875em;
 }
@@ -613,11 +616,6 @@ footer .fa-arrow-up {
 
   /* ------------------------------Header ------------------------------------------*/
 
-  .header_logo {
-    /* width: 8.75em; */ /*activate for origin design (made bigger then Figma design)*/
-    /* height: 2.125em; */ /*activate for origin design (made bigger then Figma design)*/
-  }
-
   .header_tab {
     display: flex;
     flex-direction: column;
@@ -644,7 +642,7 @@ footer .fa-arrow-up {
   .header_searchbox_tab {
     display: flex;
     position: relative;
-    bottom: 33px;
+    bottom: 26px;
     align-items: center;
     width: 30%;
     padding-bottom: 5px;
@@ -652,7 +650,7 @@ footer .fa-arrow-up {
   }
 
   .searchbox_mobile {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .header_icons {
@@ -663,7 +661,7 @@ footer .fa-arrow-up {
 
   .header_icon_buttons {
     display: flex;
-    font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
+    /* font-size: 1.5rem; delete for origin design(made bigger than Figma design) */
   }
 
   .header_nav_tab {
@@ -743,7 +741,9 @@ footer .fa-arrow-up {
   .header_tab,
   .header_bottom_menu_tab,
   .footer_top_container,
-  .to-top-button {
+  .to-top-button,
+  .header_logo
+   {
     display: none;
   }
 
@@ -762,6 +762,12 @@ footer .fa-arrow-up {
   .header_bottom_menu_mobile {
     padding: 20px 0 20px 0;
     display: flex;
+  }
+
+  .header_logo_mobile {
+    display: flex;
+    width: 8.75em; /*activate for origin design (made bigger then Figma design*/
+    height: 2.125em; /*activate for origin design (made bigger then Figma design*/
   }
 
   .header_nav_mobile {
@@ -785,7 +791,7 @@ footer .fa-arrow-up {
 
   .header_icon_buttons {
     display: flex;
-    font-size: 1.5rem; /*delete for origin design(made bigger than Figma design)*/
+    /* font-size: 1.5rem; delete for origin design(made bigger than Figma design) */
   }
   /* ------------Footer mobile version -------------*/
 
