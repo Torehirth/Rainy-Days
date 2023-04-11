@@ -378,6 +378,8 @@ footer .fa-arrow-up {
   gap: 2.5em;
   padding-bottom: 2.5em;
   scroll-snap-type: inline mandatory;
+  max-height: 100%;
+  height:fit-content;
 }
 
 .slider_group {
@@ -385,6 +387,8 @@ footer .fa-arrow-up {
   grid-auto-flow: column;
   gap: 2.1875em;
   scroll-snap-align: start;
+  max-height: 100%;
+  height:fit-content;
 }
 
 .slider_group:last-child {
