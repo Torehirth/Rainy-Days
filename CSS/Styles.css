@@ -489,7 +489,7 @@ footer .fa-arrow-up {
 /* ------------------- Index category cards -----------*/
 
 .category_card_container_index {
-  padding: 0.625em 0 0.625em 0;
+  padding: 6.25em 0 6.25em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
