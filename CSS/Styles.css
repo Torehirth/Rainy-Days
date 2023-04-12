@@ -55,20 +55,27 @@ h1,
 h2,
 h3 {
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
-  padding-top: 2.1875rem;
 }
 
 h2 {
   font-size: 1.75rem;
+  text-transform: capitalize;
 }
 
 h3 {
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 
 a {
@@ -548,7 +555,8 @@ footer .fa-arrow-up {
   margin-inline: 13.125em 13.125em;
 }
 
-.headline_jacket_page {
+.main_headline {
+  padding-top: 2.1875rem;
   padding-bottom: 2.5rem;  
 }
 
@@ -591,15 +599,45 @@ footer .fa-arrow-up {
 .top_image_container {
   background-image: url(../images/About\ us_main\ photo.jpg);
   padding-inline: 6.75em;
+  height: 48em;
+  max-width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .background-text-about-contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 100%;
   padding-inline: 11.875em;
-  gap: 1.5em;
+  gap: 1.875em;
+  color: #fff;
+}
 
+.background-text-about-contact p {
+  
+}
+
+.about_contact_headline {
+  padding-top: 8.4375rem;
+  text-transform: capitalize;
+}
+
+.story_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-inline: 18.125em;
+  gap: 1.25em;
+  padding-top: 3.75em;
+}
+
+.story_container p,
+.background-text-about-contact p {
+  line-height: 1.4;
+  text-transform:none;
 }
 
 .about-picture1,
