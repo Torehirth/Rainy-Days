@@ -658,6 +658,10 @@ footer .fa-arrow-up {
   font-weight: bold;
 }
 
+.home_btn_white {
+  color: white;
+}
+
 .home-button:hover {
   opacity: 70%;
 }
