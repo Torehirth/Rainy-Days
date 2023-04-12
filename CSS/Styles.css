@@ -527,7 +527,7 @@ footer .fa-arrow-up {
   font-size: 1.5rem;
 }
 
-.category_card_link::before { 
+.category_card_link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -549,7 +549,7 @@ footer .fa-arrow-up {
 }
 
 .headline_jacket_page {
-  padding-bottom: 2.5em;
+  padding-bottom: 2.5rem;  
 }
 
 .filter_card_container {
@@ -582,21 +582,24 @@ footer .fa-arrow-up {
   padding-top: 1.875em;
 }
 
-/* ------------------------About us ------------------------*/
-
-.about-background {
-  background-image: url(../Photos/About\ us_main\ photo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
+/* -----------------About Us & Contact Us ------------------*/
+.page_content_about_contact {
 }
 
-.about-background-text {
-  padding-left: 18.125rem;
-  padding-right: 6.25rem;
-  padding-top: 11.25rem;
-  padding-bottom: 28.25rem;
+/* ------------------------About Us ------------------------*/
+
+.top_image_container {
+  background-image: url(../images/About\ us_main\ photo.jpg);
+  padding-inline: 6.75em;
+}
+
+.background-text-about-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-inline: 11.875em;
+  gap: 1.5em;
+
 }
 
 .about-picture1,
@@ -606,6 +609,8 @@ footer .fa-arrow-up {
 .about-picture5 {
   max-width: 15%;
 }
+
+/* ------------------------Contact Us ------------------------*/
 
 /* ------------------------Icons and buttons------------------------*/
 
@@ -639,7 +644,7 @@ footer .fa-arrow-up {
 
 .home-button-container {
   position: relative;
-  top: 1.875em;
+  padding-top: 1.875em;
   width: fit-content;
 }
 
@@ -930,8 +935,6 @@ footer .fa-arrow-up {
     display: flex;
     justify-content: flex-end;
     position: relative;
-
-    padding: 2.25em 0 1.875em 0;
   }
 
   .product_card_list_mobile {
