@@ -45,8 +45,7 @@
 .popular_products_slider_mobile,
 .header_nav_mobile,
 .to-top-button-mobile,
-.header_logo_mobile,
-.sort_by_label {
+.header_logo_mobile {
   display: none;
 }
 
@@ -61,7 +60,7 @@ h3 {
 h1 {
   font-size: 2rem;
   text-align: center;
-  padding: 2.1875rem;
+  padding-top: 2.1875rem;
 }
 
 h2 {
@@ -543,10 +542,14 @@ footer .fa-arrow-up {
   transition: all ease-in-out 300ms;
 }
 
-/* --------------------Men's Products page------------------ */
+/* --------------------Men's & Women's Product pages------------------ */
 
 .jacket_page_content {
   margin-inline: 13.125em 13.125em;
+}
+
+.headline_jacket_page {
+  padding-bottom: 2.5em;
 }
 
 .filter_card_container {
@@ -557,7 +560,17 @@ footer .fa-arrow-up {
 .filter_menu {
   display: flex;
   justify-content: flex-end;
-  padding: 4.25em 0 1.875em 0;
+}
+
+.filter_menu select {
+  border: 0;
+  border-bottom: #000 solid 1px;
+  padding: 4px 2.8rem 5px 1rem;
+  background-color: transparent;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .product_card_list {
@@ -566,6 +579,7 @@ footer .fa-arrow-up {
   justify-content: space-between;
   gap: 3.75em;
   padding-bottom: 6.25em;
+  padding-top: 1.875em;
 }
 
 /* ------------------------About us ------------------------*/
@@ -826,7 +840,6 @@ footer .fa-arrow-up {
     position: absolute;
     top: 100%;
     right: 0;
-    
   }
 
   .header_searchbox_mobile {
