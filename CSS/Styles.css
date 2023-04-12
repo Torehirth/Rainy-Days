@@ -709,6 +709,7 @@ footer .fa-arrow-up {
     position: absolute;
     top: 7.625em;
     right: 0;
+    z-index: 2;
   }
 
   .header_nav_mobile ul {
@@ -825,6 +826,7 @@ footer .fa-arrow-up {
     position: absolute;
     top: 100%;
     right: 0;
+    
   }
 
   .header_searchbox_mobile {
