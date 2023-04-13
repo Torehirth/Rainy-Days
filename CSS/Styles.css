@@ -654,7 +654,7 @@ footer .fa-arrow-up {
 .about-picture5 {
   box-sizing: border-box;
   background-size: contain;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .about-picture1 img,
@@ -663,12 +663,7 @@ footer .fa-arrow-up {
 .about-picture4 img,
 .about-picture5 img {
   object-fit: cover;
-  
-  
-}
-
-.about-picture1 {
-  
+  vertical-align: top;
 }
 
 .about-picture1 img {
