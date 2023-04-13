@@ -557,7 +557,7 @@ footer .fa-arrow-up {
 
 .main_headline {
   padding-top: 2.1875rem;
-  padding-bottom: 2.5rem;  
+  padding-bottom: 2.5rem;
 }
 
 .filter_card_container {
@@ -617,7 +617,6 @@ footer .fa-arrow-up {
 }
 
 .background-text-about-contact p {
-  
 }
 
 .about_contact_headline {
@@ -629,15 +628,23 @@ footer .fa-arrow-up {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-inline: 18.125em;
   gap: 1.25em;
-  padding-top: 3.75em;
+  padding: 3.75em 18.125em 6.25em 18.125em;
 }
 
 .story_container p,
 .background-text-about-contact p {
   line-height: 1.4;
-  text-transform:none;
+  text-transform: none;
+}
+
+.about-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.1875em;
+  padding: 0 6.25em 6.25em 6.25em;
 }
 
 .about-picture1,
@@ -645,7 +652,48 @@ footer .fa-arrow-up {
 .about-picture3,
 .about-picture4,
 .about-picture5 {
-  max-width: 15%;
+  box-sizing: border-box;
+  background-size: contain;
+  overflow: hidden;  
+}
+
+.about-picture1 img,
+.about-picture2 img,
+.about-picture3 img,
+.about-picture4 img,
+.about-picture5 img {
+  object-fit: cover;
+  
+  
+}
+
+.about-picture1 {
+  
+}
+
+.about-picture1 img {
+  max-width: 213px;
+  height: 268px;
+}
+
+.about-picture2 img {
+  max-width: 193px;
+  height: 244px;
+}
+
+.about-picture3 img {
+  max-width: 333px;
+  height: 211px;
+}
+
+.about-picture4 img {
+  max-width: 212px;
+  height: 266px;
+}
+
+.about-picture5 img {
+  max-width: 212px;
+  height: 266px;
 }
 
 /* ------------------------Contact Us ------------------------*/
