@@ -243,6 +243,10 @@ footer {
   gap: 0.625em;
 }
 
+.footer_logo {
+  vertical-align: top;
+}
+
 .footer_nav {
   display: flex;
   flex-direction: column;
