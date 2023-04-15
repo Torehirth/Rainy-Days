@@ -619,7 +619,7 @@ footer .fa-arrow-up {
   background-repeat: no-repeat;
 }
 
-.background-text-about-contact {
+.background-text-about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -630,7 +630,7 @@ footer .fa-arrow-up {
 }
 
 .about_contact_headline {
-  padding-top: 8.4375rem;
+  padding-top: 6.25rem;
   text-transform: capitalize;
   text-align: left;
 }
@@ -704,6 +704,8 @@ footer .fa-arrow-up {
 
 /* ------------------------Contact Us ------------------------*/
 
+
+
 /* ------------------------Icons and buttons------------------------*/
 
 .fa-solid {
@@ -726,6 +728,7 @@ footer .fa-arrow-up {
 .home-button {
   display: flex;
   align-items: flex-end;
+  height: min-content;
   gap: 3px;
 }
 
@@ -778,7 +781,7 @@ footer .fa-arrow-up {
   .header_searchbox,
   header,
   .jacket_page_content,
-  .background-text-about-contact,
+  .background-text-about,
   .story_container {
     display: none;
   }
@@ -919,8 +922,9 @@ footer .fa-arrow-up {
   .top_image_container_mobile {
     padding-inline: 1.875em;
   }
-  .background-text-about-contact_tab {
+  .background-text-about-tab {
     display: flex;
+    justify-content: left;
     align-items: flex-start;
     padding: 0;
   }
@@ -947,7 +951,11 @@ footer .fa-arrow-up {
   .filter_card_container,
   .filter_menu,
   .product_card_list,
-  .footer_bottom_container {
+  .footer_bottom_container,
+  .top_image_container,
+  .about_contact_headline,
+  .background-text-about-tab,
+  .story_container_tab {
     display: none;
   }
 
@@ -1067,5 +1075,30 @@ footer .fa-arrow-up {
     justify-content: center;
     gap: 3.75em;
     padding-bottom: 6.25em;
+  }
+
+  /* ------------About Us---------- */
+
+  .top_image_container_mobile {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.875em;
+    max-height: 600px;
+    background-position: 40%;
+  }
+
+  .about_contact_headline_mobile {
+    display: flex;
+    padding-top: 1.875rem;
+  }
+
+  .background-text-about-mobile {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .story_container_mobile {
+    display: flex;
+    padding: 1.875em 1.875em 4.375em 1.875em;
   }
 }
