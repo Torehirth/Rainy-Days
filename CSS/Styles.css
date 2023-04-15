@@ -616,9 +616,6 @@ footer .fa-arrow-up {
   color: #fff;
 }
 
-.background-text-about-contact p {
-}
-
 .about_contact_headline {
   padding-top: 8.4375rem;
   text-transform: capitalize;
@@ -911,7 +908,7 @@ footer .fa-arrow-up {
   }
   .background-text-about-contact_tab {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
 
