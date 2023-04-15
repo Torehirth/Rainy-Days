@@ -585,7 +585,7 @@ footer .fa-arrow-up {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3.75em;
+  gap: 1.875em;
   padding-bottom: 6.25em;
   padding-top: 1.875em;
 }
