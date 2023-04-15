@@ -227,16 +227,16 @@ footer {
   flex-direction: column;
 }
 
+.footer p {
+  font-size: 1rem;
+}
+
 .footer_top_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1.5625em 0 1.25em 0;
   margin: 0 6.25em 0 6.25em;
-}
-
-.footer_logo {
-  padding-bottom: 5px;
 }
 
 .footer-contact-information {
@@ -253,8 +253,9 @@ footer {
 .footer ul {
   display: flex;
   flex-direction: column;
-  gap: 1.25em;
+  gap: 1.25rem;
   padding: 0;
+  font-size: 1.125rem;
 }
 
 .so_me_container {
@@ -279,6 +280,10 @@ footer {
   text-transform: lowercase;
   text-align: center;
   gap: 5px;
+}
+
+.to-top-button p {
+  font-size: 0.75rem;
 }
 
 footer .fa-arrow-up {
@@ -308,7 +313,11 @@ footer .fa-arrow-up {
   justify-content: center;
   text-align: center;
   font-weight: normal;
-  font-size: 0.6rem;
+}
+
+.copyright p {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
 }
 
 /* ------------------------Index------------------------ */
@@ -933,7 +942,8 @@ footer .fa-arrow-up {
   .jacket_page_content,
   .filter_card_container,
   .filter_menu,
-  .product_card_list {
+  .product_card_list,
+  .footer_bottom_container {
     display: none;
   }
 
@@ -1018,6 +1028,15 @@ footer .fa-arrow-up {
     align-items: center;
     font-size: 0.625rem;
     gap: 5px;
+  }
+
+  .to-top-button-mobile p {
+    font-size: 0.75rem;
+  }
+
+  .footer_bottom_container_mobile {
+    display: flex;
+    margin-inline: 1.875em;
   }
 
   /* -------------Men's and women's jacket pages------- */
