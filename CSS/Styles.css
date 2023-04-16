@@ -980,14 +980,14 @@ footer .fa-arrow-up {
     padding: 0 0 30.4375em 0;
   }
 
-  .story_container_tab {
+  .story_container {
     display: flex;
     padding: 4.375em 1.875em 4.375em 1.875em;
   }
 
-  .about-image-container-mobile {
+  .about-image-container { 
     padding: 0 1.875em 4.375em 1.875em;
-  }
+  } 
 }
 
 /* --------------------------- Media mobile version -------------------------- */
