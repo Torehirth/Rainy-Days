@@ -619,7 +619,6 @@ footer .fa-arrow-up {
 .top_image_container {
   background-image: url(../images/About\ us_main\ photo.jpg);
   padding-inline: 6.75em;
-  height: 48em;
   max-width: 100%;
   background-size: cover;
   background-position: center -50px;
@@ -635,6 +634,7 @@ footer .fa-arrow-up {
   padding-inline: 11.875em;
   gap: 1.875em;
   color: #fff;
+  padding-bottom: 30.4375em;
 }
 
 .about_contact_headline {
@@ -835,9 +835,7 @@ footer .fa-arrow-up {
   .header_icon_text,
   .header_searchbox,
   header,
-  .jacket_page_content,
-  .background-text-about,
-  .story_container {
+  .jacket_page_content {
     display: none;
   }
 
@@ -965,23 +963,21 @@ footer .fa-arrow-up {
     padding-top: 3.125em;
   }
 
-  /* ------------------Men's and women's jacket pages--------------- */
+  /* ---------------Men's and women's jacket pages--------------- */
 
   .jacket_page_content_tab {
     display: flex;
     margin: 0;
   }
 
-  /* --------About Us & Contact Us---- */
+  /* --------------About Us----------------- */
 
-  .top_image_container_mobile {
+  .top_image_container {
     padding-inline: 1.875em;
   }
-  .background-text-about-tab {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    padding: 0;
+
+  .background-text-about {
+    padding: 0 0 30.4375em 0;
   }
 
   .story_container_tab {
@@ -1006,11 +1002,7 @@ footer .fa-arrow-up {
   .filter_card_container,
   .filter_menu,
   .product_card_list,
-  .footer_bottom_container,
-  .top_image_container,
-  .about_contact_headline,
-  .background-text-about-tab,
-  .story_container_tab {
+  .footer_bottom_container {
     display: none;
   }
 
@@ -1116,6 +1108,7 @@ footer .fa-arrow-up {
   }
 
   /* ---------------------Index Page------------------ */
+
   .index_page_content {
     margin: 0 1.25em 0 1.25em;
   }
@@ -1178,26 +1171,16 @@ footer .fa-arrow-up {
 
   /* ------------About Us---------- */
 
-  .top_image_container_mobile {
-    display: flex;
-    flex-direction: column;
-    padding-inline: 1.875em;
-    background-position: center;
+  .top_image_container {
     max-height: 600px;
+    background-position: 50% 0;
   }
 
-  .about_contact_headline_mobile {
-    display: flex;
+  .about_contact_headline {
     padding-top: 4.375rem;
   }
 
-  .background-text-about-mobile {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .story_container_mobile {
-    display: flex;
+  .story_container {
     padding: 1.875em 1.875em 4.375em 1.875em;
   }
 
