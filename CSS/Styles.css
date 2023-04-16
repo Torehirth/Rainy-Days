@@ -1209,8 +1209,8 @@ footer .fa-arrow-up {
 
   .contact_page_content {
     padding-inline: 1.875em;
-    background-position: center 100%;
-    background-size: stretch;
+    background-position: 50% 100%;
+    background-attachment: fixed;
   }
 
   .background-text-contact {
