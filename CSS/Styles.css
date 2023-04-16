@@ -325,7 +325,7 @@ footer .fa-arrow-up {
 }
 
 /* ------------------------Index------------------------ */
-.page_content {
+.index_page_content {
   margin: 0 6.25em 0 6.25em;
 }
 
@@ -519,6 +519,7 @@ footer .fa-arrow-up {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   gap: 1.25em;
 }
 
@@ -601,10 +602,6 @@ footer .fa-arrow-up {
   gap: 1.875em;
   padding-bottom: 6.25em;
   padding-top: 1.875em;
-}
-
-/* -----------------About Us & Contact Us ------------------*/
-.page_content_about_contact {
 }
 
 /* ------------------------About Us ------------------------*/
@@ -985,9 +982,18 @@ footer .fa-arrow-up {
     display: none;
   }
 
-  .page_content {
-    margin: 0 1.25em 0 1.25em;
+  h1 {
+    font-size: 1.5rem;
   }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
   /* --------------header mobile version----------------- */
 
   .header_mobile {
@@ -1075,6 +1081,39 @@ footer .fa-arrow-up {
   .footer_bottom_container_mobile {
     display: flex;
     margin-inline: 1.875em;
+  }
+
+  /* ---------------------Index Page------------------ */
+  .index_page_content {
+    margin: 0 1.25em 0 1.25em;
+  }
+
+  .index_headline_container {
+    padding-top: 3.125em;
+  }
+
+  .index_headline_container h1 {
+    padding-bottom: 1.875rem;
+  }
+
+  .popular_products_container {
+    padding-top: 3.125em;
+  }
+
+  .category_card_container_index {
+    padding-bottom: 4.375em;
+  }
+
+  .womens_category_card,
+  .mens_category_card {
+    max-height: 10.25em;
+    max-width: 18.75em;
+    background-position-y: 45%;
+  }
+
+  .womens_category_card p,
+  .mens_category_card p {
+    padding-top: 1rem;
   }
 
   /* -------------Men's and women's jacket pages------- */
