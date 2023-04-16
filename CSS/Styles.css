@@ -1212,7 +1212,7 @@ footer .fa-arrow-up {
     position: relative;
     padding-inline: 1.875em;
     background-position: center ;
-    background-size: 100vh;
+    background-size: fill;
     /* background-attachment: local; */
   }
 
