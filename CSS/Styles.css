@@ -55,27 +55,34 @@ h1,
 h2,
 h3 {
   font-weight: bold;
-  letter-spacing: 2px;
 }
 
 h1 {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
+  letter-spacing: 3px;
+  line-height: 1.2;
 }
 
 h2 {
   font-size: 1.75rem;
   text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 p {
   font-size: 1.25rem;
   font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 a {
@@ -545,7 +552,10 @@ footer .fa-arrow-up {
 .mens_category_card p {
   text-align: center;
   padding-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .category_card_link::before {
@@ -615,7 +625,6 @@ footer .fa-arrow-up {
   background-position: center -50px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-size: 100% 100%; */
 }
 
 .background-text-about {
@@ -643,7 +652,7 @@ footer .fa-arrow-up {
 }
 
 .story_container p,
-.background-text-about-contact p {
+.background-text-about p {
   line-height: 1.4;
   text-transform: none;
 }
@@ -703,24 +712,38 @@ footer .fa-arrow-up {
 
 /* ------------------------Contact Us ------------------------*/
 
+.contact-body {
+  max-height: 100%;
+}
+
 .contact_page_content {
   background-color: darkgray; /*backup color if image not work*/
   background-image: url(../Images/Contact\ us_main\ photo.jpg);
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center 80%;
   background-repeat: no-repeat;
   color: #fff;
   padding-inline: 6.25em;
+  /* height: 100vh; */
 }
 
 .background-text-contact {
-  padding: 6.25em 0 14.0625em 0;
+  padding: 6.25em 0 21em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   gap: 1.875em;
   color: #fff;
+}
+
+.background-text-contact h1 {
+  text-transform: capitalize;
+}
+
+.background-text-contact p {
+  text-transform: none;
 }
 
 .contact_info {
@@ -729,6 +752,18 @@ footer .fa-arrow-up {
   align-items: flex-start;
   gap: 10.4375em;
   padding-bottom: 14em;
+}
+
+.contact-adress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375em;
+}
+
+.contact-support-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6875em;
 }
 
 /* ------------------------Icons and buttons------------------------*/
@@ -1116,6 +1151,8 @@ footer .fa-arrow-up {
   .womens_category_card p,
   .mens_category_card p {
     padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
 
   /* -------------Men's and women's jacket pages------- */
@@ -1168,4 +1205,27 @@ footer .fa-arrow-up {
     display: flex;
     padding: 1.875em 1.875em 4.375em 1.875em;
   }
+
+  /* ------------Contact Us------------- */
+
+  .contact_page_content {
+    padding-inline: 1.875em;
+  }
+
+  .background-text-contact {
+    align-items: flex-start;
+    padding: 4.375em 0 9.375em 0; 
+  }
+
+  .background-text-contact h1 {
+    text-align: left;
+  }
+
+  .contact_info {
+    flex-direction: column-reverse;
+    gap: 3.125em;
+    padding-bottom: 4.375em;
+  }
+
+  
 }
