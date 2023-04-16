@@ -713,7 +713,7 @@ footer .fa-arrow-up {
 /* ------------------------Contact Us ------------------------*/
 
 .contact-body {
-  overflow: visible;
+  
 }
 
 .contact_page_content {
@@ -725,6 +725,8 @@ footer .fa-arrow-up {
   background-repeat: no-repeat;
   color: #fff;
   padding-inline: 6.25em;
+  overflow: visible;
+  height: 100%;
 }
 
 .background-text-contact {
