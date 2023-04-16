@@ -1209,7 +1209,7 @@ footer .fa-arrow-up {
 
   .contact_page_content {
     padding-inline: 1.875em;
-    background-position: center;
+    background-position: center 100%;
   }
 
   .background-text-contact {
