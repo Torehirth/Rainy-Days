@@ -713,7 +713,7 @@ footer .fa-arrow-up {
 /* ------------------------Contact Us ------------------------*/
 
 .contact-body {
-  max-height: 100%;
+  /* max-height: 100%; */
 }
 
 .contact_page_content {
@@ -725,7 +725,6 @@ footer .fa-arrow-up {
   background-repeat: no-repeat;
   color: #fff;
   padding-inline: 6.25em;
-  height: 100%;
 }
 
 .background-text-contact {
@@ -1212,6 +1211,7 @@ footer .fa-arrow-up {
     padding-inline: 1.875em;
     background-position: 50% 100%;
     background-attachment: fixed;
+    background-size: 100vh;
   }
 
   .background-text-contact {
