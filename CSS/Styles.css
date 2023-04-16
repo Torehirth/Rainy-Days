@@ -721,7 +721,7 @@ footer .fa-arrow-up {
   background-image: url(../Images/Contact\ us_main\ photo.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center 70%;
+  background-position: center 65%;
   background-repeat: no-repeat;
   color: #fff;
   padding-inline: 6.25em;
@@ -1229,6 +1229,7 @@ footer .fa-arrow-up {
     flex-direction: column-reverse;
     gap: 3.125em;
     padding-bottom: 4.375em;
+    height: 100%;
   }
 
   
