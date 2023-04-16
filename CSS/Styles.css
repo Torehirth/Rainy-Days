@@ -713,6 +713,7 @@ footer .fa-arrow-up {
 /* ------------------------Contact Us ------------------------*/
 
 .contact-body {
+  overflow: visible;
 }
 
 .contact_page_content {
