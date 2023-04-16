@@ -1211,7 +1211,7 @@ footer .fa-arrow-up {
     flex-direction: column;
     padding-inline: 1.875em;
     background-position: center 60%;
-    /* background-size: 100vh; */
+    background-size: 100vh;
   }
 
   .background-text-contact {
