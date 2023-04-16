@@ -713,11 +713,10 @@ footer .fa-arrow-up {
 /* ------------------------Contact Us ------------------------*/
 
 .contact-body {
-  height: 100%;
 }
 
 .contact_page_content {
-  background-color: #080a13; /*backup color if image not work*/
+  background-color: #181a29; /*backup color if image not work*/
   background-image: url(../Images/Contact\ us_main\ photo.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -725,7 +724,6 @@ footer .fa-arrow-up {
   background-repeat: no-repeat;
   color: #fff;
   padding-inline: 6.25em;
-  height: 100%;
 }
 
 .background-text-contact {
@@ -1213,7 +1211,7 @@ footer .fa-arrow-up {
     flex-direction: column;
     padding-inline: 1.875em;
     background-position: center 60%;
-    background-size: 100vh;
+    /* background-size: 100vh; */
   }
 
   .background-text-contact {
@@ -1228,8 +1226,7 @@ footer .fa-arrow-up {
   .contact_info {
     flex-direction: column-reverse;
     gap: 3.125em;
-    padding-bottom: auto;
-    height: 100%;
+    padding-bottom: 4.375em;
   }
 
   
