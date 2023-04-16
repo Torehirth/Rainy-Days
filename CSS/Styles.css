@@ -1209,11 +1209,11 @@ footer .fa-arrow-up {
   /* ------------Contact Us------------- */
 
   .contact_page_content {
-    /* position: relative; */
+    display: flex;
+    flex-direction: column;
     padding-inline: 1.875em;
-    background-position: center ;
-    background-size: 300%;
-    /* background-attachment: local; */
+    background-position: center 70%;
+    background-size: 100vh;
   }
 
   .background-text-contact {
