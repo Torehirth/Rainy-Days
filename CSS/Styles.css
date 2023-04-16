@@ -717,11 +717,11 @@ footer .fa-arrow-up {
 }
 
 .contact_page_content {
-  background-color: darkgray; /*backup color if image not work*/
+  background-color: #080a13; /*backup color if image not work*/
   background-image: url(../Images/Contact\ us_main\ photo.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center 80%;
+  background-position: center 70%;
   background-repeat: no-repeat;
   color: #fff;
   padding-inline: 6.25em;
