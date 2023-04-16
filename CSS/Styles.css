@@ -1209,6 +1209,7 @@ footer .fa-arrow-up {
   /* ------------Contact Us------------- */
 
   .contact_page_content {
+    position: relative;
     padding-inline: 1.875em;
     background-position: center ;
     background-size: 100vh;
