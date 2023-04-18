@@ -404,7 +404,7 @@ footer .fa-arrow-up {
   gap: 2.5em;
   padding-bottom: 2.5em;
   scroll-snap-type: inline mandatory;
-  /* height: 100%; */
+  height: 100%;
   height: fit-content;
 }
 
@@ -413,7 +413,7 @@ footer .fa-arrow-up {
   grid-auto-flow: column;
   gap: 2.1875em;
   scroll-snap-align: start;
-  /* height: 100%; */
+  height: 100%;
   height: fit-content;
 }
 
@@ -458,6 +458,8 @@ footer .fa-arrow-up {
   flex-direction: column;
   gap: 7px;
   padding-top: 1rem;
+  width: 100%;
+  width: fit-content;
 }
 
 .slider_text_container a::before {
@@ -473,7 +475,8 @@ footer .fa-arrow-up {
 .slider_text_container p {
   color: #000;
   font-size: 0.875rem;
-  /* padding: 0.4375rem 0 0.4375rem 0; */
+  width: 100%;
+  width: fit-content;
 }
 
 .slider_text_container .slider_price {
