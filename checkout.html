@@ -18,8 +18,10 @@
     <title>Rainy Days | Checkout</title>
   </head>
   <body>
-    <header>
-      <section class="header_top_bottom_menu">
+    <header class="header_mobile header_tab">
+      <section
+        class="header_top_bottom_menu header_menu_tab header_menu_mobile"
+      >
         <div class="header_top_menu Desktop_version">
           <div class="header_top_container">
             <ul class="header_info_pages">
@@ -32,15 +34,17 @@
             </ul>
           </div>
         </div>
-        <div class="header_bottom_menu">
+        <div
+          class="header_bottom_menu header_bottom_menu_tab header_bottom_menu_mobile"
+        >
           <div class="header_bottom_container">
             <div class="header_logo_container">
-              <a href="index.html" class="header_logo"
+              <a href="index.html" class="header_logo header_logo_mobile"
                 ><img
                   src="logo/Rainy Days vector logo.svg"
                   alt="Rainy Days logo"
                   title="to home"
-                  class="header_logo"
+                  class="header_logo header_logo_mobile"
               /></a>
             </div>
             <div class="category_menu">
@@ -53,14 +57,15 @@
                 </li>
               </ul>
               <div class="header_searchbox">
-                <span
-                  class="fa-solid fa-magnifying-glass searchbox"
+                <label
+                  class="fa-solid fa-magnifying-glass search-icon"
                   title="search"
-                ></span>
+                  for="desktop_search"
+                ></label>
                 <input
                   type="search"
-                  name="Searchbox"
-                  id="searchbox"
+                  name="search"
+                  id="desktop_search"
                   placeholder="search"
                   title="search"
                   class="searchbox"
@@ -72,7 +77,7 @@
                     <a
                       href="favorites.html"
                       title="to Favorites"
-                      class="fa-solid fa-heart"
+                      class="fa-solid fa-heart header-heart-icon"
                     ></a>
                     <p class="header_icon_text">favorites</p>
                   </li>
@@ -80,13 +85,13 @@
                     <a
                       href="cart.html"
                       title="to Cart"
-                      class="fa-solid fa-cart-shopping"
+                      class="fa-solid fa-cart-shopping cart-icon"
                     ></a>
                     <p class="header_icon_text">cart</p>
                   </li>
                   <li class="header_icon_buttons hamburger_icon">
-                    <label for="checkbox" class="header_icon_buttons"
-                      ><i class="fa-solid fa-bars"></i
+                    <label for="checkbox" class="header_icon_buttons check"
+                      ><i class="fa-solid fa-bars hamburger-icon"></i
                     ></label>
                   </li>
                 </ul>
@@ -95,9 +100,9 @@
           </div>
         </div>
       </section>
-      <aside class="hamburger_container">
+      <section class="hamburger_container">
         <input type="checkbox" id="checkbox" class="checkbox" />
-        <nav>
+        <nav class="header_nav_mobile header_nav_tab">
           <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="men.html">men's</a></li>
@@ -106,20 +111,20 @@
             <li><a href="contact.html">contact us</a></li>
           </ul>
         </nav>
-      </aside>
-      <div class="header_searchbox_mobile">
+      </section>
+      <div class="header_searchbox_mobile header_searchbox_tab">
         <span
           class="fa-solid fa-magnifying-glass searchbox_mobile"
           title="search"
-          for="search"
+          for="mobile_search"
         ></span>
         <input
           type="search"
-          name="Searchbox"
-          id="searchbox"
-          placeholder="search"
+          name="Search"
+          id="mobile_search"
           title="search"
           class="searchbox"
+          placeholder="search"
         />
       </div>
     </header>
