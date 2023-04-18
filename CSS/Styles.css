@@ -458,8 +458,6 @@ footer .fa-arrow-up {
   flex-direction: column;
   gap: 7px;
   padding-top: 1rem;
-  width: 100%;
-  width: fit-content;
 }
 
 .slider_text_container a::before {
@@ -475,8 +473,7 @@ footer .fa-arrow-up {
 .slider_text_container p {
   color: #000;
   font-size: 0.875rem;
-  width: 100%;
-  width: fit-content;
+  text-overflow: ellipsis;
 }
 
 .slider_text_container .slider_price {
