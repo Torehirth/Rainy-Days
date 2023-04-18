@@ -404,8 +404,8 @@ footer .fa-arrow-up {
   gap: 2.5em;
   padding-bottom: 2.5em;
   scroll-snap-type: inline mandatory;
-  max-height: 100%;
-  height: fit-content;
+  height: 100%;
+  /* height: fit-content; */
 }
 
 .slider_group {
@@ -413,8 +413,8 @@ footer .fa-arrow-up {
   grid-auto-flow: column;
   gap: 2.1875em;
   scroll-snap-align: start;
-  max-height: 100%;
-  height: fit-content;
+  height: 100%;
+  /* height: fit-content; */
 }
 
 .slider_group:last-child {
@@ -423,40 +423,41 @@ footer .fa-arrow-up {
 
 .outer_product_container {
   border: solid 1px #395a79;
-  width: 13.125em;
-  height: 17.8125em;
+  width: 13.5em;
+  height: 18.75em;
   position: relative; /* This is for making the whole slider frame a link */
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
   border-radius: 5px;
+  align-items: center;
 }
 
 .inner_product_container {
   display: flex;
   flex-direction: column;
-  margin: 0.625em 0.6875em 0.9375em 0.6875em;
-  height: 16.375em;
-  width: 11.75em;
-  /* box-sizing: border-box; */
+  height: 17.5em;
+  width: 12.25em;
+  box-sizing: border-box;
 }
 
 .slider_image_container {
-  height: 12.875em;
-  width: 11.75em;
+  width: 100%;
+  max-height: 12.8125em;
+  overflow: hidden;
 }
 
 .slider_image_container img {
-  height: 100%;
+  height: 12.8125em;
   width: 100%;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .slider_text_container {
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
+  gap: 7px;
+  padding-top: 1rem;
 }
 
 .slider_text_container a::before {
@@ -472,7 +473,7 @@ footer .fa-arrow-up {
 .slider_text_container p {
   color: #000;
   font-size: 0.875rem;
-  padding: 0.3125em 0 0.3125em 0;
+  /* padding: 0.4375rem 0 0.4375rem 0; */
 }
 
 .slider_text_container .slider_price {
