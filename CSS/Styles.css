@@ -767,7 +767,27 @@ footer .fa-arrow-up {
   padding-bottom: 6.25em;
 }
 
-.product-slider-outer-container {
+.product_big-carousel_container {
+
+}
+
+.slide-container {
+
+}
+
+.image-carousel {
+
+}
+
+.big_image_div {
+
+}
+
+.slider-button {
+  
+}
+
+/* .product-slider-outer-container {
   height: 488px;
   overflow: scroll;
 }
@@ -776,7 +796,7 @@ footer .fa-arrow-up {
   flex-direction: column;
   gap: 0.9375em;
   padding-right: 0.625em;
-}
+} */
 
 .product-small-img-container {
   box-sizing: border-box;
