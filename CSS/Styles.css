@@ -415,7 +415,7 @@ footer .fa-arrow-up {
   scroll-snap-align: start;
   height: 100%;
   height: fit-content;
-}
+} 
 
 .slider_group:last-child {
   scroll-snap-align: end;
