@@ -41,6 +41,7 @@
 }
 
 .hamburger_icon,
+.hamburger_container,
 .checkbox,
 .header_searchbox_mobile,
 .popular_products_slider_mobile,
@@ -108,7 +109,6 @@ header {
   flex-direction: column;
   width: 100%;
   margin: 0 min(6.25em) 0 6.25em;
-  padding-inline: 6.25em;
   max-width: 1240px;
 }
 
@@ -354,6 +354,7 @@ footer .fa-arrow-up {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1.25em;
+ 
 }
 
 .category_button {
@@ -1001,8 +1002,8 @@ footer .fa-arrow-up {
     display: none;
   }
 
-  .page_content {
-    margin: 0 6.25em 0 6.25em;
+  .inddex-page_content {
+    
   }
 
   /* ------------------------------Header ------------------------------------------*/
