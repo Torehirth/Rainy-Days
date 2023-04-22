@@ -107,7 +107,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 6.25em 0 6.25em;
+  margin: 0 min(6.25em) 0 6.25em;
+  padding-inline: 6.25em;
   max-width: 1240px;
 }
 
@@ -236,7 +237,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.5625em 0 1.25em 0;
+  padding: 1.5625em 6.25em 1.25em 6.25em;
   margin-inline: auto;
   max-width: 1240px;
 }
@@ -302,11 +303,10 @@ footer .fa-arrow-up {
   display: flex;
   flex-direction: column;
   gap: 0.9375em;
-  padding-bottom: 0.9375em;
+  padding: 0 6.25em 0.9375em 6.25em;
   margin-inline: auto;
   justify-content: center;
   max-width: 1240px;
-
 }
 
 .horizontal_line {
@@ -1098,9 +1098,22 @@ footer .fa-arrow-up {
     display: flex;
   }
 
-  /* -----------------------Index page------------------------ */
+  /* -----------------Footer------------------- */
 
-  /*----------product card slider/carousel------*/
+  .footer_top_container {
+    padding-inline: 1.875em;
+  }
+
+  .footer_bottom_container {
+    padding-inline: 1.875em;
+  }
+
+  /* ------------------Index page-------------- */
+
+  .index_page_content {
+    padding-inline: 1.875em;
+  }
+
   .popular_products_slider {
     scroll-snap-align: start;
     gap: 0.9375em;
@@ -1230,6 +1243,7 @@ footer .fa-arrow-up {
     flex-direction: column;
     gap: 3.75em;
     margin: 0 1.875em 0 1.875em;
+    padding-inline: 0;
   }
 
   .contact_top_btn {
@@ -1267,12 +1281,14 @@ footer .fa-arrow-up {
   .footer_bottom_container_mobile {
     display: flex;
     margin-inline: 1.875em;
+    padding-inline: 0;
   }
 
   /* ---------------------Index Page------------------ */
 
   .index_page_content {
-    margin: 0 1.25em 0 1.25em;
+    margin: 0 1.875em 0 1.875em;
+    padding-inline: 0;
   }
 
   .index_headline_container {
@@ -1344,6 +1360,10 @@ footer .fa-arrow-up {
 
   .story_container {
     padding: 1.875em 1.875em 4.375em 1.875em;
+  }
+
+  .about-image-container {
+    justify-content: center;
   }
 
   /* ------------Contact Us------------- */
