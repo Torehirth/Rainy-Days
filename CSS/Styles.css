@@ -805,34 +805,32 @@ footer {
   display: flex;
   height: 488px;
   width: 354px;
-  overflow: hidden;
-  border-radius: 5px;
   object-fit: cover;
-  /* background-position: 100% 100%; */
 }
 
 .big-img-container {
-  /* overflow: hidden; */
-  /* object-fit: cover; */
-  /* background-size: cover; */
+  position: absolute;
   width: 100%;
   height: 100%;
-  /* background-position: 100% 100%; */
 }
 
 .big-img-container img {
   width: 354px;
   height: 488px;
   vertical-align: top;
+  border-radius: 5px;
 }
 
-.nav-dots {
+.nav-dots-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
   padding-top: 15px;
 }
 
-.nav-dots input {
+.nav-dots-icon {
+  font-size: 0.75rem;
   cursor: pointer;
 }
 
