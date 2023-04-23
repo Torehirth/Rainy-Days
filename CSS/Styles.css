@@ -308,7 +308,7 @@ footer {
 
 /* ------------------------Index------------------------ */
 .index_page_content {
-  margin: 0 auto 0 auto;
+  margin-inline: auto;
   max-width: 1240px;
 }
 
@@ -702,7 +702,6 @@ footer {
   background-position: center 65%;
   background-repeat: no-repeat;
   color: #fff;
-  padding-inline: ;
 }
 
 .background-text-contact {
@@ -745,6 +744,14 @@ footer {
 
 /* --------------------------Product page----------------------- */
 
+.product_top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding-bottom: 6.25em;
+  padding-inline: 5px;
+}
+
 /* -------Small image slider----- */
 
 .product-small-slider-outer-container {
@@ -780,38 +787,34 @@ footer {
   object-position: 100% 45%;
 }
 
-.product_top_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 6.25em;
-}
-
 /* ----------Big image Slider------ */
 
 .complete-product-slider {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  position: relative;
+  width: 434px;
 }
 
 .outer-slider-container {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .outer-img-container {
   display: flex;
-  height: 488px;
+  justify-content: center;
   width: 354px;
+  height: 488px;
   object-fit: cover;
 }
 
 .big-img-container {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  z-index: 1;
 }
 
 .big-img-container img {
@@ -821,18 +824,38 @@ footer {
   border-radius: 5px;
 }
 
+#i1:checked ~ #slide_img_1,
+#i2:checked ~ #slide_img_2,
+#i3:checked ~ #slide_img_3,
+#i4:checked ~ #slide_img_4,
+#i5:checked ~ #slide_img_5,
+#i6:checked ~ #slide_img_6 {
+  z-index: 9;
+}
+
+#i1:checked ~ .nav-dots-container #nav-dot1 .nav-dots-icon,
+#i2:checked ~ .nav-dots-container #nav-dot2 .nav-dots-icon,
+#i3:checked ~ .nav-dots-container #nav-dot3 .nav-dots-icon,
+#i4:checked ~ .nav-dots-container #nav-dot4 .nav-dots-icon,
+#i5:checked ~ .nav-dots-container #nav-dot5 .nav-dots-icon,
+#i6:checked ~ .nav-dots-container #nav-dot6 .nav-dots-icon {
+  color: #00838f;
+  font-weight: bold;
+  font-size: .875rem;
+}
+
 .nav-dots-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding-top: 15px;
+  position: absolute;
+  bottom: -30px;
+  z-index: 10;
 }
 
 .nav-dots-icon {
   font-size: 0.75rem;
   cursor: pointer;
 }
+
+
 
 /* ----------Choices container------ */
 
@@ -984,8 +1007,18 @@ footer .fa-arrow-up {
 
 .left-arrow,
 .right-arrow {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 47%;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: -46px;
+}
+
+.right-arrow {
+  right: -46px;
 }
 
 .left-arrow-span,
