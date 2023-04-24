@@ -40,9 +40,13 @@
   /* -webkit-text-size-adjust: 100%; */
 }
 
+
+
 .hamburger_icon,
 .hamburger_container,
-.checkbox,
+.nav-checkbox,
+.header_searchbox,
+.header_searchbox_tab,
 .header_searchbox_mobile,
 .popular_products_slider_mobile,
 .header_nav_mobile,
@@ -185,11 +189,15 @@ header {
 }
 
 .header_searchbox {
+  align-items: center;
   display: flex;
   margin-left: 7.5rem;
   gap: 5px;
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+.header_searchbox label {
+  cursor: pointer;
 }
 
 .searchbox {
@@ -1009,11 +1017,11 @@ footer {
 
 .add_to_cart_button {
   display: flex;
-  background-color: #ED7A3C;
+  background-color: #ed7a3c;
   padding: 9px 40px;
   border-radius: 5px;
   position: relative;
-  box-shadow: rgb(0, 0, 0, .35) 2px 2px 3px;
+  box-shadow: rgb(0, 0, 0, 0.35) 2px 2px 3px;
 }
 
 .add_to_cart_button p {
@@ -1197,8 +1205,7 @@ footer .fa-arrow-up {
   .Desktop_version,
   .header_icon_text,
   .header_searchbox,
-  header,
-  .jacket_page_content {
+  header {
     display: none;
   }
 
@@ -1236,8 +1243,9 @@ footer .fa-arrow-up {
     border-bottom: solid 1px #fff;
   }
 
-  .searchbox_mobile {
-    /* font-size: 1.5rem; */
+  .header_searchbox_mobile label, 
+  .header_searchbox_tab label {
+  cursor: pointer;
   }
 
   .header_icons {
@@ -1286,12 +1294,17 @@ footer .fa-arrow-up {
     width: 10.625rem;
   }
 
-  .header_nav_mobile ul li a:active {
+  .hamburger_container {
+    display: flex;
+    z-index: 99;
+  }
+
+  .header_nav_mobile a:active {
     background-color: #00838f;
     color: #fff;
   }
 
-  .checkbox:checked ~ .header_nav_mobile {
+  .hamburger_container #nav:checked ~ .header_nav_mobile {
     display: flex;
   }
 
