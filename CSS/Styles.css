@@ -40,8 +40,6 @@
   /* -webkit-text-size-adjust: 100%; */
 }
 
-
-
 .hamburger_icon,
 .hamburger_container,
 .nav-checkbox,
@@ -756,6 +754,7 @@ footer {
 .product_top_section {
   display: flex;
   justify-content: space-between;
+  height: 488px;
   padding: 6.25em 5px 6.25em 5px;
 }
 
@@ -914,12 +913,13 @@ footer {
 .product-choises-container {
   display: flex;
   flex-direction: column;
-  gap: 53.5px;
+  justify-content: space-between;
 }
 
 .product_choises_headline {
   display: flex;
   flex-direction: column;
+  align-content: end;
   gap: 15px;
 }
 
@@ -1087,7 +1087,6 @@ footer {
   line-height: 1.4;
 }
 
-
 .product_detail_list_container ul {
   padding-left: 2em;
 }
@@ -1216,7 +1215,9 @@ footer .fa-arrow-up {
   .Desktop_version,
   .header_icon_text,
   .header_searchbox,
-  header {
+  header,
+  .product-small-slider-outer-container,
+  .big-slider-container {
     display: none;
   }
 
@@ -1254,9 +1255,9 @@ footer .fa-arrow-up {
     border-bottom: solid 1px #fff;
   }
 
-  .header_searchbox_mobile label, 
+  .header_searchbox_mobile label,
   .header_searchbox_tab label {
-  cursor: pointer;
+    cursor: pointer;
   }
 
   .header_icons {
@@ -1366,7 +1367,7 @@ footer .fa-arrow-up {
     margin: 0;
   }
 
-  /* --------------About Us----------------- */
+  /* --------------------About Us--------------------- */
 
   .top_image_container {
     padding-inline: 1.875em;
@@ -1383,6 +1384,32 @@ footer .fa-arrow-up {
 
   .about-image-container {
     padding: 0 1.875em 4.375em 1.875em;
+  }
+
+  /* ------------------product page------------------ */
+
+  .product_top_section {
+    padding-inline: 0;
+  }
+
+  .mobile-image-slider {
+    display: flex;
+    overflow: scroll;
+    max-width: 354px;
+    gap: 1.25em;
+  }
+
+  .mobile-img-container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+  }
+
+  .mobile-img-container img {
+    width: 354px;
+    height: 488px;
+    vertical-align: top;
+    border-radius: 5px;
   }
 }
 
