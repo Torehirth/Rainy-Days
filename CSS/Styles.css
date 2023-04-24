@@ -1390,6 +1390,9 @@ footer .fa-arrow-up {
 
   .product_top_section {
     padding-inline: 0;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 30px;
   }
 
   .mobile-image-slider {
@@ -1410,6 +1413,10 @@ footer .fa-arrow-up {
     height: 488px;
     vertical-align: top;
     border-radius: 5px;
+  }
+
+  .product-choises-container {
+    gap: 30px;
   }
 }
 
