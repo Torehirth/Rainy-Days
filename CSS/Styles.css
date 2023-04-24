@@ -1076,9 +1076,20 @@ footer {
 }
 
 .product_detail_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.product_detail_list_container {
+.product_detail_container p {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+}
+
+
+.product_detail_list_container ul {
+  padding-left: 2em;
 }
 
 .product_detail_list_container li {
