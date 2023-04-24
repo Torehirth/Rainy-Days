@@ -48,7 +48,8 @@
 .header_nav_mobile,
 .to-top-button-mobile,
 .header_logo_mobile,
-#fav1 {
+#fav1,
+.size-input {
   display: none;
 }
 
@@ -346,7 +347,6 @@ footer {
 
 .category_button a {
   font-size: 1rem;
-  padding: auto;
   letter-spacing: 2px;
   width: 13.125rem;
   height: 2.5rem;
@@ -748,7 +748,6 @@ footer {
 .product_top_section {
   display: flex;
   justify-content: space-between;
-  align-items: top;
   padding: 6.25em 5px 6.25em 5px;
 }
 
@@ -788,6 +787,10 @@ footer {
 }
 
 /* ----------Big image Slider------ */
+
+.big-slider-container {
+  display: flex;
+}
 
 .complete-product-slider {
   display: flex;
@@ -940,18 +943,58 @@ footer {
 .product_choises_size_container {
   display: flex;
   flex-direction: column;
+  gap: 14px;
 }
 
-.size_option_button_container {
+.size_option_container {
   display: flex;
-  flex-direction: row;
+  padding-left: 5px;
+  gap: 9px;
 }
 
-.size_option_button_container p {
+.size-button-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 50px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.size-button-container:hover {
+  scale: 1.1;
+  border: #00838f solid 2px;
+  border-radius: 2px;
+}
+
+.sizes label {
   text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.price-container {
+.size-button-container label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.size_option_container #size_s:checked ~ .sizes #size1,
+.size_option_container #size_m:checked ~ .sizes #size2,
+.size_option_container #size_l:checked ~ .sizes #size3,
+.size_option_container #size_xl:checked ~ .sizes #size4,
+.size_option_container #size_xxl:checked ~ .sizes #size5 {
+  scale: 1.1;
+  border: solid #00838f 3px;
+  border-radius: 2px;
 }
 
 .price-container p {
@@ -961,10 +1004,35 @@ footer {
 
 .product_button_container {
   display: flex;
+  gap: 50px;
 }
 
 .add_to_cart_button {
   display: flex;
+  background-color: #ED7A3C;
+  padding: 9px 40px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgb(0, 0, 0, .35) 2px 2px 3px;
+}
+
+.add_to_cart_button p {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.add_to_cart_button a {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.add_to_cart_button:hover {
+  opacity: 70%;
 }
 
 .add_to_favorites_button {
