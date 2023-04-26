@@ -449,7 +449,7 @@ footer {
 }
 
 .slider_text_container a::before {
-  /* This is for making the whole slider-frame a link */
+  /* This is for making the slider cards a link */
   content: "";
   position: absolute;
   top: 0;
@@ -1158,64 +1158,6 @@ footer .fa-arrow-up {
   text-shadow: var(--main-text-shadow);
 }
 
-/* .home-button,
-.home-button-white {
-  display: flex;
-  align-items: flex-end;
-  height: min-content;
-  gap: 3px;
-}
-
-.home-button p {
-  color: #000;
-  font-weight: bold;
-}
-
-.home-button-white p {
-  color: white;
-  font-weight: bold;
-}
-
-.home-button-container {
-  position: relative;
-  padding-top: 1.875em;
-  width: fit-content;
-}
-
-.home-button-white-container {
-  position: relative;
-  width: fit-content;
-}
-
-.home-button a::before,
-.home-button-white a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.home-button p,
-.home-button-white p {
-  font-size: 0.75rem;
-  letter-spacing: 1.5px;
-  font-weight: bold;
-}
-
-.home-button:hover,
-.home-button-white:hover {
-  opacity: 70%;
-}
-
-.fa-house-chimney {
-  font-size: 0.9375rem;
-  color: #00838f;
-  -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: 0.5px;
-} */
-
 /* -------------------------tablet/mobile version----------------------- */
 
 @media (width <= 1160px) {
@@ -1228,7 +1170,7 @@ footer .fa-arrow-up {
     display: none;
   }
 
-  /* ------------------------------Header ------------------------------------------*/
+  /* ------------Header -------------------*/
 
   .header_tab {
     display: flex;
@@ -1405,9 +1347,9 @@ footer .fa-arrow-up {
   .mobile-image-slider {
     display: flex;
     overflow: auto;
-    scroll-snap-type: inline;
+    scroll-snap-type: mandatory x;
     max-width: 300px;
-    gap: 5px;
+    gap: 15px;
   }
 
   .mobile-img-container {
@@ -1415,6 +1357,14 @@ footer .fa-arrow-up {
     height: 100%;
     scroll-snap-align: center;
   }
+
+  /* .mobile-image-slider:first-child {
+    scroll-snap-align: start;
+  }
+
+  .mobile-image-slider:last-child {
+    scroll-snap-align: end;
+  } */
 
   .mobile-img-container img {
     max-width: 280px;
@@ -1425,6 +1375,10 @@ footer .fa-arrow-up {
 
   .product-choises-container {
     width: 100%;
+  }
+
+  .pop_prod_hdline {
+    text-align: left;
   }
 }
 
@@ -1673,9 +1627,19 @@ footer .fa-arrow-up {
     text-transform: capitalize;
   }
 
+  .mobile-image-slider {
+    gap: 10px;
+    /* overflow: auto; */
+    /* scroll-snap-type: mandatory inline; */
+  }
+
+  .mobile-img-container {
+    /* scroll-snap-align: center; */
+  }
+
   .product-choises-container {
     gap: 40px;
-    max-width: 300px;
+    max-width: 100%;
   }
 
   .product-choises-container + p {
