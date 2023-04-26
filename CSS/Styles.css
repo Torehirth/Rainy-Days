@@ -1376,7 +1376,6 @@ footer .fa-arrow-up {
 
   .product-choises-container {
     width: 100%;
-    /* max-width: 340px; */
   }
 
   .pop_prod_hdline {
@@ -1629,9 +1628,9 @@ footer .fa-arrow-up {
     text-transform: capitalize;
   }
 
-  .mobile-image-slider {
+  /* .mobile-image-slider {
     gap: 10px;
-  }
+  } */
 
   .product-choises-container {
     gap: 40px;
