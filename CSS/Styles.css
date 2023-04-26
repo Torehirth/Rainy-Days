@@ -348,7 +348,7 @@ footer {
 
 .category_button {
   background-color: #395a79;
-  border: 0;
+  border: none;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0;
 }
@@ -1024,6 +1024,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: none;
   background-color: #ed7a3c;
   padding: 9px 40px;
   border-radius: 5px;
@@ -1055,6 +1056,8 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: none;
+  background-color: transparent;
 }
 
 .add_to_favorites_button p {
@@ -1108,7 +1111,34 @@ footer {
 
 /* ---------------Shopping Cart---------------------- */
 
+.keep_shopping_button {
+  border: none;
+  margin-top: 1.875em;
+  background-color:transparent;
+  position: relative;
+}
 
+.keep_shopping_div {
+  display: flex;
+  align-items:center;
+  gap: 15px;  
+}
+
+.keep_shopping_button a {
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  border-bottom: solid black 1px;
+}
+
+.keep_shopping_div a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 /* ------------------------Icons and buttons------------------------*/
 .cart-icon,
