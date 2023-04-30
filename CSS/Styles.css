@@ -1142,6 +1142,7 @@ footer {
   align-items: end;
   max-width: 535px;
   margin-inline: auto;
+  gap: 50px;
 }
 
 /* item container */
@@ -1246,6 +1247,7 @@ footer {
 .cost-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 20px;
 }
 
@@ -1264,20 +1266,31 @@ footer {
 .continue-shopping-btn {
   border: 0;
   background-color: transparent;
-  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: var(--main-btn-shadow);
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .checkout-btn {
-  color: white;
   background-color: var(--orange-btn-color);
+  padding: 10px 40px;
+  font-size: 1.25rem;
 }
 
 .continue-shopping-btn {
   background-color: var(--grey-btn-color);
+  padding: 8px 20px;
+  font-size: 1rem;
 }
 
 .continue-shopping-btn a {
   color: black;
+}
+
+.continue-shopping-btn:hover,
+.checkout-btn:hover {
+  opacity: 70%;
 }
 
 /* ------------------------Icons and buttons------------------------*/
