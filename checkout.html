@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      src="https://kit.fontawesome.com/c4115ef720.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/c4115ef720.js" crossorigin="anonymous"></script>
     <link href="css/Styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -102,26 +99,46 @@
       </div>
     </header>
     <main>
-      <a href="cart.html">back to cart</a>
-      <h1>checkout</h1>
-      <section>
-        <div>
-          <h2>order summary</h2>
-        </div>
-        <div>
-          <a href="product.html"
-            ><img src="Photos/main product 1.jpg" alt="photo of jacket"
-          /></a>
-        </div>
-        <div>
-          <a href="product.html"
-            ><p>rainy days</p>
-            <h2>supreme alpine jacket m's</h2>
-            <p>size:</p>
-            <p>xl</p>
-            <p>price:</p>
-            <p>279$</p></a
-          >
+      <h1 class="cart-checkout-headline">checkout</h1>
+      <section class="order-summary-container">
+        <h2>order summary</h2>
+        <div class="checkout-item-container">
+          <a href="product.html" class="cart-item-container-img">
+            <img src="/images/main product 1.jpg" alt="cart item image" />
+          </a>
+          <div class="cart-item-info-container">
+            <h2 class="item-name">supreme alpine jacket m's</h2>
+            <div class="color-container">
+              <p>color:</p>
+              <p>Yellow</p>
+            </div>
+            <div class="size-container">
+              <p>size:</p>
+              <p>xl</p>
+            </div>
+            <div class="cart-price-container">
+              <p>price:</p>
+              <p>279$</p>
+            </div>
+            <a href="product.html"></a>
+          </div>
+          <div class="qty-container">
+            <button class="fa-stack fa-1x minus-btn">
+              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+              <i class="fa-solid fa-minus fa-stack-1x qty-minus"></i>
+            </button>
+            <p>1</p>
+            <button class="fa-stack fa-1x plus-btn">
+              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+              <i class="fa-solid fa-plus fa-stack-1x qty-plus"></i>
+            </button>
+          </div>
+          <div>
+            <button class="fa-stack fa-1x del-btn">
+              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+              <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
+            </button>
+          </div>
         </div>
       </section>
       <section>
@@ -133,12 +150,7 @@
           </div>
           <div>
             <label for="street address">street address</label>
-            <input
-              type="text"
-              name="street address"
-              id="street address"
-              required
-            />
+            <input type="text" name="street address" id="street address" required />
           </div>
           <div>
             <label for="zip code">zip code</label>
@@ -174,24 +186,11 @@
           </div>
           <div>
             <label for="expiration date">expiration date</label>
-            <input
-              type="date"
-              name="expiration date"
-              id="expiration date"
-              required
-              min="07.05.2023"
-            />
+            <input type="date" name="expiration date" id="expiration date" required min="07.05.2023" />
           </div>
           <div>
             <label for="cvv code">cvv code</label>
-            <input
-              type="number"
-              name="cvv code"
-              id="cvv code"
-              required
-              min="000"
-              max="999"
-            />
+            <input type="number" name="cvv code" id="cvv code" required min="000" max="999" />
           </div>
           <div>
             <p>cost:</p>
@@ -218,17 +217,13 @@
                   title="to homepage"
                   class="footer_logo"
               /></a>
-              <a href="mailto:support@rainydays.com" title="send us an email"
-                >support@rainydays.com</a
-              >
+              <a href="mailto:support@rainydays.com" title="send us an email">support@rainydays.com</a>
               <p>+47 815 493 00</p>
             </div>
             <div class="to-top-button-mobile">
               <span class="fa-stack fa-2x">
                 <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-                <a href="#" title="to top of page"
-                  ><i class="fa-solid fa-arrow-up fa-stack-1x"></i
-                ></a>
+                <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
               </span>
               <p>top</p>
             </div>
@@ -245,31 +240,20 @@
           </nav>
           <div class="so_me_container">
             <p>follow us</p>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              title=" to Instagram"
+            <a href="https://www.instagram.com" target="_blank" title=" to Instagram"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              title=" to Facebook"
+            <a href="https://www.facebook.com" target="_blank" title=" to Facebook"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a
-              href="https://www.youtube.com"
-              target="_blank"
-              title=" to Youtube"
+            <a href="https://www.youtube.com" target="_blank" title=" to Youtube"
               ><i class="fa-brands fa-youtube"></i
             ></a>
           </div>
           <div class="to-top-button">
             <span class="fa-stack fa-2x">
               <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-              <a href="#" title="to top of page"
-                ><i class="fa-solid fa-arrow-up fa-stack-1x"></i
-              ></a>
+              <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
             </span>
             <p>top</p>
           </div>

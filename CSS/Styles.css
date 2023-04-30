@@ -1132,7 +1132,7 @@ footer {
 
 /* ---------------Shopping Cart Page---------------------- */
 
-.cart-headline {
+.cart-checkout-headline {
   padding-block: 6.25rem;
 }
 
@@ -1282,6 +1282,7 @@ footer {
   box-shadow: var(--main-btn-shadow);
   font-weight: bold;
   letter-spacing: 2px;
+  position: relative;
 }
 
 .checkout-btn {
@@ -1300,12 +1301,43 @@ footer {
   color: black;
 }
 
+.checkout-btn a::before,
+.continue-shopping-btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .continue-shopping-btn:hover,
 .checkout-btn:hover {
   opacity: 70%;
 }
 
-/* ------------------------Icons and buttons------------------------*/
+/* ----------------Checkout page-------------- */
+
+.order-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 535px;
+  margin-inline: auto;
+  gap: 50px;
+}
+
+.checkout-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--main-border-black);
+  border-bottom: var(--main-border-black);
+  padding-block: 20px;
+  width: 100%;
+}
+
+/* -------Icons and buttons------------*/
 .cart-icon,
 .header-heart-icon,
 .hamburger-icon,
