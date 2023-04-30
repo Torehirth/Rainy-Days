@@ -48,7 +48,7 @@
   --orange-btn-color: #ed7a3c;
   --backup-color: #181a29;
   --light-grey-btn-color: #d9d9d9;
-  --grey-btn-color: #AEAEAE;
+  --grey-btn-color: #aeaeae;
 
   /* shadow */
   --main-btn-shadow: rgba(0, 0, 0, 0.35) 2px 2px 3px;
@@ -1130,7 +1130,7 @@ footer {
   padding-bottom: 6.25em;
 }
 
-/* ---------------Shopping Cart---------------------- */
+/* ---------------Shopping Cart Page---------------------- */
 
 .cart-headline {
   padding-block: 6.25rem;
@@ -1185,7 +1185,7 @@ footer {
   right: 0;
 }
 
-.price-container,
+.cart-price-container,
 .color-container,
 .size-container,
 .qty-container {
@@ -1203,17 +1203,19 @@ footer {
   font-size: 0.75rem;
 }
 
-.price-container {
+.cart-price-container {
   border-bottom: var(--main-border-black);
   width: fit-content;
 }
 
-.price-container p {
+.cart-price-container p {
   font-size: 0.875rem;
+  font-weight: bold;
 }
 
 .qty-container {
   gap: 15px;
+  align-items: center;
 }
 
 .minus-btn,
@@ -1224,11 +1226,12 @@ footer {
   background-color: transparent;
   cursor: pointer;
   width: fit-content;
-  height: fit-content;
+  max-height: 2rem;
 }
 
 .del-btn {
   font-size: 0.625rem;
+  max-height: 1.25rem;
 }
 
 .qty-circle {
@@ -1258,8 +1261,17 @@ footer {
   gap: 10px;
 }
 
+.item-cost-container p,
+.shipping-cost-container p {
+  font-size: 0.875rem;
+}
+
 .total-cost-container {
   border-bottom: var(--main-border-black);
+}
+
+.total-cost-container h3 {
+  font-size: 1rem;
 }
 
 .checkout-btn,
@@ -1846,5 +1858,63 @@ footer .fa-arrow-up {
 
   .complete_pop_prod_cont {
     padding-bottom: 4.375em;
+  }
+
+  /* ---------------Shopping Cart Page------------- */
+
+  .cart-headline {
+    padding: 4.375rem 0 3.125rem 0;
+  }
+
+  /* item container */
+
+  .cart-item-container {
+    padding-block: 15px;
+  }
+
+  .cart-item-container-img {
+    max-width: 41px;
+    height: 63px;
+  }
+
+  .cart-item-info-container {
+    gap: 5px;
+  }
+
+  .item-name {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+  }
+
+  .color-container p,
+  .size-container p,
+  .cart-price-container p {
+    font-size: 0.625rem;
+  }
+
+  .qty-container {
+    flex-direction: column-reverse;
+    gap: 7.5px;
+  }
+
+  .plus-btn,
+  .minus-btn {
+    font-size: 0.875rem;
+  }
+
+  /* cost container */
+
+  .item-cost-container p,
+  .shipping-cost-container p {
+    font-size: 0.875rem;
+  }
+
+  .total-cost-container h3 {
+    font-size: 1rem;
+  }
+
+  .cost-container {
+    padding-bottom: 1.25em;
   }
 }
