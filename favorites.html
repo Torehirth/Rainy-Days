@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      src="https://kit.fontawesome.com/c4115ef720.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/c4115ef720.js" crossorigin="anonymous"></script>
     <link href="css/Styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -101,68 +98,47 @@
         <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
       </div>
     </header>
-    <main>
-      <section>
+    <main class="favorites-content">
+      <section class="fav-headline">
         <h1>favorites</h1>
         <h2>save your favorites here for later on</h2>
       </section>
-      <div>
-        <a href="favorites-empty.html">delete selected</a>
-      </div>
-      <div>
-        <a href="cart.html">add selected to cart</a>
-      </div>
       <section>
-        <div>
-          <img src="Photos/main product 1.jpg" alt="" />
-        </div>
-        <div>
-          <p>rainy days</p>
-          <h2>supreme alpine jacket m's</h2>
-          <p>size:</p>
-          <p>xl</p>
-          <p>price:</p>
-          <p>279$</p>
+        <div class="checkout-item-container">
+          <a href="product.html" class="cart-item-container-img">
+            <img src="/images/main product 1.jpg" alt="cart item image" />
+          </a>
+          <div class="cart-item-info-container">
+            <h3 class="item-name">supreme alpine jacket m's</h3>
+            <div class="color-container">
+              <p>color:</p>
+              <p>Yellow</p>
+            </div>
+            <div class="size-container">
+              <p>size:</p>
+              <p class="size-text">xl</p>
+            </div>
+            <div class="cart-price-container">
+              <p>price:</p>
+              <p>279$</p>
+            </div>
+            <a href="product.html"></a>
+          </div>
+          <div class="checkout-qty-container">
+            <p>qty:</p>
+            <p>1</p>
+          </div>
+          <div>
+            <button class="fa-stack fa-1x del-btn">
+              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+              <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
+            </button>
+          </div>
         </div>
       </section>
-      <section>
-        <div>
-          <img src="Photos/main product 1.jpg" alt="" />
-        </div>
-        <div>
-          <p>rainy days</p>
-          <h2>supreme alpine jacket m's</h2>
-          <p>size:</p>
-          <p>xl</p>
-          <p>price:</p>
-          <p>279$</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="Photos/main product 1.jpg" alt="" />
-        </div>
-        <div>
-          <p>rainy days</p>
-          <h2>supreme alpine jacket m's</h2>
-          <p>size:</p>
-          <p>xl</p>
-          <p>price:</p>
-          <p>279$</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="Photos/main product 1.jpg" alt="" />
-        </div>
-        <div>
-          <p>rainy days</p>
-          <h2>supreme alpine jacket m's</h2>
-          <p>size:</p>
-          <p>xl</p>
-          <p>price:</p>
-          <p>279$</p>
-        </div>
+      <section class="fav-buttons">
+        <button class="continue-shopping-btn add_btn"><a href="index.html">add selected to cart</a></button>
+        <button class="continue-shopping-btn del_btn"><a href="index.html">delete selected</a></button>
       </section>
     </main>
     <footer class="footer footer_tab footer_mobile">
@@ -177,17 +153,13 @@
                   title="to homepage"
                   class="footer_logo"
               /></a>
-              <a href="mailto:support@rainydays.com" title="send us an email"
-                >support@rainydays.com</a
-              >
+              <a href="mailto:support@rainydays.com" title="send us an email">support@rainydays.com</a>
               <p>+47 815 493 00</p>
             </div>
             <div class="to-top-button-mobile">
               <span class="fa-stack fa-2x">
                 <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-                <a href="#" title="to top of page"
-                  ><i class="fa-solid fa-arrow-up fa-stack-1x"></i
-                ></a>
+                <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
               </span>
               <p>top</p>
             </div>
@@ -204,31 +176,20 @@
           </nav>
           <div class="so_me_container">
             <p>follow us</p>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              title=" to Instagram"
+            <a href="https://www.instagram.com" target="_blank" title=" to Instagram"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              title=" to Facebook"
+            <a href="https://www.facebook.com" target="_blank" title=" to Facebook"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a
-              href="https://www.youtube.com"
-              target="_blank"
-              title=" to Youtube"
+            <a href="https://www.youtube.com" target="_blank" title=" to Youtube"
               ><i class="fa-brands fa-youtube"></i
             ></a>
           </div>
           <div class="to-top-button">
             <span class="fa-stack fa-2x">
               <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-              <a href="#" title="to top of page"
-                ><i class="fa-solid fa-arrow-up fa-stack-1x"></i
-              ></a>
+              <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
             </span>
             <p>top</p>
           </div>

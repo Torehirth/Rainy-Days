@@ -1524,6 +1524,29 @@ footer {
 
 /* ------------Favorites Page----------- */
 
+.favorites-content {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.fav-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .fav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+.add_btn {
+  background-color: var(--orange-btn-color);
+  padding: 10px 40px;
+  font-size: 1.25rem;
+}
+
 /* -------Icons and buttons------------*/
 .cart-icon,
 .header-heart-icon,
@@ -1848,8 +1871,8 @@ footer .fa-arrow-up {
 
   .header_logo_mobile {
     display: flex;
-    /* width: 8.75em; */ /*original Figma size*/
-    /* height: 2.125em; */ /*original Figma size*/
+    /* width: 8.75em; */ /*original Figma size (looks to small on website)*/
+    /* height: 2.125em; */ /*original Figma size (looks to small on website)*/
     width: 10em;
     height: 3em;
   }
