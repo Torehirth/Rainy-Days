@@ -2183,7 +2183,7 @@ footer .fa-arrow-up {
   .success-icon i {
     font-size: 32px;
     max-height: 32px;
-    line-height: normal;
+    line-height: 1;
   }
 
   /* ------------Favorites Page----------- */
