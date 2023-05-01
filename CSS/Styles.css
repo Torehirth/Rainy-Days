@@ -58,6 +58,7 @@
 
   /* border */
   --main-border-black: solid #000 1px;
+  --main-border-radius: 5px;
 
   /* transitions */
   --main-transition: all ease-in-out 300ms;
@@ -1435,6 +1436,86 @@ footer {
   text-transform: uppercase;
 }
 
+/* ---------------Chekout-Success Page------------ */
+
+.success-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4.375em;
+  padding-block: 6.25em;
+  max-width: 719px;
+  margin-inline: auto;
+  align-items: flex-end;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 719px;
+  height: 394px;
+  border: solid var(--light-blue-color);
+  border-radius: var(--main-border-radius);
+}
+
+.success-container h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.success-h1 {
+  padding: 0;
+  text-align: inherit;
+  text-transform: capitalize;
+}
+
+.success-headline {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.success-icon {
+  max-height: 62px;
+  max-width: 62px;
+}
+
+.success-icon i {
+  font-size: 62px;
+  max-height: 62px;
+}
+
+.success-check-icon {
+  color: white;
+}
+
+.success-circle-icon {
+  color: #00838f;
+}
+
+.order_number-container,
+.payment-container {
+  display: flex;
+  gap: 30px;
+}
+
+.order_number-container p,
+.payment-container p {
+  font-size: 1rem;
+}
+
+.success-btn {
+  background-color: var(--orange-btn-color);
+}
+
+.success-btn a {
+  color: white;
+}
+
+/* ------------Favorites Page----------- */
+
 /* -------Icons and buttons------------*/
 .cart-icon,
 .header-heart-icon,
@@ -2062,4 +2143,48 @@ footer .fa-arrow-up {
   .cost-container-checkout {
     padding-bottom: 0;
   }
+
+  /* ---------Success Page--------- */
+
+  .success-page {
+    max-width: 300px;
+    gap: 3.125em;
+    padding-block: 4.375em;
+  }
+
+  .success-container {
+    gap: 30px;
+    max-width: 300px;
+    max-height: 330px;
+  }
+
+  .success-headline {
+    gap: 10px;
+  }
+
+  .success-headline h1 {
+    letter-spacing: 1px;
+  }
+
+  .success-container h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .success-container p {
+    font-size: 0.875rem;
+  }
+
+  .success-icon {
+    max-height: 32px;
+    max-width: 32px;
+  }
+
+  .success-icon i {
+    font-size: 32px;
+    max-height: 32px;
+    line-height: normal;
+  }
+
+  /* ------------Favorites Page----------- */
 }
