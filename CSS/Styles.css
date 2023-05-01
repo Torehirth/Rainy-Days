@@ -1321,6 +1321,12 @@ footer {
   opacity: 70%;
 }
 
+/* product slider */
+
+.cart-headline {
+  padding: 0;
+}
+
 /* ----------------Checkout page-------------- */
 
 .complete-checkout-page-wrapper {
@@ -1333,7 +1339,7 @@ footer {
 }
 
 .complete-checkout-page-wrapper h2 {
-  /* font-size: 1.25rem; */
+  font-size: 1.25rem;
 }
 
 /* Order summary */
@@ -1703,7 +1709,7 @@ footer .fa-arrow-up {
   }
 
   .pop_prod_hdline {
-    text-align: left;
+    align-items: center;
   }
 }
 
