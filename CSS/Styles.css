@@ -2041,4 +2041,23 @@ footer .fa-arrow-up {
   .cost-container {
     padding-bottom: 1.25em;
   }
+
+  /* --------checkout page--------- */
+
+  .cart-checkout-headline {
+    padding: 4.375rem 0 3.125rem 0;
+  }
+
+  .complete-checkout-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-inline: auto;
+    gap: 50px;
+    padding-bottom: 4.375em;
+  }
+
+  .cost-container-checkout {
+    padding-bottom: 0;
+  }
 }
