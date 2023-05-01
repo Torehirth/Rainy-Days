@@ -49,6 +49,7 @@
   --backup-color: #181a29;
   --light-grey-btn-color: #d9d9d9;
   --grey-btn-color: #aeaeae;
+  --light-grey-input-color: #f3f3f3;
 
   /* shadow */
   --main-btn-shadow: rgba(0, 0, 0, 0.35) 2px 2px 3px;
@@ -1203,6 +1204,10 @@ footer {
   font-size: 0.75rem;
 }
 
+.size-text {
+  text-transform: uppercase;
+}
+
 .cart-price-container {
   border-bottom: var(--main-border-black);
   width: fit-content;
@@ -1271,7 +1276,7 @@ footer {
 }
 
 .total-cost-container h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .checkout-btn,
@@ -1318,13 +1323,26 @@ footer {
 
 /* ----------------Checkout page-------------- */
 
+.complete-checkout-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 535px;
+  margin-inline: auto;
+  gap: 50px;
+  padding-bottom: 6.25em;
+}
+
+.complete-checkout-page-wrapper h2 {
+  /* font-size: 1.25rem; */
+}
+
+/* Order summary */
+
 .order-summary-container {
   display: flex;
   flex-direction: column;
   align-items: start;
-  max-width: 535px;
-  margin-inline: auto;
-  gap: 50px;
+  gap: 30px;
 }
 
 .checkout-item-container {
@@ -1335,6 +1353,80 @@ footer {
   border-bottom: var(--main-border-black);
   padding-block: 20px;
   width: 100%;
+}
+
+.checkout-qty-container {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-qty-container p {
+  font-size: 0.875rem;
+}
+
+/* shipping and billing information */
+
+.shipping-container,
+.billing-container,
+.shipping-form,
+.billing-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-container,
+.billing-container {
+  gap: 30px;
+}
+
+.shipping-form,
+.billing-form {
+  letter-spacing: 2px;
+  gap: 20px;
+}
+
+.name-shipping-container,
+.address-container,
+.zip-code-container,
+.city-container,
+.country-container,
+.name-billing-container,
+.card-container,
+.expiration-container,
+.CVV-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.name-shipping-container input,
+.address-container input,
+.zip-code-container input,
+.city-container input,
+.country-container input,
+.name-billing-container input,
+.card-container input,
+.expiration-container input,
+.CVV-container input {
+  border: 0;
+  border-bottom: var(--main-border-black);
+  background-color: var(--light-grey-input-color);
+  height: 30px;
+}
+
+.zip-code-container {
+  max-width: 210px;
+}
+.expiration-container {
+  max-width: 230px;
+}
+
+.CVV-container {
+  max-width: 125px;
+}
+
+.CVV-container span {
+  text-transform: uppercase;
 }
 
 /* -------Icons and buttons------------*/
