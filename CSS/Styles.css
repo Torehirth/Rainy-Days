@@ -2176,7 +2176,7 @@ footer .fa-arrow-up {
   .success-page {
     max-width: 300px;
     gap: 3.125em;
-    padding-block: 4.375em;
+    padding: 4.375em 0 12.45em;
   }
 
   .success-container {
