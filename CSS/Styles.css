@@ -1440,17 +1440,11 @@ footer {
 
 /* ---------------Chekout-Success Page------------ */
 
-.footer-position {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .success-page {
   display: flex;
   flex-direction: column;
   gap: 4.375em;
-  padding-block: 6.25em;
+  padding: 6.25em 0 15.1em;
   max-width: 719px;
   margin-inline: auto;
   align-items: flex-end;
