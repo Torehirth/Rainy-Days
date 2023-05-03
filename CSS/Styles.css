@@ -1529,6 +1529,10 @@ footer {
   align-items: center;
 }
 
+.fav-headline h2 {
+  font-weight: normal;
+}
+
 /* .fav-buttons {
   display: flex;
   flex-direction: column;
