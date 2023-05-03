@@ -1444,7 +1444,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 4.375em;
-  padding: 6.25em 0 16.15em;
+  padding: 6.25em 0 16.15em; /*bottom padding to get footer to end of page*/
   max-width: 719px;
   margin-inline: auto;
   align-items: flex-end;
@@ -1521,27 +1521,94 @@ footer {
 .favourites-content {
   max-width: 860px;
   margin-inline: auto;
+  padding-inline: 1.875em;
 }
 
 .fav-headline {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+  padding-block: 6.25em;
 }
 
 .fav-headline h2 {
   font-weight: normal;
 }
 
-/* .fav-buttons {
+.fav-item-container-row-1,
+.fav-item-container-row-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav-item-container {
+  max-width: 375px;
+  padding-block: 15px;
+}
+
+.fav-checkbox-div {
+  height: 100%;
+  text-align: center;
+}
+
+.fav-checkbox-label {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  border: var(--main-border-black);
+  border-radius: var(--small-border-radius);
+}
+
+.checkbox-arrow {
+  color: var(--light-blue-color);
+  display: none;
+}
+
+.fav-checkbox-label:hover {
+  scale: 1.1;
+  border: solid 2px var(--light-blue-color);
+}
+
+#fav-checkbox1,
+#fav-checkbox2,
+#fav-checkbox3,
+#fav-checkbox4 {
+  display: none;
+}
+
+#fav-checkbox1:checked ~ .fav-checkbox-label,
+#fav-checkbox2:checked ~ .fav-checkbox-label,
+#fav-checkbox3:checked ~ .fav-checkbox-label,
+#fav-checkbox4:checked ~ .fav-checkbox-label {
+  scale: 1.1;
+  border: solid 2px var(--light-blue-color);
+}
+
+#fav-checkbox1:checked ~ .fav-checkbox-label .checkbox-arrow,
+#fav-checkbox2:checked ~ .fav-checkbox-label .checkbox-arrow,
+#fav-checkbox3:checked ~ .fav-checkbox-label .checkbox-arrow,
+#fav-checkbox4:checked ~ .fav-checkbox-label .checkbox-arrow {
+  display: inline-block;
+}
+
+.fav-buttons {
+  padding: 3.125em 0 8.2em; /*bottom padding to get footer to end of page*/
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 20px;
-} */
+}
 
 .add_btn {
   background-color: var(--orange-btn-color);
   padding: 10px 40px;
+  font-size: 1.25rem;
+  max-width: fit-content;
+}
+
+.del_btn {
+  max-width: fit-content;
   font-size: 1.25rem;
 }
 
