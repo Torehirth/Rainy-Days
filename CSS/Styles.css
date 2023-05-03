@@ -1536,10 +1536,18 @@ footer {
   font-weight: normal;
 }
 
+.complete-fav-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .fav-item-container-row-1,
 .fav-item-container-row-2 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .fav-item-container {
@@ -1682,11 +1690,11 @@ footer .fa-arrow-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5em 1.875em 0 1.875em;
+    padding: 0 1.875em 0 1.875em;
   }
 
   .header_bottom_menu_tab {
-    padding: 1.25em 0 0 0;
+    padding: 1.5em 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2285,4 +2293,19 @@ footer .fa-arrow-up {
   }
 
   /* ------------Favorites Page----------- */
+
+  .favourites-content {
+    max-width: 300px;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  .fav-headline {
+    text-align: center;
+    padding: 4.375em 0 3.125em;
+  }
+
+  .fav-buttons {
+    padding-bottom: 4.375em;
+  }
 }
