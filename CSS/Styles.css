@@ -1516,7 +1516,7 @@ footer {
   color: white;
 }
 
-/* ------------Favorites Page----------- */
+/* ------------Favourites Page----------- */
 
 .favourites-content {
   max-width: 860px;
@@ -1601,7 +1601,7 @@ footer {
 }
 
 .fav-buttons {
-  padding: 3.125em 0 8.2em; /*bottom padding to get footer to end of page*/
+  padding: 3.125em 0 7em; /*bottom padding to get footer to end of page*/
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1619,6 +1619,32 @@ footer {
   max-width: fit-content;
   font-size: 1.25rem;
 }
+
+/* ---------Favourites-Empty Page---------- */
+
+.fav-empty-content {
+  margin-inline: auto;
+  max-width: 1000px; /*just for auto-margin*/
+}
+
+.fav-empty-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875em;
+  padding: 6.25em 0 9.375em 0;
+  text-align: center;
+}
+
+.fav-empty-cont-text-container {
+  text-align: center;
+  color: var(--light-blue-color);
+  padding-bottom: 29.9em;
+}
+
+.fav-empty-cont-text-container h2 {
+  text-decoration: underline;
+}
+
 
 /* -------Icons and buttons------------*/
 .cart-icon,
@@ -1690,7 +1716,7 @@ footer .fa-arrow-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 1.875em 0 1.875em;
+    padding: 1.25em 1.875em 0 1.875em;
   }
 
   .header_bottom_menu_tab {
@@ -2292,7 +2318,7 @@ footer .fa-arrow-up {
     line-height: 1;
   }
 
-  /* ------------Favorites Page----------- */
+  /* ------------Favourites Page----------- */
 
   .favourites-content {
     max-width: 300px;
@@ -2307,5 +2333,22 @@ footer .fa-arrow-up {
 
   .fav-buttons {
     padding-bottom: 4.375em;
+  }
+
+  /* ------Favourites-Empty Page------ */
+
+  .fav-empty-content {
+    max-width: 300px; /*just for auto-margin*/
+  }
+  
+  .fav-empty-headline {
+    padding: 4,375em 0 6.25em 0;
+    text-align: center;
+  }
+  
+  .fav-empty-cont-text-container {
+    text-align: center;
+    color: var(--light-blue-color);
+    padding-bottom: 17.9em;
   }
 }
