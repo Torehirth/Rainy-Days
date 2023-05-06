@@ -375,14 +375,25 @@ footer {
   gap: 1.25em;
 }
 
-.category_button {
-  background-color: var(--dark-blue-color);
-  border: none;
-  border-radius: var(--main-border-radius);
-  box-shadow: var(--main-btn-shadow);
+.index_button_container button {
+  border: 0;
+  background-color: transparent;
 }
 
-.category_button a {
+.category_button {
+  background-color: var(--dark-blue-color);
+  /* border: none; */
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-btn-shadow);
+  /* padding: 13px 25px; */
+  width: 210px;
+  height: 42px;
+  /* align-self: center; */
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* .category_button a {
   font-size: 1rem;
   letter-spacing: 2px;
   width: 13.125rem;
@@ -390,7 +401,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .category_button:hover {
   opacity: 80%;
