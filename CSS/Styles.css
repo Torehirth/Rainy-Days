@@ -376,7 +376,6 @@ footer {
 
 .category_button {
   background-color: var(--dark-blue-color);
-  border: none;
   border-radius: var(--main-border-radius);
   box-shadow: var(--main-btn-shadow);
   width: 210px;
@@ -385,9 +384,11 @@ footer {
   letter-spacing: 2px;
   color: white;
   cursor: pointer;
+  text-align: center;
+  line-height: 40px;
 }
 
-.index_button_container a:hover {
+.category_button:hover {
   opacity: 80%;
 }
 
