@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="jacket, jackets, clothing, rainwear, shopping, buy, outdoor clothing, outdoor equipment"
-    />
+      content="jacket, jackets, clothing, rainwear, shopping, buy, outdoor clothing, outdoor equipment" />
     <meta name="author" content="Tore M. Hirth" />
     <meta http-equiv="refresh" content="600" />
     <meta name="description" content="checkout and payment page" />
@@ -16,7 +15,7 @@
   </head>
   <body>
     <header class="header_mobile header_tab">
-      <section class="header_top_bottom_menu header_menu_tab header_menu_mobile">
+      <div class="header_top_bottom_menu header_menu_tab header_menu_mobile">
         <div class="header_top_menu Desktop_version">
           <div class="header_top_container">
             <ul class="header_info_pages">
@@ -34,13 +33,13 @@
             <div class="header_logo_container">
               <a href="index.html" class="header_logo header_logo_mobile"
                 ><img
-                  src="logo/Rainy Days vector logo.svg"
+                  src="logo/Rainy-Days-vector-logo.svg"
                   alt="Rainy Days logo"
                   title="to home"
                   class="header_logo header_logo_mobile"
               /></a>
             </div>
-            <div class="category_menu">
+            <nav class="category_menu">
               <ul class="header_category_container Desktop_version">
                 <li class="header_category_buttons">
                   <a href="men.html" title="to men's jackets">men's</a>
@@ -57,8 +56,7 @@
                   id="desktop_search"
                   placeholder="search"
                   title="search"
-                  class="searchbox"
-                />
+                  class="searchbox" />
               </div>
               <div>
                 <ul class="header_icons">
@@ -77,11 +75,11 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
-      </section>
-      <section class="hamburger_container">
+      </div>
+      <div class="hamburger_container">
         <input type="checkbox" id="nav" class="nav-checkbox" />
         <nav class="header_nav_mobile header_nav_tab">
           <ul>
@@ -92,7 +90,7 @@
             <li><a href="contact.html">contact us</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
       <div class="header_searchbox_mobile header_searchbox_tab">
         <label class="fa-solid fa-magnifying-glass searchbox_mobile" title="search" for="mobile_search"></label>
         <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
@@ -105,7 +103,7 @@
           <h2>order summary</h2>
           <div class="checkout-item-container">
             <a href="product.html" class="cart-item-container-img">
-              <img src="/images/main product 1.jpg" alt="cart item image" />
+              <img src="/images/main-product-1.jpg" alt="cart item image" />
             </a>
             <div class="cart-item-info-container">
               <h3 class="item-name">supreme alpine jacket m's</h3>
@@ -175,8 +173,7 @@
                 id="card number"
                 required
                 min="999999999999"
-                max="99999999999999999999"
-              />
+                max="99999999999999999999" />
             </div>
             <div class="expiration-container">
               <label for="expiration date">expiration date</label>
@@ -201,8 +198,8 @@
             <h3>total cost:</h3>
             <h3>288$</h3>
           </div>
-          <button class="checkout-btn"><a href="checkout-success.html">place order</a></button>
-          <button class="continue-shopping-btn"><a href="index.html">continue shopping</a></button>
+          <button class="checkout-btn"><a href="checkout-success.html" role="button">place order</a></button>
+          <button class="continue-shopping-btn"><a href="index.html" role="button">continue shopping</a></button>
         </section>
       </section>
     </main>
@@ -213,7 +210,7 @@
             <div class="footer-contact-information footer_contact_mobile">
               <a href="index.html"
                 ><img
-                  src="logo/Rainy Days Logo Footer Vector 2.svg"
+                  src="logo/Rainy-Days-Logo-Footer-Vector-2.svg"
                   alt="Rainy Days footer logo"
                   title="to homepage"
                   class="footer_logo"
@@ -253,8 +250,8 @@
           </div>
           <div class="to-top-button">
             <span class="fa-stack fa-2x">
-              <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-              <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
+              <a href="#" title="to top of page" role="button"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
+              <a href="#" title="to top of page" role="button"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
             </span>
             <p>top</p>
           </div>

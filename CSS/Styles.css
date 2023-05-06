@@ -351,7 +351,7 @@ footer {
 
 .Landingpage-img {
   width: 100%;
-  max-height: 600px;
+  /* max-height: 600px; */
 }
 
 .index_headline_container {
@@ -549,11 +549,11 @@ footer {
 }
 
 .womens_category_card {
-  background-image: url(../Images/women\ category\ button.jpg);
+  background-image: url(../Images/women-category-button.jpg);
 }
 
 .mens_category_card {
-  background-image: url(../Images/mens\ category\ button.jpg);
+  background-image: url(../Images/mens-category-button.jpg);
 }
 
 .womens_category_card p,
@@ -626,7 +626,7 @@ footer {
 
 .top_image_container {
   background-color: var(--backup-color); /*backup color if image not work*/
-  background-image: url(../images/About\ us_main\ photo.jpg);
+  background-image: url(../images/About-us_main-photo.jpg);
   /* padding-inline: 6.75em; */
   max-width: 100%;
   background-size: cover;
@@ -727,7 +727,7 @@ footer {
 
 .contact_page_content {
   background-color: var(--backup-color); /*backup color if image not work*/
-  background-image: url(../Images/Contact\ us_main\ photo.jpg);
+  background-image: url(../Images/Contact-us_main-photo.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center 65%;
