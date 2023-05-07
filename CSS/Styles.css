@@ -1558,6 +1558,10 @@ footer {
 
 .del_btn {
   max-width: fit-content;
+}
+
+.add_btn p,
+.del_btn p {
   font-size: 1.25rem;
 }
 
@@ -2276,6 +2280,11 @@ footer .fa-arrow-up {
 
   .fav-buttons {
     padding-bottom: 4.375em;
+  }
+
+  .add_btn p,
+  .del_btn p {
+    font-size: 1.125rem;
   }
 
   /* ------Favourites-Empty Page------ */
