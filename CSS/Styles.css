@@ -346,9 +346,6 @@ footer {
   max-width: 77.5em;
 }
 
-.index-img-container {
-}
-
 .Landingpage-img {
   width: 100%;
 }
@@ -1032,15 +1029,6 @@ footer {
   letter-spacing: 2px;
 }
 
-.add_to_cart_button a {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .add_to_cart_button:hover {
   opacity: 70%;
 }
@@ -1051,6 +1039,11 @@ footer {
   align-items: center;
   text-align: center;
   border: none;
+  background-color: transparent;
+}
+
+.add_to_favorites_button button {
+  border: 0;
   background-color: transparent;
 }
 
