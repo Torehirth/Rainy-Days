@@ -1551,8 +1551,7 @@ footer {
 
 .add_btn {
   background-color: var(--orange-btn-color);
-  padding: 10px 40px;
-  font-size: 1.25rem;
+  padding-block: 10px;
   max-width: fit-content;
 }
 
