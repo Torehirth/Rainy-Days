@@ -42,10 +42,14 @@
                 </li>
               </ul>
               <div class="header_searchbox">
-                <label title="magnifying glass icon for search bar" class="fa-solid fa-magnifying-glass search-icon" for="desktop_search"
+                <label
+                  title="search"
+                  aria-label="magnifying glass icon for search bar"
+                  class="fa-solid fa-magnifying-glass search-icon"
+                  for="desktop_search"
                   ><span hidden>#</span></label
                 >
-                <input type="search" name="search" id="desktop_search" placeholder="search" title="search box desktop" class="searchbox" />
+                <input type="search" name="search" id="desktop_search" placeholder="search" title="search" class="searchbox" />
               </div>
               <div>
                 <ul class="header_icons">
@@ -58,7 +62,7 @@
                     <p class="header_icon_text">cart</p>
                   </li>
                   <li class="header_icon_buttons hamburger_icon">
-                    <label title="hamburger menu icon for mobile nav" for="nav" class="header_icon_buttons check"
+                    <label title="menu" aria-label="hamburger menu icon for mobile nav" for="nav" class="header_icon_buttons check"
                       ><i class="fa-solid fa-bars hamburger-icon"></i><span hidden>#</span></label
                     >
                   </li>
@@ -69,7 +73,7 @@
         </div>
       </div>
       <div class="hamburger_container">
-        <input type="checkbox" id="nav" class="nav-checkbox" />
+        <input type="checkbox" id="nav" class="nav-checkbox" hidden />
         <nav class="header_nav_mobile header_nav_tab">
           <ul>
             <li><a href="index.html">home</a></li>
@@ -81,7 +85,11 @@
         </nav>
       </div>
       <div class="header_searchbox_mobile header_searchbox_tab">
-        <label title="magnifying glass icon for search bar" class="fa-solid fa-magnifying-glass searchbox_mobile" for="mobile_search"
+        <label
+          title="search"
+          aria-label="magnifying glass icon for search bar"
+          class="fa-solid fa-magnifying-glass searchbox_mobile"
+          for="mobile_search"
           ><span hidden>#</span></label
         >
         <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
