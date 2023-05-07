@@ -1457,10 +1457,6 @@ footer {
   background-color: var(--orange-btn-color);
 }
 
-.success-btn a {
-  color: white;
-}
-
 /* ------------Favourites Page----------- */
 
 .favourites-content {
