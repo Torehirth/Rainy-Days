@@ -433,7 +433,6 @@ footer {
   border: solid 1px var(--dark-blue-color);
   width: 13.5em;
   height: 18.75em;
-  position: relative; /* This is for making the whole slider frame a link */
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
@@ -468,16 +467,6 @@ footer {
   padding-top: 1rem;
 }
 
-.slider_text_container a::before {
-  /* This is for making the whole slider cards a link */
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .slider_text_container p {
   color: #000;
   font-size: 0.875rem;
@@ -489,9 +478,13 @@ footer {
   font-weight: bold;
 }
 
-.outer_product_container:hover img {
+.outer_product_container img:hover {
   scale: 98%;
-  transition: ease-in-out 300ms;
+  transition: var(--main-transition);
+}
+
+.outer_product_container:hover {
+  opacity: 1;
 }
 
 .img_supreme_alpine_Jacket_m,
@@ -514,18 +507,6 @@ footer {
   gap: 1.0625em;
 }
 
-/* .scroll_bar_icon,
-#solid_circle {
-  color: #000;
-  font-size: 0.625rem;
-  cursor: auto;
-}
-
-.scroll_bar_icon:hover,
-#solid_circle:hover {
-  opacity: 1;
-} */
-
 /* ------------------- Index category cards -----------*/
 
 .category_card_container_index {
@@ -544,7 +525,6 @@ footer {
   background-size: cover;
   box-sizing: border-box;
   border-radius: var(--main-border-radius);
-  position: relative;
 }
 
 .womens_category_card {
@@ -558,6 +538,7 @@ footer {
 .womens_category_card p,
 .mens_category_card p {
   text-align: center;
+  color: black;
   padding-top: 2rem;
   font-size: 1.25rem;
   font-weight: bold;
@@ -565,19 +546,11 @@ footer {
   letter-spacing: 4px;
 }
 
-.category_card_link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .womens_category_card:hover,
 .mens_category_card:hover {
   scale: 99%;
   transition: var(--main-transition);
+  opacity: 1;
 }
 
 /* --------------------Men's & Women's Product pages------------------ */
@@ -1172,17 +1145,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: relative;
-  cursor: pointer;
-}
-
-.cart-item-info-container a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  color: black;
 }
 
 .cart-price-container,
