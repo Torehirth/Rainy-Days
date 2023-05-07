@@ -1236,39 +1236,32 @@ footer {
 
 .checkout-btn,
 .continue-shopping-btn {
-  border: 0;
-  background-color: transparent;
   border-radius: var(--main-border-radius);
   box-shadow: var(--main-btn-shadow);
+}
+
+.checkout-btn p,
+.continue-shopping-btn p {
   font-weight: bold;
   letter-spacing: 2px;
-  position: relative;
+}
+
+.checkout-btn p {
+  font-size: 1.25rem;
+}
+.continue-shopping-btn p {
+  font-size: 1rem;
+  color: black;
 }
 
 .checkout-btn {
   background-color: var(--orange-btn-color);
   padding: 10px 40px;
-  font-size: 1.25rem;
 }
 
 .continue-shopping-btn {
   background-color: var(--grey-btn-color);
   padding: 8px 20px;
-  font-size: 1rem;
-}
-
-.continue-shopping-btn a {
-  color: black;
-}
-
-.checkout-btn a::before,
-.continue-shopping-btn a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .continue-shopping-btn:hover,
