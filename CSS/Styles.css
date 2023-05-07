@@ -80,7 +80,6 @@
 .header_logo_mobile,
 #fav1,
 .mobile-image-slider,
-.size-input,
 .prod-mob-hdline {
   display: none;
 }
@@ -979,15 +978,6 @@ footer {
   text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;
-}
-
-.size-button-container label::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .size_option_container #size_s:checked ~ .sizes #size1,
