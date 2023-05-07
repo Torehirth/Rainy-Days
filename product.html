@@ -42,10 +42,14 @@
                 </li>
               </ul>
               <div class="header_searchbox">
-                <label title="magnifying glass icon for search bar" class="fa-solid fa-magnifying-glass search-icon" for="desktop_search"
+                <label
+                  title="search"
+                  aria-label="magnifying glass icon for search bar"
+                  class="fa-solid fa-magnifying-glass search-icon"
+                  for="desktop_search"
                   ><span hidden>#</span></label
                 >
-                <input type="search" name="search" id="desktop_search" placeholder="search" title="search box desktop" class="searchbox" />
+                <input type="search" name="search" id="desktop_search" placeholder="search" title="search" class="searchbox" />
               </div>
               <div>
                 <ul class="header_icons">
@@ -58,7 +62,7 @@
                     <p class="header_icon_text">cart</p>
                   </li>
                   <li class="header_icon_buttons hamburger_icon">
-                    <label title="hamburger menu icon for mobile nav" for="nav" class="header_icon_buttons check"
+                    <label title="menu" aria-label="hamburger menu icon for mobile nav" for="nav" class="header_icon_buttons check"
                       ><i class="fa-solid fa-bars hamburger-icon"></i><span hidden>#</span></label
                     >
                   </li>
@@ -69,7 +73,7 @@
         </div>
       </div>
       <div class="hamburger_container">
-        <input type="checkbox" id="nav" class="nav-checkbox" />
+        <input type="checkbox" id="nav" class="nav-checkbox" hidden />
         <nav class="header_nav_mobile header_nav_tab">
           <ul>
             <li><a href="index.html">home</a></li>
@@ -81,7 +85,11 @@
         </nav>
       </div>
       <div class="header_searchbox_mobile header_searchbox_tab">
-        <label title="magnifying glass icon for search bar" class="fa-solid fa-magnifying-glass searchbox_mobile" for="mobile_search"
+        <label
+          title="search"
+          aria-label="magnifying glass icon for search bar"
+          class="fa-solid fa-magnifying-glass searchbox_mobile"
+          for="mobile_search"
           ><span hidden>#</span></label
         >
         <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
@@ -124,14 +132,14 @@
             <input type="radio" id="i6" name="images" hidden />
             <div class="big-img-container" id="slide_img_1">
               <img src="Images/main-product-1.jpg" alt="first big picture of product inside desktop image carousel" id="img1" />
-              <label for="i6" class="left-arrow"
+              <label for="i6" class="left-arrow" aria-label="image left arrow"
                 ><span class="fa-stack fa-1x left-arrow-span"
                   ><i class="fa-sharp fa-solid fa-arrow-left fa-stack-1x product-slider-arrow-left"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
               <label for="i2" class="right-arrow"
-                ><span class="fa-stack fa-1x right-arrow-span"
+                ><span class="fa-stack fa-1x right-arrow-span" aria-label="image right arrow"
                   ><i class="fa-sharp fa-solid fa-arrow-right fa-stack-1x product-slider-arrow-right"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
@@ -139,14 +147,14 @@
             </div>
             <div class="big-img-container" id="slide_img_2">
               <img src="Images/main-product-2.jpg" alt="second big picture of product inside desktop image carousel" id="img2" />
-              <label for="i1" class="left-arrow"
+              <label for="i1" class="left-arrow" aria-label="image left arrow"
                 ><span class="fa-stack fa-1x left-arrow-span"
                   ><i class="fa-sharp fa-solid fa-arrow-left fa-stack-1x product-slider-arrow-left"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
               <label for="i3" class="right-arrow"
-                ><span class="fa-stack fa-1x right-arrow-span"
+                ><span class="fa-stack fa-1x right-arrow-span" aria-label="image right arrow"
                   ><i class="fa-sharp fa-solid fa-arrow-right fa-stack-1x product-slider-arrow-right"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
@@ -154,14 +162,14 @@
             </div>
             <div class="big-img-container" id="slide_img_3">
               <img src="Images/main-product-3.jpg" alt="third big picture of product inside desktop image carousel" id="img3" />
-              <label for="i2" class="left-arrow"
+              <label for="i2" class="left-arrow" aria-label="image left arrow"
                 ><span class="fa-stack fa-1x left-arrow-span"
                   ><i class="fa-sharp fa-solid fa-arrow-left fa-stack-1x product-slider-arrow-left"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
               <label for="i4" class="right-arrow"
-                ><span class="fa-stack fa-1x right-arrow-span"
+                ><span class="fa-stack fa-1x right-arrow-span" aria-label="image right arrow"
                   ><i class="fa-sharp fa-solid fa-arrow-right fa-stack-1x product-slider-arrow-right"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
@@ -169,14 +177,14 @@
             </div>
             <div class="big-img-container" id="slide_img_4">
               <img src="Images/main-product-4.jpg" alt="fourth big picture of product inside desktop image carousel" id="img4" />
-              <label for="i3" class="left-arrow"
+              <label for="i3" class="left-arrow" aria-label="image left arrow"
                 ><span class="fa-stack fa-1x left-arrow-span"
                   ><i class="fa-sharp fa-solid fa-arrow-left fa-stack-1x product-slider-arrow-left"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
               <label for="i5" class="right-arrow"
-                ><span class="fa-stack fa-1x right-arrow-span"
+                ><span class="fa-stack fa-1x right-arrow-span" aria-label="image right arrow"
                   ><i class="fa-sharp fa-solid fa-arrow-right fa-stack-1x product-slider-arrow-right"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
@@ -184,14 +192,14 @@
             </div>
             <div class="big-img-container" id="slide_img_5">
               <img src="Images/main-product-5.jpg" alt="fifht big picture of product inside desktop image carousel" id="img5" />
-              <label for="i4" class="left-arrow"
+              <label for="i4" class="left-arrow" aria-label="image left arrow"
                 ><span class="fa-stack fa-1x left-arrow-span"
                   ><i class="fa-sharp fa-solid fa-arrow-left fa-stack-1x product-slider-arrow-left"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
               <label for="i6" class="right-arrow"
-                ><span class="fa-stack fa-1x right-arrow-span"
+                ><span class="fa-stack fa-1x right-arrow-span" aria-label="image right arrow"
                   ><i class="fa-sharp fa-solid fa-arrow-right fa-stack-1x product-slider-arrow-right"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
@@ -199,26 +207,38 @@
             </div>
             <div class="big-img-container" id="slide_img_6">
               <img src="Images/main-product-6-with-tent.jpg" alt="sixth big picture of product inside desktop image carousel" id="img6" />
-              <label for="i5" class="left-arrow"
+              <label for="i5" class="left-arrow" aria-label="image left arrow"
                 ><span class="fa-stack fa-1x left-arrow-span"
                   ><i class="fa-sharp fa-solid fa-arrow-left fa-stack-1x product-slider-arrow-left"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
               <label for="i1" class="right-arrow"
-                ><span class="fa-stack fa-1x right-arrow-span"
+                ><span class="fa-stack fa-1x right-arrow-span" aria-label="image right arrow"
                   ><i class="fa-sharp fa-solid fa-arrow-right fa-stack-1x product-slider-arrow-right"></i
                   ><i class="fa-solid fa-circle fa-stack-1x product-slider-arrow-circle"></i></span
                 ><span hidden>#</span></label
               >
             </div>
             <div class="nav-dots-container">
-              <label for="i1" id="nav-dot1"><i class="fa-regular fa-circle nav-dots-icon"></i><span hidden>#</span></label>
-              <label for="i2" id="nav-dot2"><i class="fa-regular fa-circle nav-dots-icon"></i><span hidden>#</span></label>
-              <label for="i3" id="nav-dot3"><i class="fa-regular fa-circle nav-dots-icon"></i><span hidden>#</span></label>
-              <label for="i4" id="nav-dot4"><i class="fa-regular fa-circle nav-dots-icon"></i><span hidden>#</span></label>
-              <label for="i5" id="nav-dot5"><i class="fa-regular fa-circle nav-dots-icon"></i><span hidden>#</span></label>
-              <label for="i6" id="nav-dot6"><i class="fa-regular fa-circle nav-dots-icon"></i><span hidden>#</span></label>
+              <label for="i1" id="nav-dot1"
+                ><i class="fa-regular fa-circle nav-dots-icon" aria-label="image navigaton dots"></i><span hidden>#</span></label
+              >
+              <label for="i2" id="nav-dot2"
+                ><i class="fa-regular fa-circle nav-dots-icon" aria-label="image navigaton dots"></i><span hidden>#</span></label
+              >
+              <label for="i3" id="nav-dot3"
+                ><i class="fa-regular fa-circle nav-dots-icon" aria-label="image navigaton dots"></i><span hidden>#</span></label
+              >
+              <label for="i4" id="nav-dot4"
+                ><i class="fa-regular fa-circle nav-dots-icon" aria-label="image navigaton dots"></i><span hidden>#</span></label
+              >
+              <label for="i5" id="nav-dot5"
+                ><i class="fa-regular fa-circle nav-dots-icon" aria-label="image navigaton dots"></i><span hidden>#</span></label
+              >
+              <label for="i6" id="nav-dot6"
+                ><i class="fa-regular fa-circle nav-dots-icon" aria-label="image navigaton dots"></i><span hidden>#</span></label
+              >
             </div>
           </div>
         </div>
@@ -263,19 +283,19 @@
               <input type="radio" id="size_xl" name="sizes" hidden />
               <input type="radio" id="size_xxl" name="sizes" hidden />
               <div class="sizes">
-                <label class="size-button-container" id="size1" for="size_s" title="size small">s</label>
+                <label class="size-button-container" id="size1" for="size_s" aria-label="size small">s</label>
               </div>
               <div class="sizes">
-                <label class="size-button-container" id="size2" for="size_m" title="size medium">m</label>
+                <label class="size-button-container" id="size2" for="size_m" aria-labe="size medium">m</label>
               </div>
               <div class="sizes">
-                <label class="size-button-container" id="size3" for="size_l" title="size large">l</label>
+                <label class="size-button-container" id="size3" for="size_l" aria-labe="size large">l</label>
               </div>
               <div class="sizes">
-                <label class="size-button-container" id="size4" for="size_xl" title="size extra large">xl</label>
+                <label class="size-button-container" id="size4" for="size_xl" aria-labe="size extra large">xl</label>
               </div>
               <div class="sizes">
-                <label class="size-button-container" id="size5" for="size_xxl" title="size extra extra large">xxl</label>
+                <label class="size-button-container" id="size5" for="size_xxl" aria-labe="size extra extra large">xxl</label>
               </div>
             </div>
           </div>
