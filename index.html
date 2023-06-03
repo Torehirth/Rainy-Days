@@ -5,20 +5,14 @@
     <link href="css/Styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="jacket, jackets, clothing, rainwear, shopping, buy, outdoor clothing, outdoor equipment"
-    />
+    <meta name="keywords" content="jacket, jackets, clothing, rainwear, shopping, buy, outdoor clothing, outdoor equipment" />
     <meta name="author" content="Tore M. Hirth" />
-    <meta
-      name="description"
-      content="Rainy Days - Buy quality outdoor jackets that handles all kind of weather, made of sustainable materials"
-    />
+    <meta name="description" content="Rainy Days - Buy quality outdoor jackets that handles all kind of weather, made of sustainable materials" />
     <title>Rainy Days | Home</title>
   </head>
   <body>
     <header class="header_mobile header_tab">
-      <section class="header_top_bottom_menu header_menu_tab header_menu_mobile">
+      <div class="header_top_bottom_menu header_menu_tab header_menu_mobile">
         <div class="header_top_menu Desktop_version">
           <div class="header_top_container">
             <ul class="header_info_pages">
@@ -35,14 +29,10 @@
           <div class="header_bottom_container">
             <div class="header_logo_container">
               <a href="index.html" class="header_logo header_logo_mobile"
-                ><img
-                  src="logo/Rainy Days vector logo.svg"
-                  alt="Rainy Days logo"
-                  title="to home"
-                  class="header_logo header_logo_mobile"
+                ><img src="logo/Rainy-Days-vector-logo.svg" alt="Rainy Days logo" title="to home" class="header_logo header_logo_mobile"
               /></a>
             </div>
-            <div class="category_menu">
+            <nav class="category_menu">
               <ul class="header_category_container Desktop_version">
                 <li class="header_category_buttons">
                   <a href="men.html" title="to men's jackets">men's</a>
@@ -52,39 +42,38 @@
                 </li>
               </ul>
               <div class="header_searchbox">
-                <label class="fa-solid fa-magnifying-glass search-icon" title="search" for="desktop_search"></label>
-                <input
-                  type="search"
-                  name="search"
-                  id="desktop_search"
-                  placeholder="search"
+                <label
                   title="search"
-                  class="searchbox"
-                />
+                  aria-label="magnifying glass icon for search bar"
+                  class="fa-solid fa-magnifying-glass search-icon"
+                  for="desktop_search"
+                  ><span hidden>#</span></label
+                >
+                <input type="search" name="search" id="desktop_search" placeholder="search" title="search" class="searchbox" />
               </div>
               <div>
                 <ul class="header_icons">
                   <li class="header_icon_buttons favorites">
-                    <a href="favorites.html" title="to Favorites" class="fa-solid fa-heart header-heart-icon"></a>
-                    <p class="header_icon_text">favorites</p>
+                    <a href="favourites.html" title="to Favourites" class="fa-solid fa-heart header-heart-icon"></a>
+                    <p class="header_icon_text">favourites</p>
                   </li>
                   <li class="header_icon_buttons">
                     <a href="cart.html" title="to Cart" class="fa-solid fa-cart-shopping cart-icon"></a>
                     <p class="header_icon_text">cart</p>
                   </li>
                   <li class="header_icon_buttons hamburger_icon">
-                    <label for="nav" class="header_icon_buttons check"
-                      ><i class="fa-solid fa-bars hamburger-icon"></i
-                    ></label>
+                    <label title="menu" aria-label="hamburger menu icon for mobile nav" for="nav" class="header_icon_buttons check"
+                      ><i class="fa-solid fa-bars hamburger-icon"></i><span hidden>#</span></label
+                    >
                   </li>
                 </ul>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
-      </section>
-      <section class="hamburger_container">
-        <input type="checkbox" id="nav" class="nav-checkbox" />
+      </div>
+      <div class="hamburger_container">
+        <input type="checkbox" id="nav" class="nav-checkbox" hidden />
         <nav class="header_nav_mobile header_nav_tab">
           <ul>
             <li><a href="index.html">home</a></li>
@@ -94,26 +83,32 @@
             <li><a href="contact.html">contact us</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
       <div class="header_searchbox_mobile header_searchbox_tab">
-        <label class="fa-solid fa-magnifying-glass searchbox_mobile" title="search" for="mobile_search"></label>
+        <label
+          title="search"
+          aria-label="magnifying glass icon for search bar"
+          class="fa-solid fa-magnifying-glass searchbox_mobile"
+          for="mobile_search"
+          ><span hidden>#</span></label
+        >
         <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
       </div>
     </header>
     <main>
-      <section class="Index_image">
-        <div>
-          <img class="Landingpage-img" src="Images/Landingpage.jpg" alt="person climbing a mountain" />
+      <div class="Index_image">
+        <div class="index-img-container">
+          <img class="Landingpage-img" src="Images/Landingpage.jpg" alt="big image of a person climbing a mountain" />
         </div>
-      </section>
+      </div>
       <section class="index_page_content">
-        <section class="index_headline_container">
+        <div class="index_headline_container">
           <h1>Watch our collection of all weather<br />jackets</h1>
           <div class="index_button_container">
-            <button class="category_button"><a href="men.html">men's</a></button>
-            <button class="category_button"><a href="women.html">women's</a></button>
+            <a href="men.html" class="category_button" role="button">men's</a>
+            <a href="women.html" class="category_button" role="button">women's</a>
           </div>
-        </section>
+        </div>
         <section class="popular_products_container">
           <div class="popular_products_container_headline">
             <h2>popular products</h2>
@@ -123,189 +118,135 @@
             <!-- Group 1 -->
             <div class="slider_group">
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/main product 1.jpg"
-                      alt="supreme alpine jacket m's"
-                      href="product.html"
-                      class="img_supreme_alpine_Jacket_m"
-                    />
+                    <img src="Images/main-product-1.jpg" alt="supreme alpine jacket m's" class="img_supreme_alpine_Jacket_m" />
                   </div>
                   <div class="slider_text_container">
                     <p>supreme alpine jacket m's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/women blue_green alpine jacket.jpg"
-                      alt="supreme alpine jacket w's"
-                      href="product.html"
-                      class="img_supreme_alpine_jacket_w"
-                    />
+                    <img src="Images/women-blue_green-alpine-jacket.jpg" alt="supreme alpine jacket w's" class="img_supreme_alpine_jacket_w" />
                   </div>
                   <div class="slider_text_container">
                     <p>supreme alpine jacket w's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/men red down jacket.jpg"
-                      alt="supreme down jacket m's"
-                      href="product.html"
-                      class="img_supreme_down_jacket_m"
-                    />
+                    <img src="Images/men-red-down-jacket.jpg" alt="supreme down jacket m's" class="img_supreme_down_jacket_m" />
                   </div>
                   <div class="slider_text_container">
                     <p>supreme down jacket m's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/women orange all weather jacket.jpg"
-                      alt="all weather jacket w's"
-                      href="product.html"
-                      class="img_all_weather_jacket_w"
-                    />
+                    <img src="Images/women-orange-all-weather-jacket.jpg" alt="all weather jacket w's" class="img_all_weather_jacket_w" />
                   </div>
                   <div class="slider_text_container">
                     <p>all weather jacket w's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <!-- Product -->
             <div class="slider_group last_slider_group">
               <!-- Group 2 -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/women yellow down jacket.jpg"
-                      alt="supreme down jacket w's"
-                      href="product.html"
-                      class="img_supreme_down_jacket_w"
-                    />
+                    <img src="Images/women-yellow-down-jacket.jpg" alt="supreme down jacket w's" class="img_supreme_down_jacket_w" />
                   </div>
                   <div class="slider_text_container">
                     <p>supreme down jacket w's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/men yellow all weather jacket.jpg"
-                      alt="all weather jacket m's"
-                      href="product.html"
-                      class="img_all_weather_jacket_m"
-                    />
+                    <img src="Images/men-yellow-all-weather-jacket.jpg" alt="all weather jacket m's" class="img_all_weather_jacket_m" />
                   </div>
                   <div class="slider_text_container">
                     <p>all weather jacket m's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/men red light down jacket.jpg"
-                      alt="light down jacket m's"
-                      href="product.html"
-                      class="img_light_down_jacket_m"
-                    />
+                    <img src="Images/men-red-light-down-jacket.jpg" alt="light down jacket m's" class="img_light_down_jacket_m" />
                   </div>
                   <div class="slider_text_container">
                     <p>light down jacket m's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- Product -->
-              <div class="outer_product_container">
+              <a href="product.html" class="outer_product_container">
                 <div class="inner_product_container">
                   <div class="slider_image_container">
-                    <img
-                      src="Images/women black down jacket.jpg"
-                      alt="light down jacket w's"
-                      href="product.html"
-                      class="img_light_down_jacket_w"
-                    />
+                    <img src="Images/women-black-down-jacket.jpg" alt="light down jacket w's" class="img_light_down_jacket_w" />
                   </div>
                   <div class="slider_text_container">
                     <p>light down jacket w's</p>
                     <p class="slider_price">279$</p>
-                    <a href="product.html"></a>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <!-- Product -->
           </div>
         </section>
-        <section>
+        <div>
           <div class="category_card_container_index">
-            <div class="womens_category_card">
+            <a href="women.html" class="womens_category_card">
               <p>women's jackets</p>
-              <a href="women.html" class="category_card_link"></a>
-            </div>
-            <div class="mens_category_card">
+            </a>
+            <a href="men.html" class="mens_category_card">
               <p>men's jackets</p>
-              <a href="men.html" class="category_card_link"></a>
-            </div>
+            </a>
           </div>
-        </section>
+        </div>
       </section>
     </main>
     <footer class="footer footer_tab footer_mobile">
-      <section class="footer-top-btm-container">
-        <section class="footer_top_container footer_top_container_mobile">
+      <div class="footer-top-btm-container">
+        <div class="footer_top_container footer_top_container_mobile">
           <div class="contact_top_btn">
             <div class="footer-contact-information footer_contact_mobile">
               <a href="index.html"
-                ><img
-                  src="logo/Rainy Days Logo Footer Vector 2.svg"
-                  alt="Rainy Days footer logo"
-                  title="to homepage"
-                  class="footer_logo"
+                ><img src="logo/Rainy-Days-Logo-Footer-Vector-2.svg" alt="Rainy Days footer logo" title="to homepage" class="footer_logo"
               /></a>
               <a href="mailto:support@rainydays.com" title="send us an email">support@rainydays.com</a>
               <p>+47 815 493 00</p>
             </div>
             <div class="to-top-button-mobile">
               <span class="fa-stack fa-2x">
-                <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-                <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
+                <a href="#" title="to top of page button"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
+                <a href="#" title="to top of page button"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
               </span>
               <p>top</p>
             </div>
@@ -313,40 +254,34 @@
           <nav class="footer_nav">
             <ul>
               <li>
-                <a href="contact.html" title="to contact us">contact us</a>
+                <a href="contact.html" title="to contact page">contact us</a>
               </li>
               <li>
-                <a href="about.html" title="to about us">about us</a>
+                <a href="about.html" title="to about page">about us</a>
               </li>
             </ul>
           </nav>
           <div class="so_me_container">
             <p>follow us</p>
-            <a href="https://www.instagram.com" target="_blank" title=" to Instagram"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com" target="_blank" title=" to Facebook"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://www.youtube.com" target="_blank" title=" to Youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+            <a href="https://www.instagram.com" target="_blank" title=" to Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" title=" to Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank" title=" to Youtube"><i class="fa-brands fa-youtube"></i></a>
           </div>
           <div class="to-top-button">
             <span class="fa-stack fa-2x">
-              <a href="#"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
-              <a href="#" title="to top of page"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
+              <a href="#" title="to top of page button" role="button"><i class="fa-solid fa-circle fa-stack-2x"></i></a>
+              <a href="#" title="to top of page button" role="button"><i class="fa-solid fa-arrow-up fa-stack-1x"></i></a>
             </span>
             <p>top</p>
           </div>
-        </section>
-        <section class="footer_bottom_container footer_bottom_container_mobile">
+        </div>
+        <div class="footer_bottom_container footer_bottom_container_mobile">
           <hr class="horizontal_line" />
           <div class="copyright">
             <p>&copy; 2023 rainy days. all rights reserved</p>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
