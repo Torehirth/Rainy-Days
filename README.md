@@ -3,7 +3,8 @@
 
 # Rainy Days
 
-Course assignment in HTML and CSS - Creating online store for all weather jackets
+## Course assignment in HTML and CSS
+Creating online store for all weather jackets
 
 ## By Tore M. Hirth
 
