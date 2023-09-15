@@ -6,6 +6,6 @@
 ## Course assignment in HTML and CSS
 Creating online store for all weather jackets
 
-## By Tore M. Hirth
-
 Link to website (Netlify): https://tore-hirth-rainy-days.netlify.app/
+
+### By Tore M. Hirth
