@@ -19,7 +19,7 @@ Link to website: https://tore-hirth-rainy-days.netlify.app/
 ---
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/torehirth/">
+  <a href="https://github.com/Torehirth">
     <img src="https://skillicons.dev/icons?i=figma,git,github,vscode,html,css" />
   </a>
 </p>
