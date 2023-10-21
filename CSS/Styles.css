@@ -43,7 +43,7 @@
   /* color */
   --header-gradient-color: linear-gradient(to top, #38818a, #0550ba);
   --light-blue-color: #00838f;
-  --dark-blue-color: #395a79;
+  --dark-blue-color: #22577E;
   --orange-btn-color: #ed7a3c;
   --backup-color: #181a29;
   --light-grey-btn-color: #d9d9d9;
@@ -130,7 +130,7 @@ a:hover {
 /* ------------------------Header------------------------ */
 
 header {
-  background: var(--header-gradient-color);
+  background-color: var(--dark-blue-color);
   padding: 1.25em 0 1.5625em 0;
 }
 
