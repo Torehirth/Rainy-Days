@@ -1,5 +1,5 @@
 # Rainy Days 
-# [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app/index.html)
+
 
 ### This is my course assignment in HTML and CSS
 
@@ -16,7 +16,7 @@
 
 ---
 
-Link to website: https://tore-hirth-rainy-days.netlify.app/
+# [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app/index.html)
 
 ---
 
