@@ -43,7 +43,7 @@
   /* color */
   --header-gradient-color: linear-gradient(to top, #38818a, #0550ba);
   --light-blue-color: #00838f;
-  --dark-blue-color: #22577E;
+  --dark-blue-color: #22577e;
   --orange-btn-color: #ed7a3c;
   --backup-color: #181a29;
   --light-grey-btn-color: #d9d9d9;
@@ -81,6 +81,39 @@
 .mobile-image-slider,
 .prod-mob-hdline {
   display: none;
+}
+
+.success {
+  border: 1px solid green;
+  padding: 1rem;
+  color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.error {
+  border: 1px solid darkred;
+  padding: 1rem;
+  color: darkred;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid darkred;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ------------------------General header/text------------------------ */
