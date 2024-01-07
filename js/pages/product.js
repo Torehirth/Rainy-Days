@@ -1,24 +1,14 @@
 import { message } from "../components/message.js";
 import { URL } from "../data/constants.js";
 
-// const queryString = document.location.search;
-// const params = new URLSearchParams(queryString);
-// const id = params.get("id");
-
-// console.log(id);
-
 const productSliderContainer = document.querySelector(".product-image-container");
 
 async function displayJacket() {
-  // const specificUrl = `${URL}/${id}`;
-
   try {
     const response = await fetch(URL);
     const jacketsJson = await response.json();
 
-    // console.log(specificUrl);
-
-    // productSliderContainer.innerHTML = "";
+    productSliderContainer.innerHTML = "";
 
     displayJacketProduct(jacketsJson);
   } catch (error) {
