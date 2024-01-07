@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://kit.fontawesome.com/c4115ef720.js" crossorigin="anonymous"></script>
-    <link href="css/Styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="jacket, jackets, clothing, rainwear, shopping, buy, outdoor clothing, outdoor equipment" />
     <meta name="author" content="Tore M. Hirth" />
     <meta name="description" content="Rainy Days - Buy quality outdoor jackets that handles all kind of weather, made of sustainable materials" />
     <title>Rainy Days | Home</title>
+    <link href="css/Styles.css" rel="stylesheet" />
     <link rel="icon" type="image/icon-x" href="./favicon.ico" />
+    <script src="https://kit.fontawesome.com/c4115ef720.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/pages/index.js"></script>
   </head>
   <body>
     <header class="header_mobile header_tab">
@@ -30,8 +31,8 @@
           <div class="header_bottom_container">
             <div class="header_logo_container">
               <a href="index.html" class="header_logo header_logo_mobile"
-                ><img src="logo/Rainy-Days-vector-logo.svg" alt="Rainy Days logo" title="to home" class="header_logo header_logo_mobile"
-              /></a>
+                ><img src="./assets/logo/Rainy-Days-vector-logo.svg" alt="Rainy Days logo" title="to home" class="header_logo header_logo_mobile" />
+              </a>
             </div>
             <nav class="category_menu">
               <ul class="header_category_container Desktop_version">
@@ -116,109 +117,7 @@
           </div>
           <!-- Slider group/desktop container -->
           <div class="popular_products_slider">
-            <!-- Group 1 -->
-            <div class="slider_group">
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/main-product-1.jpg" alt="supreme alpine jacket m's" class="img_supreme_alpine_Jacket_m" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>supreme alpine jacket m's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/women-blue_green-alpine-jacket.jpg" alt="supreme alpine jacket w's" class="img_supreme_alpine_jacket_w" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>supreme alpine jacket w's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/men-red-down-jacket.jpg" alt="supreme down jacket m's" class="img_supreme_down_jacket_m" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>supreme down jacket m's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/women-orange-all-weather-jacket.jpg" alt="all weather jacket w's" class="img_all_weather_jacket_w" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>all weather jacket w's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Product -->
-            <div class="slider_group last_slider_group">
-              <!-- Group 2 -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/women-yellow-down-jacket.jpg" alt="supreme down jacket w's" class="img_supreme_down_jacket_w" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>supreme down jacket w's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/men-yellow-all-weather-jacket.jpg" alt="all weather jacket m's" class="img_all_weather_jacket_m" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>all weather jacket m's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/men-red-light-down-jacket.jpg" alt="light down jacket m's" class="img_light_down_jacket_m" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>light down jacket m's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-              <!-- Product -->
-              <a href="product.html" class="outer_product_container">
-                <div class="inner_product_container">
-                  <div class="slider_image_container">
-                    <img src="Images/women-black-down-jacket.jpg" alt="light down jacket w's" class="img_light_down_jacket_w" />
-                  </div>
-                  <div class="slider_text_container">
-                    <p>light down jacket w's</p>
-                    <p class="slider_price">279$</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Product -->
+            <div class="loader"></div>
           </div>
         </section>
         <div>
@@ -239,7 +138,7 @@
           <div class="contact_top_btn">
             <div class="footer-contact-information footer_contact_mobile">
               <a href="index.html"
-                ><img src="logo/Rainy-Days-Logo-Footer-Vector-2.svg" alt="Rainy Days footer logo" title="to homepage" class="footer_logo"
+                ><img src="./assets/logo/Rainy-Days-Logo-Footer-Vector-2.svg" alt="Rainy Days footer logo" title="to homepage" class="footer_logo"
               /></a>
               <a href="mailto:support@rainydays.com" title="send us an email">support@rainydays.com</a>
               <p>+47 815 493 00</p>
