@@ -1,25 +1,23 @@
 import { message } from "./message.js";
-import { URL, productSlider } from "../data/constants.js";
+import { URL, productSliderContainer } from "../data/constants.js";
 
 export async function fetchJackets() {
   try {
     const response = await fetch(URL);
     const jacketsJson = await response.json();
 
-    console.log(jacketsJson);
+    productSliderContainer.innerHTML = "";
 
-    productSlider.innerHTML = "";
-
-    renderJacketsIndex(jacketsJson);
+    displayJacketslider(jacketsJson);
   } catch (error) {
     console.log(error);
-    productSlider.innerHTML = message("error", "oops! a minor bug in the machinery..");
+    productSliderContainer.innerHTML = message("error", "oops! Something went wrong fetching the products..");
   }
 }
 
-function renderJacketsIndex(jacketsJson) {
+export function displayJacketslider(jacketsJson) {
   jacketsJson.forEach((jacket) => {
-    productSlider.innerHTML += `
+    productSliderContainer.innerHTML += `
     <div class="slider_group">
     <a href="product.html?id=${jacket.id}" class="outer_product_container">
     <div class="inner_product_container">

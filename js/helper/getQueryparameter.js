@@ -1,6 +1,6 @@
-export function getQueryParameter() {
+export function getQueryParameter(param) {
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
-  const id = params.get(id);
-  return id;
+  const value = params.get(param);
+  return value;
 }
