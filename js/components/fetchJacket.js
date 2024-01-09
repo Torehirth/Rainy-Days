@@ -25,7 +25,7 @@ export async function fetchJacket() {
 
 export const productTitleContainer = document.querySelector(".product_choises_headline");
 export const productDescriptionContainer = document.querySelector(".product_choises_list");
-export const productSizeContainer = document.querySelector(".sizes");
+export const productSizeContainer = document.querySelector(".size_option_container");
 
 function displayProductImage(jacketJson) {
   imageContainer.innerHTML = `
@@ -45,7 +45,12 @@ function displayProductDescription(jacketJson) {
 function displayProductSizes(jacketJson) {
   for (const size of jacketJson.sizes) {
     productSizeContainer.innerHTML += `
-                              <label class="size-button-container">${size}</label>
+                              <div class="size_option_container" id="size${size}" for="size_${size}">
+                                <input type="radio" id="size_${size}" name="sizes" hidden /> 
+                                <div class="sizes">
+                                  <label class="size-button-container" id="size${size}" for="size_${size}">${size}</label>
+                                </div>
+                              </div>
                              `;
   }
 }
