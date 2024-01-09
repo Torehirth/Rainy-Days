@@ -15,6 +15,8 @@ export async function fetchJacket() {
     displayProductTitle(jacketJson);
     displayProductDescription(jacketJson);
     displayProductSizes(jacketJson);
+    displayProductPrice(jacketJson);
+    displayProductDetails(jacketJson);
   } catch (error) {
     console.log(error);
     imageContainer.innerHTML = message("error", "oops! Something went wrong fetching the jacket..");
@@ -26,6 +28,8 @@ export async function fetchJacket() {
 export const productTitleContainer = document.querySelector(".product_choises_headline");
 export const productDescriptionContainer = document.querySelector(".product_choises_list");
 export const productSizeContainer = document.querySelector(".size_option_container");
+export const productPriceContainer = document.querySelector(".price-container");
+export const productProductDetailsContainer = document.querySelector(".product_details");
 
 function displayProductImage(jacketJson) {
   imageContainer.innerHTML = `
@@ -55,12 +59,12 @@ function displayProductSizes(jacketJson) {
   }
 }
 function displayProductPrice(jacketJson) {
-  imageContainer.innerHTML = `
-                              <div class="product-image-container" src="${jacketJson.image}" ></div>
+  productPriceContainer.innerHTML = `
+                              <p>$${jacketJson.price}</p>
                              `;
 }
-function displayProduct(jacketJson) {
-  imageContainer.innerHTML = `
-                              <div class="product-image-container" src="${jacketJson.image}" ></div>
+function displayProductDetails(jacketJson) {
+  productProductDetailsContainer.innerHTML = `
+                              <p class="product_details">${jacketJson.description}</p>
                              `;
 }
