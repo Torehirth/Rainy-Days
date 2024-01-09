@@ -1,4 +1,12 @@
-import { URL, imageContainer } from "../data/constants.js";
+import {
+  URL,
+  imageContainer,
+  productTitleContainer,
+  productDescriptionContainer,
+  productSizeContainer,
+  productPriceContainer,
+  productProductDetailsContainer,
+} from "../data/constants.js";
 import { message } from "./message.js";
 import { getQueryParameter } from "../helper/getQueryparameter.js";
 
@@ -17,6 +25,7 @@ export async function fetchJacket() {
     displayProductSizes(jacketJson);
     displayProductPrice(jacketJson);
     displayProductDetails(jacketJson);
+    // getKeywords(jacketJson);
   } catch (error) {
     console.log(error);
     imageContainer.innerHTML = message("error", "oops! Something went wrong fetching the jacket..");
@@ -24,12 +33,6 @@ export async function fetchJacket() {
 }
 
 // render HTML
-
-export const productTitleContainer = document.querySelector(".product_choises_headline");
-export const productDescriptionContainer = document.querySelector(".product_choises_list");
-export const productSizeContainer = document.querySelector(".size_option_container");
-export const productPriceContainer = document.querySelector(".price-container");
-export const productProductDetailsContainer = document.querySelector(".product_details");
 
 function displayProductImage(jacketJson) {
   imageContainer.innerHTML = `
@@ -46,6 +49,7 @@ function displayProductDescription(jacketJson) {
                               <p>${jacketJson.description}</p>
                              `;
 }
+
 function displayProductSizes(jacketJson) {
   for (const size of jacketJson.sizes) {
     productSizeContainer.innerHTML += `
@@ -58,6 +62,7 @@ function displayProductSizes(jacketJson) {
                              `;
   }
 }
+
 function displayProductPrice(jacketJson) {
   productPriceContainer.innerHTML = `
                               <p>$${jacketJson.price}</p>
@@ -68,3 +73,31 @@ function displayProductDetails(jacketJson) {
                               <p class="product_details">${jacketJson.description}</p>
                              `;
 }
+
+// ----------------------
+
+// function getKeywords(jacketJson) {
+//   for (const keyWord of jacketJson.description) {
+//     const productDescription = keyWord.description;
+//     const words = productDescription.toLowerCase().split(/\W+/);
+//     const stopWords = [
+//       "breathable",
+//       "sustainable",
+//       "durable",
+//       "lightweight",
+//       "waterproof",
+//       "hiking",
+//       "stylish",
+//       "water-repellent",
+//       "outdoor adventure",
+//       "outdoor activities",
+//       "travel",
+//       "packabel",
+//       "relaxed fit",
+//     ];
+
+//     const keyWords = words.filter((word) => !stopWords.includes(word));
+
+//     console.log(keyWords);
+//   }
+// }
