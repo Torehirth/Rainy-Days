@@ -1,4 +1,4 @@
-import { fetchJackets } from "../components/productSlider.js";
+import { fetchJackets } from "../API/fetchJackets.js";
 // import { fetchJacket } from "../components/fetchJacket.js";
 
 fetchJackets();
