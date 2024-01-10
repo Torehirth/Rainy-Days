@@ -5,7 +5,7 @@ import {
   productDescriptionContainer,
   productSizeContainer,
   productPriceContainer,
-  productProductDetailsContainer,
+  productProductDetailsContainer as productDetailsContainer,
 } from "../data/constants.js";
 import { message } from "./message.js";
 import { getQueryParameter } from "../helper/getQueryparameter.js";
@@ -19,13 +19,13 @@ export async function fetchJacket() {
     const response = await fetch(jacketUrl);
     const jacketJson = await response.json();
 
-    displayProductImage(jacketJson);
-    displayProductTitle(jacketJson);
-    displayProductDescription(jacketJson);
-    displayProductSizes(jacketJson);
-    displayProductPrice(jacketJson);
-    displayProductDetails(jacketJson);
-    // getKeywords(jacketJson);
+    displayProductImage(jacketJson, imageContainer);
+    displayProductTitle(jacketJson, productTitleContainer);
+    displayProductDescription(jacketJson, productDescriptionContainer);
+    displayProductSizes(jacketJson, productSizeContainer);
+    displayProductPrice(jacketJson, productPriceContainer);
+    displayProductDetails(jacketJson, productDetailsContainer);
+    getKeywords(jacketJson, wordContainer);
   } catch (error) {
     console.log(error);
     imageContainer.innerHTML = message("error", "oops! Something went wrong fetching the jacket..");
@@ -34,25 +34,25 @@ export async function fetchJacket() {
 
 // render HTML
 
-function displayProductImage(jacketJson) {
-  imageContainer.innerHTML = `
-                              <img class="product-image-container" src="${jacketJson.image}" ></img>
+function displayProductImage(JSON, container) {
+  container.innerHTML = `
+                              <img class="product-image-container" src="${JSON.image}" alt="${JSON.title}" ></img>
                              `;
 }
-function displayProductTitle(jacketJson) {
-  productTitleContainer.innerHTML = `
-                              <h1>${jacketJson.title}</h1>
+function displayProductTitle(JSON, container) {
+  container.innerHTML = `
+                              <h1>${JSON.title}</h1>
                              `;
 }
-function displayProductDescription(jacketJson) {
-  productDescriptionContainer.innerHTML = `
-                              <p>${jacketJson.description}</p>
+function displayProductDescription(JSON, container) {
+  container.innerHTML = `
+                              <p>${JSON.description}</p>
                              `;
 }
 
-function displayProductSizes(jacketJson) {
-  for (const size of jacketJson.sizes) {
-    productSizeContainer.innerHTML += `
+function displayProductSizes(JSON, container) {
+  for (const size of JSON.sizes) {
+    container.innerHTML += `
                               <div class="size_option_container" id="size${size}" for="size_${size}">
                                 <input type="radio" id="size_${size}" name="sizes" hidden /> 
                                 <div class="sizes">
@@ -63,41 +63,51 @@ function displayProductSizes(jacketJson) {
   }
 }
 
-function displayProductPrice(jacketJson) {
-  productPriceContainer.innerHTML = `
-                              <p>$${jacketJson.price}</p>
+function displayProductPrice(JSON, container) {
+  container.innerHTML = `
+                              <p>$${JSON.price}</p>
                              `;
 }
-function displayProductDetails(jacketJson) {
-  productProductDetailsContainer.innerHTML = `
-                              <p class="product_details">${jacketJson.description}</p>
+function displayProductDetails(JSON, container) {
+  container.innerHTML = `
+                              <p class="product_details">${JSON.description}</p>
                              `;
 }
 
 // ----------------------
 
-// function getKeywords(jacketJson) {
-//   for (const keyWord of jacketJson.description) {
-//     const productDescription = keyWord.description;
-//     const words = productDescription.toLowerCase().split(/\W+/);
-//     const stopWords = [
-//       "breathable",
-//       "sustainable",
-//       "durable",
-//       "lightweight",
-//       "waterproof",
-//       "hiking",
-//       "stylish",
-//       "water-repellent",
-//       "outdoor adventure",
-//       "outdoor activities",
-//       "travel",
-//       "packabel",
-//       "relaxed fit",
-//     ];
+const wordContainer = document.querySelector(".product_details_list");
 
-//     const keyWords = words.filter((word) => !stopWords.includes(word));
+const desiredWords = [
+  "breathable",
+  "sustainable",
+  "durable",
+  "lightweight",
+  "waterproof",
+  "hiking",
+  "stylish",
+  "water-repellent",
+  "outdoor adventure",
+  "outdoor activities",
+  "travel",
+  "packable",
+  "relaxed fit",
+];
 
-//     console.log(keyWords);
-//   }
-// }
+function getKeywords(JSON, container) {
+  const text = JSON.description;
+  const words = text.split(" ");
+  const filteredWords = words.filter((word) => desiredWords.includes(word));
+
+  console.log(filteredWords);
+
+  for (const word of filteredWords) {
+    container.innerHTML += `
+                            <div class="product_details_list">
+                              <ul>
+                                <li>${word}</li>
+                              </ul>
+                            </div>
+                           `;
+  }
+}
