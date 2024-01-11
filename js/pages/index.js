@@ -1,3 +1,3 @@
 // Popular product slider
-import { fetchJackets } from "../components/productSlider.js";
+import { fetchJackets } from "../api/fetchJackets.js";
 fetchJackets();

@@ -1,5 +1,5 @@
-import { fetchJackets } from "../API/fetchJackets.js";
-import { fetchJacket } from "../API/fetchJacket.js";
+import { fetchJackets } from "../api/fetchJackets.js";
+import { fetchJacket } from "../api/fetchJacket.js";
 import { desiredWords } from "../data/constants.js";
 
 fetchJackets();

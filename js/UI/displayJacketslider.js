@@ -1,5 +1,5 @@
-export function displayJacketslider(JSON, container) {
-  JSON.forEach((jacket) => {
+export function displayJacketSlider(jackets, container) {
+  jackets.forEach((jacket) => {
     container.innerHTML += `
     <div class="slider_group">
     <a href="product.html?id=${jacket.id}" class="outer_product_container">

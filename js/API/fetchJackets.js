@@ -1,6 +1,6 @@
 import { message } from "../components/message.js";
 import { URL, productSliderContainer } from "../data/constants.js";
-import { displayJacketslider } from "../UI/displayJacketslider.js";
+import { displayJacketSlider } from "../ui/displayJacketslider.js";
 
 export async function fetchJackets() {
   try {
@@ -9,7 +9,7 @@ export async function fetchJackets() {
 
     productSliderContainer.innerHTML = "";
 
-    displayJacketslider(jacketsJson, productSliderContainer);
+    displayJacketSlider(jacketsJson, productSliderContainer);
   } catch (error) {
     console.log(error);
     productSliderContainer.innerHTML = message("error", "oops! Something went wrong fetching the products..");
