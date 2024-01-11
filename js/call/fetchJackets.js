@@ -1,6 +1,6 @@
 import { message } from "../components/message.js";
 import { URL, productSliderContainer } from "../data/constants.js";
-import { displayJacketSlider } from "../ui/displayJacketslider.js";
+import { displayJacketSlider } from "../ui/displayJacketSlider.js";
 
 export async function fetchJackets() {
   try {

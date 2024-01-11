@@ -11,7 +11,7 @@ import {
 } from "../data/constants.js";
 
 import { message } from "../components/message.js";
-import { getQueryParameter } from "../helper/getQueryparameter.js";
+import { getQueryParameter } from "../helper/getQueryParameter.js";
 import {
   displayProductImage,
   displayProductTitle,
