@@ -1011,7 +1011,7 @@ footer .fa-arrow-up {
   text-align: left;
 }
 
-.product_choises_list ul {
+/* .product_choises_list ul {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -1024,12 +1024,12 @@ footer .fa-arrow-up {
 
 .product_choises_list p {
   text-transform: none;
-}
+} */
 
 .product_choises_list p,
 .product_choises_size_container p,
 .size_option_button_container p {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .product_choises_size_container {
@@ -1159,17 +1159,14 @@ footer .fa-arrow-up {
   gap: 30px;
 }
 
-.product_detail_container p {
-  font-size: 1rem;
-  letter-spacing: 1.5px;
+.product_details,
+.product_details_list {
+  font-size: 1.125rem;
+  letter-spacing: 1.25px;
   line-height: 1.4;
 }
 
-.product_detail_list_container ul {
-  padding-left: 2em;
-}
-
-.product_detail_list_container li {
+.product_details_list li {
   list-style: disc;
 }
 

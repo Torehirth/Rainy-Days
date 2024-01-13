@@ -2,7 +2,7 @@ export function displayJacketSlider(jackets, container) {
   jackets.forEach((jacket) => {
     container.innerHTML += `
     <div class="slider_group">
-    <a href="product.html?id=${jacket.id}" class="outer_product_container">
+    <a href="../pages/product.html?id=${jacket.id}" class="outer_product_container">
     <div class="inner_product_container">
       <div class="slider_image_container">
         <img src="${jacket.image}" alt="${jacket.title}" class="img_supreme_alpine_Jacket_m" />

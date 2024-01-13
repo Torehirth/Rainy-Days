@@ -12,15 +12,17 @@ import {
 
 import { message } from "../components/message.js";
 import { getQueryParameter } from "../helper/getQueryParameter.js";
-import {
-  displayProductImage,
-  displayProductTitle,
-  displayProductDescription,
-  displayProductSizes,
-  displayProductPrice,
-  displayProductDetails,
-  getKeywords,
-} from "../pages/product.js";
+import // displayProductImage,
+// displayProductTitle,
+// displayProductDescription,
+// displayProductSizes,
+// displayProductPrice,
+// displayProductDetails,
+// getKeywords,
+"../pages/product.js";
+
+import { displayProductInformation } from "../ui/displayproductinformation.js";
+import { getKeywords } from "../helper/getkeywords.js";
 
 // fetching specific jacket and calling functions to render HTML
 export async function fetchJacket() {
@@ -30,13 +32,13 @@ export async function fetchJacket() {
     const response = await fetch(jacketUrl);
     const jacketJson = await response.json();
 
-    //calling functions to render HTML
-    displayProductImage(jacketJson, imageContainer);
-    displayProductTitle(jacketJson, productTitleContainer);
-    displayProductDescription(jacketJson, productDescriptionContainer);
-    displayProductSizes(jacketJson, productSizeContainer);
-    displayProductPrice(jacketJson, productPriceContainer);
-    displayProductDetails(jacketJson, productDetailsContainer);
+    displayProductInformation("image", jacketJson, imageContainer);
+    displayProductInformation("title", jacketJson, productTitleContainer);
+    displayProductInformation("description", jacketJson, productDescriptionContainer);
+    displayProductInformation("sizes", jacketJson, productSizeContainer);
+    displayProductInformation("price", jacketJson, productPriceContainer);
+    displayProductInformation("details", jacketJson, productDetailsContainer);
+    displayProductInformation("details", jacketJson, productDetailsContainer);
     getKeywords(jacketJson, wordContainer);
   } catch (error) {
     console.log(error);
