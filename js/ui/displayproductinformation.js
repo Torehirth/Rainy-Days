@@ -1,3 +1,5 @@
+import { message } from "../components/message.js";
+
 export function displayProductInformation(type, jacket, container) {
   switch (type) {
     case "image":
@@ -38,6 +40,6 @@ export function displayProductInformation(type, jacket, container) {
                             `;
       break;
     default:
-      console.error(`Unknown type: ${type}`);
+      container.innerHTML = message("error", `Cant't show the ${type} at the moment..`);
   }
 }

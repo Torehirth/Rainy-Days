@@ -11,7 +11,6 @@ export async function fetchJackets() {
 
     displayJacketSlider(jacketsJson, productSliderContainer);
   } catch (error) {
-    console.log(error);
-    productSliderContainer.innerHTML = message("error", "oops! Something went wrong fetching the products..");
+    productSliderContainer.innerHTML = message("error", "Something went wrong fetching the jackets.. We'll fix it shortly!");
   }
 }

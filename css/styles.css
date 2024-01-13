@@ -635,7 +635,9 @@ footer .fa-arrow-up {
 /* --------------------Men's & Women's Product pages------------------ */
 
 .jacket_page_content {
-  margin-inline: 13.125em 13.125em;
+  margin-inline: auto;
+  max-width: 750px;
+  padding-bottom: 5em;
 }
 
 .main_headline {
@@ -650,7 +652,8 @@ footer .fa-arrow-up {
 
 .filter_menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
+  padding-bottom: 1.875em;
 }
 
 .filter_menu select {
@@ -663,14 +666,10 @@ footer .fa-arrow-up {
   letter-spacing: 1px;
   cursor: pointer;
 }
-
-.product_card_list {
+.jackets-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.875em;
-  padding-bottom: 6.25em;
-  padding-top: 1.875em;
+  gap: 3em 1em;
 }
 
 /* ------------------------About Us ------------------------*/
@@ -1835,13 +1834,6 @@ footer .fa-arrow-up {
     padding-top: 3.125em;
   }
 
-  /* ---------------Men's and women's jacket pages--------------- */
-
-  .jacket_page_content_tab {
-    display: flex;
-    margin: 0;
-  }
-
   /* --------------------About Us--------------------- */
 
   .top_image_container {
@@ -1918,10 +1910,6 @@ footer .fa-arrow-up {
   .footer_top_container,
   .to-top-button,
   .header_logo,
-  .jacket_page_content,
-  .filter_card_container,
-  .filter_menu,
-  .product_card_list,
   .footer_bottom_container,
   .product_choises_headline,
   .product_choises_list {
@@ -2072,28 +2060,21 @@ footer .fa-arrow-up {
 
   /* -------------Men's and women's jacket pages------- */
 
-  .jacket_page_content_mobile {
-    display: flex;
-    margin: 0;
+  .jacket_page_content {
+    max-width: 300px;
+    padding-bottom: 0em;
   }
 
-  .filter_card_container_mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .filter_menu_mobile {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-
-  .product_card_list_mobile {
-    display: flex;
-    flex-wrap: wrap;
+  .filter_menu {
     justify-content: center;
-    gap: 1.875em;
+  }
+
+  .product_card_list {
     padding-bottom: 4.375em;
+  }
+
+  .jackets-container {
+    gap: 1em;
   }
 
   /* ------------About Us---------- */

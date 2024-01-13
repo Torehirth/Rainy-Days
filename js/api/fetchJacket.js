@@ -42,6 +42,7 @@ export async function fetchJacket() {
     getKeywords(jacketJson, wordContainer);
   } catch (error) {
     console.log(error);
-    errorContainer.innerHTML = message("error", "oops! Something went wrong fetching the jacket..");
+    errorContainer.innerHTML = message("error", "Something went wrong fetching the jacket.. We'll fix it shortly!");
   }
 }
+  
