@@ -13,10 +13,10 @@
 - Follow WCAG standards.
 - Semantic and neat HTML.
 - CSS must follow DRY principles.
-- Clean Javascript
-- Fetch jackets through API
+- Clean Javascript.
+- Fetch jackets through API.
 
-Noroff API documentation: [Noroff API documentation](https://docs.noroff.dev/)
+API docs: [Noroff API documentation](https://docs.noroff.dev/)
 
 ---
 
