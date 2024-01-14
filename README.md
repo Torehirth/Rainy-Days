@@ -1,11 +1,10 @@
-# Rainy Days 
+# Rainy Days
 
 ## [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app/index.html)
 
 ### This is my course assignment in HTML and CSS
 
 ![Screenshot 2023-09-15 135048](https://github.com/Torehirth/Rainy-Days/assets/116200852/eb2015f3-a014-4e98-9a6a-617c123a4b0f)
-
 
 ### Requirements:
 
@@ -14,7 +13,11 @@
 - Follow WCAG standards.
 - Semantic and neat HTML.
 - CSS must follow DRY principles.
+- Clean Javascript
+- Fetch jackets through API
+
+Noroff API documentation: [Noroff API documentation](https://docs.noroff.dev/)
 
 ---
-<p align="center" ><img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&width=750&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=git%2CGit%2C40F8FF%3Bgithub%2CGitHub%2C40F8FF%3Bvisualstudiocode%2CVS+Code%2C40F8FF%3Bfigma%2CFigma%2C40F8FF%3Bhtml5%2CHTML%2C40F8FF%3Bcss3%2CCSS%2C40F8FF%3Bjavascript%2CJavaScript%2C40F8FF%3B" alt="My Tech Stack" /> </p>
 
+<p align="center" ><img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&width=750&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=git%2CGit%2C40F8FF%3Bgithub%2CGitHub%2C40F8FF%3Bvisualstudiocode%2CVS+Code%2C40F8FF%3Bfigma%2CFigma%2C40F8FF%3Bhtml5%2CHTML%2C40F8FF%3Bcss3%2CCSS%2C40F8FF%3Bjavascript%2CJavaScript%2C40F8FF%3B" alt="My Tech Stack" /> </p>
