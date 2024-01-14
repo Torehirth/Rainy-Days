@@ -1,6 +1,6 @@
 import {
   URL,
-  errorContainer,
+  productSliderContainer,
   imageContainer,
   productTitleContainer,
   productDescriptionContainer,
@@ -42,7 +42,6 @@ export async function fetchJacket() {
     getKeywords(jacketJson, wordContainer);
   } catch (error) {
     console.log(error);
-    errorContainer.innerHTML = message("error", "Something went wrong fetching the jacket.. We'll fix it shortly!");
+    productSliderContainer.innerHTML = message("error", "Something went wrong fetching the jacket.. We'll fix it shortly!");
   }
 }
-  

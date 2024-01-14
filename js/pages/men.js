@@ -1,4 +1,4 @@
-import { mensErrorContainer, mensContainer } from "../data/constants.js";
+import { mensContainer } from "../data/constants.js";
 import { fetchJackets } from "../api/fetchJackets.js";
 
 // import { message } from "../components/message.js";
@@ -19,4 +19,4 @@ import { fetchJackets } from "../api/fetchJackets.js";
 //     errorContainer.innerHTML = message("error", "Sorry! an error occurred when fetching the jackets");
 //   }
 // }
-fetchJackets(mensContainer, mensErrorContainer);
+fetchJackets(mensContainer);

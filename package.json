@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "![Screenshot 2023-09-15 135048](https://github.com/Torehirth/Rainy-Days/assets/116200852/eb2015f3-a014-4e98-9a6a-617c123a4b0f)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
