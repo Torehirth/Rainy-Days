@@ -1,3 +1,6 @@
 // Popular product slider
 import { fetchJackets } from "../api/fetchJackets.js";
-fetchJackets();
+import { displayJacketSlider } from "../ui/displayJacketSlider.js";
+import { productSliderContainer } from "../data/constants.js";
+
+fetchJackets(displayJacketSlider, productSliderContainer);

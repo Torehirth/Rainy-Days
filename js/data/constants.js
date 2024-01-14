@@ -31,4 +31,7 @@ export const desiredWords = [
   "relaxed fit",
 ];
 
-// -----------------------------
+// ------------catergory pages-----------------
+
+export const mensErrorContainer = document.querySelector(".jacket_page_content");
+export const mensContainer = document.querySelector(".jackets-container");
