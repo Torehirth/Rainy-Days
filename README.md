@@ -4,7 +4,7 @@
 
 ### Course assignment in HTML and CSS, now implemented with Javascript
 
-![Screenshot 2023-09-15 135048](https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1)
+<p align="center"><img src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of mountain with several mountains in the horizon" /></p>
 
 ### Requirements:
 
