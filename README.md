@@ -2,7 +2,7 @@
 
 ### To website: [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app/index.html)
 
-### course assignment in HTML and CSS, now implemented with Javascript 
+### Course assignment in HTML and CSS, now implemented with Javascript 
 
 ![Screenshot 2023-09-15 135048](https://github.com/Torehirth/Rainy-Days/assets/116200852/eb2015f3-a014-4e98-9a6a-617c123a4b0f)
 
