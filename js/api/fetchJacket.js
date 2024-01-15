@@ -12,14 +12,6 @@ import {
 
 import { message } from "../components/message.js";
 import { getQueryParameter } from "../helper/getQueryParameter.js";
-import // displayProductImage,
-// displayProductTitle,
-// displayProductDescription,
-// displayProductSizes,
-// displayProductPrice,
-// displayProductDetails,
-// getKeywords,
-"../pages/product.js";
 
 import { displayProductInformation } from "../ui/displayproductinformation.js";
 import { getKeywords } from "../helper/getkeywords.js";
@@ -30,16 +22,16 @@ export async function fetchJacket() {
     //fetching each jackets id by calling the getQueryParameter function inside the template literal to get the object's ID in the API call.
     const jacketUrl = `${URL}/${getQueryParameter("id")}`;
     const response = await fetch(jacketUrl);
-    const jacketJson = await response.json();
+    const jacket = await response.json();
 
-    displayProductInformation("image", jacketJson, imageContainer);
-    displayProductInformation("title", jacketJson, productTitleContainer);
-    displayProductInformation("description", jacketJson, productDescriptionContainer);
-    displayProductInformation("sizes", jacketJson, productSizeContainer);
-    displayProductInformation("price", jacketJson, productPriceContainer);
-    displayProductInformation("details", jacketJson, productDetailsContainer);
-    displayProductInformation("details", jacketJson, productDetailsContainer);
-    getKeywords(jacketJson, wordContainer);
+    displayProductInformation("image", jacket, imageContainer);
+    displayProductInformation("title", jacket, productTitleContainer);
+    displayProductInformation("description", jacket, productDescriptionContainer);
+    displayProductInformation("sizes", jacket, productSizeContainer);
+    displayProductInformation("price", jacket, productPriceContainer);
+    displayProductInformation("details", jacket, productDetailsContainer);
+    displayProductInformation("details", jacket, productDetailsContainer);
+    getKeywords(jacket, wordContainer);
   } catch (error) {
     console.log(error);
     productSliderContainer.innerHTML = message("error", "Something went wrong fetching the jacket.. We'll fix it shortly!");

@@ -1,6 +1,6 @@
 export async function displayJacketsByGender(gender, jackets, container) {
   await jackets.forEach(async (jacket) => {
-    if (jacket.gender.toLowerCase() === gender) {
+    if (await jacket.gender.toLowerCase() === gender) {
       container.innerHTML += `
       <div class="product_card_list">
       <a href="./product.html?id=${jacket.id}" class="outer_product_container">

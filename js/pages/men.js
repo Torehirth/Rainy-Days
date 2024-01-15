@@ -1,12 +1,11 @@
 import { mensContainer } from "../data/constants.js";
 import { fetchJackets } from "../api/fetchJackets.js";
-
 // import { message } from "../components/message.js";
 
 // const mensErrorContainer = document.querySelector(".jacket_page_content");
 // const mensContainer = document.querySelector(".jackets-container");
 
-// async function FetchMensJackets(container, errorContainer) {
+// async function FetchCategoryJackets(container, errorContainer) {
 //   try {
 //     const response = await fetch(URL);
 //     const mensJackets = await response.json();
