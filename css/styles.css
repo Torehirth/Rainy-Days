@@ -103,8 +103,6 @@
 }
 
 .loader {
-  /* position: absolute;
-  left: 30%; */
   margin-inline: auto;
   max-width: 77.5em;
   border: 10px solid #f3f3f3;
@@ -112,7 +110,6 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  /* margin-left: 100%; */
   animation: spin 1.5s linear infinite;
 }
 

@@ -11,7 +11,7 @@ export async function fetchJackets(container) {
     container.innerHTML = "";
 
     console.log("Calling displayJacketSlider");
-    displayJacketSlider(jacketsJson, productSliderContainer);
+    await displayJacketSlider(jacketsJson, productSliderContainer);
 
     console.log("Calling displayJacketsByGender");
     await displayJacketsByGender("male", jacketsJson, mensContainer);
