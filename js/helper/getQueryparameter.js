@@ -4,3 +4,4 @@ export function getQueryParameter(param) {
   const value = params.get(param);
   return value;
 }
+

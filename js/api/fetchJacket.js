@@ -32,6 +32,8 @@ export async function fetchJacket() {
     const response = await fetch(jacketUrl);
     const jacketJson = await response.json();
 
+    console.log();
+
     displayProductInformation("image", jacketJson, imageContainer);
     displayProductInformation("title", jacketJson, productTitleContainer);
     displayProductInformation("description", jacketJson, productDescriptionContainer);
