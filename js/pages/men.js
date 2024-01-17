@@ -1,4 +1,4 @@
-import { mensContainer } from "../data/constants.js";
-import { handleJacketsByGender } from "../handlers/handleJacketsByGender.js";
+import { menContainer } from "../data/constants.js";
+import { handleMenJackets } from "../handlers/handleMenJackets.js";
 
-handleJacketsByGender(mensContainer);
+handleMenJackets(menContainer);

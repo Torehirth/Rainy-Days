@@ -7,14 +7,11 @@ export async function handleJacketsSlider(container) {
   try {
     const jackets = await fetchJackets(container);
 
-    console.log(jackets);
-
     container.innerHTML = "";
 
-    console.log("Calling displayJacketSlider");
     displayJacketsSlider(jackets, productSliderContainer);
   } catch (error) {
-    console.log(error);
+    console.error(error);
     container.innerHTML = message("error", "Something went wrong displaying the jackets.. We'll fix it shortly!");
   }
 }

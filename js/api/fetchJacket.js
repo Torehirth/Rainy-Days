@@ -18,10 +18,17 @@ import { getKeywords } from "../helper/getkeywords.js";
 
 // fetching specific jacket and calling functions to render HTML
 export async function fetchJacket() {
+  const id = getQueryParameter("id");
+
+  if (!id) {
+    document.location.href = "/";
+  }
+
+  const jacketUrl = `${URL}/${id}`;
+
   try {
-    //fetching each jackets id by calling the getQueryParameter function inside the template literal to get the object's ID in the API call.
-    const jacketUrl = `${URL}/${getQueryParameter("id")}`;
     const response = await fetch(jacketUrl);
+
     const jacket = await response.json();
 
     displayProductInformation("image", jacket, imageContainer);
@@ -33,7 +40,7 @@ export async function fetchJacket() {
     displayProductInformation("details", jacket, productDetailsContainer);
     getKeywords(jacket, wordContainer);
   } catch (error) {
-    console.log(error);
+    console.error(error);
     productSliderContainer.innerHTML = message("error", "Something went wrong fetching the jacket.. We'll fix it shortly!");
   }
 }

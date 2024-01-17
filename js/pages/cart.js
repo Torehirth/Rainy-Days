@@ -1,4 +1,4 @@
-import { fetchJackets } from "../api/fetchJackets.js";
 import { productSliderContainer } from "../data/constants.js";
+import { handleJacketsSlider } from "../handlers/handleJacketsSlider.js";
 
-fetchJackets(productSliderContainer);
+handleJacketsSlider(productSliderContainer);

@@ -15,6 +15,8 @@ export const productDetailsContainer = document.querySelector(".product_details"
 export const wordContainer = document.querySelector(".product_details_list");
 
 export const desiredWords = [
+  "men's",
+  "women's",
   "breathable",
   "sustainable",
   "durable",
@@ -32,5 +34,5 @@ export const desiredWords = [
 
 // ------------category pages-----------------
 
-export const mensContainer = document.querySelector("#mens-container");
-export const womensContainer = document.querySelector("#womens-container");
+export const menContainer = document.querySelector("#men-container");
+export const womenContainer = document.querySelector("#women-container");
