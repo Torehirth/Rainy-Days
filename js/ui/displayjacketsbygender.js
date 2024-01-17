@@ -1,6 +1,11 @@
-export async function displayJacketsByGender(gender, jackets, container) {
-  await jackets.forEach(async (jacket) => {
-    if (await jacket.gender.toLowerCase() === gender) {
+export function displayJacketsByGender(gender, jackets, container) {
+  // if (!container) {
+  //   console.warn("Container is null or undefined");
+  //   document.location.href = "/";
+  //   return;
+  // }
+  jackets.forEach((jacket) => {
+    if (jacket.gender.toLowerCase() === gender) {
       container.innerHTML += `
       <div class="product_card_list">
       <a href="./product.html?id=${jacket.id}" class="outer_product_container">

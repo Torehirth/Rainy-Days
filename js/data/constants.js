@@ -30,7 +30,7 @@ export const desiredWords = [
   "relaxed fit",
 ];
 
-// ------------catergory pages-----------------
+// ------------category pages-----------------
 
 export const mensContainer = document.querySelector("#mens-container");
 export const womensContainer = document.querySelector("#womens-container");
