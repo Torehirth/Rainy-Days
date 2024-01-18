@@ -8,9 +8,9 @@ import {
   wordContainer,
 } from "../data/constants.js";
 
+import { message } from "../components/message.js";
 import { fetchJacket } from "../api/fetchJacket.js";
 import { displayJacketInformation } from "../ui/displayJacketInformation.js";
-import { getKeywords } from "../helper/getkeywords.js";
 
 export async function handleJacketInformation(container) {
   const jacket = await fetchJacket();
@@ -24,10 +24,9 @@ export async function handleJacketInformation(container) {
     displayJacketInformation("price", jacket, productPriceContainer);
     displayJacketInformation("details", jacket, productDetailsContainer);
     displayJacketInformation("details", jacket, productDetailsContainer);
-    getKeywords(jacket, wordContainer);
+    // displayWords(wordContainer);
   } catch (error) {
-    console.log(error);
-
     container.innerHTML = message("error", "Something went wrong fetching the jacket.. Try again shortly!");
   }
 }
+
