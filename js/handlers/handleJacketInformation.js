@@ -24,9 +24,7 @@ export async function handleJacketInformation(container) {
     displayJacketInformation("price", jacket, productPriceContainer);
     displayJacketInformation("details", jacket, productDetailsContainer);
     displayJacketInformation("details", jacket, productDetailsContainer);
-    // displayWords(wordContainer);
   } catch (error) {
     container.innerHTML = message("error", "Something went wrong fetching the jacket.. Try again shortly!");
   }
 }
-

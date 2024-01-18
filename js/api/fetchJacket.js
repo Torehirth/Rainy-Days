@@ -14,7 +14,6 @@ export async function fetchJacket() {
   const jacketUrl = `${URL}/${id}`;
   try {
     const response = await fetch(jacketUrl);
-    console.log(response.status);
 
     if (!response.ok) {
       throw new Error("there was an error fetching the jackets");
