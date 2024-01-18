@@ -1,6 +1,7 @@
 import { message } from "../components/message.js";
 
-export function displayProductInformation(type, jacket, container) {
+// using a switch statement to render the HTML.
+export function displayJacketInformation(type, jacket, container) {
   switch (type) {
     case "image":
       container.innerHTML = `

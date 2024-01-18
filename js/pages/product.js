@@ -1,6 +1,6 @@
 import { handleJacketsSlider } from "../handlers/handleJacketsSlider.js";
-import { fetchJacket } from "../api/fetchJacket.js";
-import { productSliderContainer } from "../data/constants.js";
+import { handleJacketInformation } from "../handlers/handleJacketInformation.js";
+import { productSliderContainer, imageContainer } from "../data/constants.js";
 
-fetchJacket();
+handleJacketInformation(imageContainer);
 handleJacketsSlider(productSliderContainer);

@@ -14,6 +14,6 @@ export async function handleWomenJackets(container) {
     displayJacketsByGender("female", jackets, womenContainer);
   } catch (error) {
     console.log(error);
-    container.innerHTML = message("error", "Something went wrong displaying the jackets.. We'll fix it shortly!");
+    container.innerHTML = message("error", "Something went wrong displaying the jackets.. Try again shortly!");
   }
 }

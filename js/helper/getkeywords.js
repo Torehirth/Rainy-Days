@@ -1,28 +1,13 @@
 import { desiredWords } from "../data/constants.js";
 
-// export function getKeywords(jacket, container) {
-//   const text = jacket.description.toLowerCase();
-//   const words = text.split(" ");
-//   const filteredWords = words.filter((word) => desiredWords.includes(word));
-
-//   for (const word of filteredWords) {
-//     container.innerHTML += `
-//                             <div class="product_details_list">
-//                               <ul>
-//                                 <li>${word}</li>
-//                               </ul>
-//                             </div>
-//                            `;
-//   }
-// }
-
-// Function to split text into words
 function splitTextIntoWords(text) {
   return text.split(" ");
 }
 
 // Function to filter desired words
 function filterDesiredWords(words, desiredWords) {
+  console.log(desiredWords);
+
   return words.filter(function (word) {
     return desiredWords.includes(word);
   });
