@@ -1,7 +1,7 @@
 # Rainy Days
 
 ### Designing and creating an online store for all-weather jackets.
-**School Project in HTML and CSS, now implemented with Javascript!**
+School Project in HTML and CSS, now implemented with Javascript!
 
 ### To website: [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app/index.html)
 
