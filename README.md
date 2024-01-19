@@ -1,5 +1,5 @@
 # Rainy Days ☔
-### Online store for all-weather jackets.
+### An online store for all-weather jackets.
 School Project in HTML and CSS, now implemented with Javascript!
 
 ---
