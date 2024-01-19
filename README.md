@@ -6,9 +6,10 @@
 
 <p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of mountain with several mountains in the horizon" /></p>
 
+### Designing and creating an online store for all-weather jackets.
+
 ### Requirements:
 
-- Designing and creating an online store for all weather jackets.
 - Responsive design on all screen sizes and devices.
 - Follow WCAG standards.
 - Semantic and neat HTML.
