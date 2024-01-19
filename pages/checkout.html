@@ -97,105 +97,107 @@
       </div>
     </header>
     <main>
-      <h1 class="cart-checkout-headline">checkout</h1>
-      <div class="complete-checkout-page-wrapper">
-        <section class="order-summary-container">
-          <h2>order summary</h2>
-          <div class="checkout-item-container">
-            <a href="./product.html" class="cart-item-container-img">
-              <img src="../assets/images/main-product-1.jpg" alt="small image of item added to checkout" />
-            </a>
-            <a href="./product.html" class="cart-item-info-container">
-              <h3 class="item-name">supreme alpine jacket m's</h3>
-              <div class="color-container">
-                <p>color:</p>
-                <p>Yellow</p>
+      <section class="page_content">
+        <h1 class="cart-checkout-headline">checkout</h1>
+        <div class="complete-checkout-page-wrapper">
+          <section class="order-summary-container">
+            <h2>order summary</h2>
+            <div class="checkout-item-container">
+              <a href="./product.html" class="cart-item-container-img">
+                <img src="../assets/images/main-product-1.jpg" alt="small image of item added to checkout" />
+              </a>
+              <a href="./product.html" class="cart-item-info-container">
+                <h3 class="item-name">supreme alpine jacket m's</h3>
+                <div class="color-container">
+                  <p>color:</p>
+                  <p>Yellow</p>
+                </div>
+                <div class="size-container">
+                  <p>size:</p>
+                  <p class="size-text">xl</p>
+                </div>
+                <div class="cart-price-container">
+                  <p>price:</p>
+                  <p>279$</p>
+                </div>
+              </a>
+              <div class="checkout-qty-container">
+                <p>qty:</p>
+                <p>1</p>
               </div>
-              <div class="size-container">
-                <p>size:</p>
-                <p class="size-text">xl</p>
+              <div>
+                <button class="fa-stack fa-1x del-btn">
+                  <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+                  <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
+                  <span hidden>#</span>
+                </button>
               </div>
-              <div class="cart-price-container">
-                <p>price:</p>
-                <p>279$</p>
+            </div>
+          </section>
+          <section class="shipping-container">
+            <h2>shipping information</h2>
+            <form class="shipping-form">
+              <div class="name-shipping-container">
+                <label for="full-name-shipping">full name</label>
+                <input type="text" name="full name shipping" id="full-name-shipping" required />
               </div>
-            </a>
-            <div class="checkout-qty-container">
-              <p>qty:</p>
-              <p>1</p>
+              <div class="address-container">
+                <label for="street-address">street address</label>
+                <input type="text" name="street address" id="street-address" required />
+              </div>
+              <div class="zip-code-container">
+                <label for="zip-code">zip code</label>
+                <input type="number" name="zip code" id="zip-code" required />
+              </div>
+              <div class="city-container">
+                <label for="city">city</label>
+                <input type="text" name="city" id="city" required />
+              </div>
+              <div class="country-container">
+                <label for="country">country</label>
+                <input type="text" name="country" id="country" required />
+              </div>
+            </form>
+          </section>
+          <section class="billing-container">
+            <h2>billing information</h2>
+            <form class="billing-form">
+              <div class="name-billing-container">
+                <label for="full-name-billing">full name</label>
+                <input type="text" name="full name billing" id="full-name-billing" required />
+              </div>
+              <div class="card-container">
+                <label for="card-number">card number</label>
+                <input type="number" name="card number" id="card-number" required min="999999999999" max="99999999999999999999" />
+              </div>
+              <div class="expiration-container">
+                <label for="expiration-date">expiration date</label>
+                <input type="date" name="expiration date" id="expiration-date" required min="2023-05-07" />
+              </div>
+              <div class="CVV-container">
+                <label for="cvv-code">c<span>vv</span> code</label>
+                <input type="number" name="cvv code" id="cvv-code" required min="000" max="999" />
+              </div>
+            </form>
+          </section>
+          <section class="cost-container cost-container-checkout">
+            <div class="item-cost-container">
+              <p>cost:</p>
+              <p>279$</p>
             </div>
-            <div>
-              <button class="fa-stack fa-1x del-btn">
-                <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
-                <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
-                <span hidden>#</span>
-              </button>
+            <div class="shipping-cost-container">
+              <p>shipping:</p>
+              <p>9$</p>
             </div>
-          </div>
-        </section>
-        <section class="shipping-container">
-          <h2>shipping information</h2>
-          <form class="shipping-form">
-            <div class="name-shipping-container">
-              <label for="full-name-shipping">full name</label>
-              <input type="text" name="full name shipping" id="full-name-shipping" required />
+            <div class="total-cost-container">
+              <h3>total cost:</h3>
+              <h3>288$</h3>
             </div>
-            <div class="address-container">
-              <label for="street-address">street address</label>
-              <input type="text" name="street address" id="street-address" required />
-            </div>
-            <div class="zip-code-container">
-              <label for="zip-code">zip code</label>
-              <input type="number" name="zip code" id="zip-code" required />
-            </div>
-            <div class="city-container">
-              <label for="city">city</label>
-              <input type="text" name="city" id="city" required />
-            </div>
-            <div class="country-container">
-              <label for="country">country</label>
-              <input type="text" name="country" id="country" required />
-            </div>
-          </form>
-        </section>
-        <section class="billing-container">
-          <h2>billing information</h2>
-          <form class="billing-form">
-            <div class="name-billing-container">
-              <label for="full-name-billing">full name</label>
-              <input type="text" name="full name billing" id="full-name-billing" required />
-            </div>
-            <div class="card-container">
-              <label for="card-number">card number</label>
-              <input type="number" name="card number" id="card-number" required min="999999999999" max="99999999999999999999" />
-            </div>
-            <div class="expiration-container">
-              <label for="expiration-date">expiration date</label>
-              <input type="date" name="expiration date" id="expiration-date" required min="2023-05-07" />
-            </div>
-            <div class="CVV-container">
-              <label for="cvv-code">c<span>vv</span> code</label>
-              <input type="number" name="cvv code" id="cvv-code" required min="000" max="999" />
-            </div>
-          </form>
-        </section>
-        <section class="cost-container cost-container-checkout">
-          <div class="item-cost-container">
-            <p>cost:</p>
-            <p>279$</p>
-          </div>
-          <div class="shipping-cost-container">
-            <p>shipping:</p>
-            <p>9$</p>
-          </div>
-          <div class="total-cost-container">
-            <h3>total cost:</h3>
-            <h3>288$</h3>
-          </div>
-          <a href="./successcheckout.html" class="checkout-btn"><p>place order</p></a>
-          <a href="../index.html" class="continue-shopping-btn"><p>continue shopping</p></a>
-        </section>
-      </div>
+            <a href="./successcheckout.html" class="checkout-btn"><p>place order</p></a>
+            <a href="../index.html" class="continue-shopping-btn"><p>continue shopping</p></a>
+          </section>
+        </div>
+      </section>
     </main>
     <footer class="footer footer_tab footer_mobile">
       <div class="footer-top-btm-container">

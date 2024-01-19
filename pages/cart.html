@@ -97,76 +97,78 @@
         <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
       </div>
     </header>
-    <main class="index_page_content">
-      <h1 class="cart-checkout-headline">shopping cart</h1>
-      <div class="item-cost-section">
-        <section class="cart-item-container">
-          <a href="./product.html" class="cart-item-container-img">
-            <img src="../assets/images/main-product-1.jpg" alt="small image of item added to cart" />
-          </a>
-          <a href="./product.html" class="cart-item-info-container">
-            <h2 class="item-name">supreme alpine jacket m's</h2>
-            <div class="color-container">
-              <p>color:</p>
-              <p>Yellow</p>
+    <main>
+      <section class="page_content">
+        <h1 class="cart-checkout-headline">shopping cart</h1>
+        <div class="item-cost-section">
+          <section class="cart-item-container">
+            <a href="./product.html" class="cart-item-container-img">
+              <img src="../assets/images/main-product-1.jpg" alt="small image of item added to cart" />
+            </a>
+            <a href="./product.html" class="cart-item-info-container">
+              <h2 class="item-name">supreme alpine jacket m's</h2>
+              <div class="color-container">
+                <p>color:</p>
+                <p>Yellow</p>
+              </div>
+              <div class="size-container">
+                <p>size:</p>
+                <p class="size-text">xl</p>
+              </div>
+              <div class="cart-price-container">
+                <p>price:</p>
+                <p>279$</p>
+              </div>
+            </a>
+            <div class="qty-container">
+              <button class="fa-stack fa-1x minus-btn">
+                <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+                <i class="fa-solid fa-minus fa-stack-1x qty-minus"></i>
+                <span hidden>#</span>
+              </button>
+              <p>1</p>
+              <button class="fa-stack fa-1x plus-btn">
+                <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+                <i class="fa-solid fa-plus fa-stack-1x qty-plus"></i>
+                <span hidden>#</span>
+              </button>
             </div>
-            <div class="size-container">
-              <p>size:</p>
-              <p class="size-text">xl</p>
+            <div>
+              <button class="fa-stack fa-1x del-btn">
+                <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
+                <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
+                <span hidden>#</span>
+              </button>
             </div>
-            <div class="cart-price-container">
-              <p>price:</p>
+          </section>
+          <section class="cost-container">
+            <div class="item-cost-container">
+              <p>cost:</p>
               <p>279$</p>
             </div>
-          </a>
-          <div class="qty-container">
-            <button class="fa-stack fa-1x minus-btn">
-              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
-              <i class="fa-solid fa-minus fa-stack-1x qty-minus"></i>
-              <span hidden>#</span>
-            </button>
-            <p>1</p>
-            <button class="fa-stack fa-1x plus-btn">
-              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
-              <i class="fa-solid fa-plus fa-stack-1x qty-plus"></i>
-              <span hidden>#</span>
-            </button>
-          </div>
-          <div>
-            <button class="fa-stack fa-1x del-btn">
-              <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
-              <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
-              <span hidden>#</span>
-            </button>
-          </div>
-        </section>
-        <section class="cost-container">
-          <div class="item-cost-container">
-            <p>cost:</p>
-            <p>279$</p>
-          </div>
-          <div class="shipping-cost-container">
-            <p>shipping:</p>
-            <p>9$</p>
-          </div>
-          <div class="total-cost-container">
-            <h3>total cost:</h3>
-            <h3>288$</h3>
-          </div>
-          <a href="./checkout.html" class="checkout-btn"><p>to checkout</p></a>
-          <a href="./index.html" class="continue-shopping-btn"><p>continue shopping</p></a>
-        </section>
-      </div>
-      <!-- Product slider -->
-      <section class="complete_pop_prod_cont">
-        <div class="popular_products_container pop_prod_container">
-          <div class="popular_products_container_headline pop_prod_hdline">
-            <h2>You may also like</h2>
-          </div>
-          <div class="popular_products_slider" id="slider-container">
-            <div class="loader"></div>
-          </div>
+            <div class="shipping-cost-container">
+              <p>shipping:</p>
+              <p>9$</p>
+            </div>
+            <div class="total-cost-container">
+              <h3>total cost:</h3>
+              <h3>288$</h3>
+            </div>
+            <a href="./checkout.html" class="checkout-btn"><p>to checkout</p></a>
+            <a href="./index.html" class="continue-shopping-btn"><p>continue shopping</p></a>
+          </section>
         </div>
+        <!-- Product slider -->
+        <section class="complete_pop_prod_cont">
+          <div class="popular_products_container pop_prod_container">
+            <div class="popular_products_container_headline pop_prod_hdline">
+              <h2>You may also like</h2>
+            </div>
+            <div class="popular_products_slider" id="slider-container">
+              <div class="loader"></div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="footer footer_tab footer_mobile">

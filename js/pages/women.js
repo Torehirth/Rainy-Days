@@ -1,4 +1,4 @@
-import { womensContainer } from "../data/constants.js";
-import { fetchJackets } from "../api/fetchJackets.js";
+import { womenContainer } from "../data/constants.js";
+import { handleWomenJackets } from "../handlers/handleWomenJackets.js";
 
-fetchJackets(womensContainer);
+handleWomenJackets(womenContainer);

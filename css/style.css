@@ -39,6 +39,16 @@
   scroll-behavior: smooth;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 :root {
   /* color */
   --header-gradient-color: linear-gradient(to top, #38818a, #0550ba);
@@ -122,7 +132,7 @@
   }
 }
 
-/* ------------------------General header/text------------------------ */
+/* ------------------------General text------------------------ */
 
 h1,
 h2,
@@ -302,6 +312,7 @@ footer {
 footer {
   background-color: var(--dark-blue-color);
   flex-direction: column;
+  margin-top: auto;
 }
 
 .footer p {
@@ -420,6 +431,7 @@ footer .fa-arrow-up {
 
 /* ------------------------Index------------------------ */
 .index_page_content {
+  justify-content: center;
   margin-inline: auto;
   max-width: 77.5em;
   padding: 0em 1em; /*added 07.01.24 to create distance from screen egde*/
@@ -479,6 +491,7 @@ footer .fa-arrow-up {
   display: flex;
   flex-direction: column;
   gap: 1.25em;
+  max-width: 100%;
 }
 
 .popular_products_container_headline {
@@ -494,7 +507,6 @@ footer .fa-arrow-up {
   padding-bottom: 2.5em;
   scroll-snap-type: inline mandatory;
   height: 100%;
-  height: fit-content;
 }
 
 .slider_group {
@@ -826,6 +838,12 @@ footer .fa-arrow-up {
 
 /* --------------------------Product page----------------------- */
 
+.page_content {
+  margin-inline: auto;
+  max-width: 77.5em;
+  padding: 0em 1em;
+}
+
 .product_top_section {
   display: flex;
   justify-content: space-between;
@@ -996,6 +1014,7 @@ footer .fa-arrow-up {
 .product_detail_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -1612,12 +1631,18 @@ footer .fa-arrow-up {
     justify-content: center;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #0c0b0b;
+    font-weight: bold;
     font-size: 1rem;
     padding: 7.5px 5px;
     border-radius: var(--nav-border-radius);
     height: 1.9375rem;
     width: 10.625rem;
+  }
+
+  .header_nav_mobile ul li a:hover {
+    font-weight: normal;
+    opacity: 1;
   }
 
   .hamburger_container {
@@ -1698,7 +1723,6 @@ footer .fa-arrow-up {
 
   .product_top_section {
     padding-inline: 0;
-    /* justify-content: center; */
     height: 100%;
     gap: 30px;
   }
@@ -1740,6 +1764,7 @@ footer .fa-arrow-up {
   p {
     font-size: 1rem;
   }
+  /* -------------------body--------------- */
 
   /* --------------header mobile version----------------- */
 
@@ -1940,6 +1965,11 @@ footer .fa-arrow-up {
 
   /* -------------Product Page--------- */
 
+  .page_content {
+    max-width: 400px;
+    /* margin: 0; */
+  }
+
   .prod-mob-hdline {
     display: block;
   }
@@ -1981,6 +2011,11 @@ footer .fa-arrow-up {
   .add_to_favorites_button p {
     font-size: 0.625rem;
     margin-left: 0.3125rem;
+  }
+
+  .product-image-container {
+    width: 300px;
+    max-height: 400px;
   }
 
   .complete_pop_prod_cont {

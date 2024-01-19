@@ -1,5 +1,5 @@
-export async function displayJacketSlider(jackets, container) {
-  await jackets.forEach(async (jacket) => {
+export function displayJacketsSlider(jackets, container) {
+  jackets.forEach((jacket) => {
     container.innerHTML += `
     <div class="slider_group">
     <a href="../pages/product.html?id=${jacket.id}" class="outer_product_container">
