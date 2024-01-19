@@ -5,7 +5,6 @@ import {
   productSizeContainer,
   productPriceContainer,
   productDetailsContainer,
-  wordContainer,
 } from "../data/constants.js";
 
 import { message } from "../components/message.js";

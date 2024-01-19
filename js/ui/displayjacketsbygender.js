@@ -1,7 +1,7 @@
 export function displayJacketsByGender(gender, jackets, container) {
   jackets.forEach((jacket) => {
     if (jacket.gender.toLowerCase() === gender) {
-      // could have used innerHTML and template literals, this would have been less code, but wanted to use the createElement and append method.
+      // could have used innerHTML and template literals, this would have been less code, but wanted to use the createElement and append method. Will improve this later to have a function with arguments to create the elements, resulting in less lines of code.
 
       const productCard = document.createElement("div");
       productCard.classList.add("product_card_list");

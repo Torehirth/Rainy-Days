@@ -1631,12 +1631,18 @@ footer .fa-arrow-up {
     justify-content: center;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #0c0b0b;
+    font-weight: bold;
     font-size: 1rem;
     padding: 7.5px 5px;
     border-radius: var(--nav-border-radius);
     height: 1.9375rem;
     width: 10.625rem;
+  }
+
+  .header_nav_mobile ul li a:hover {
+    font-weight: normal;
+    opacity: 1;
   }
 
   .hamburger_container {
