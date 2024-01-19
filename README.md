@@ -1,6 +1,5 @@
 # Rainy Days
-
-### Designing and creating an online store for all-weather jackets.
+### Online store for all-weather jackets.
 School Project in HTML and CSS, now implemented with Javascript!
 
 ---
