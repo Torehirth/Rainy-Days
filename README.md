@@ -3,6 +3,8 @@
 ### Designing and creating an online store for all-weather jackets.
 School Project in HTML and CSS, now implemented with Javascript!
 
+---
+
 ### To website: [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app/index.html)
 
 <p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of mountain with several mountains in the horizon" /></p>
