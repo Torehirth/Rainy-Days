@@ -1,4 +1,4 @@
-# Rainy Days
+# Rainy Days ☔
 ### Online store for all-weather jackets.
 School Project in HTML and CSS, now implemented with Javascript!
 
