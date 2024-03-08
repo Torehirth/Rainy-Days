@@ -5,7 +5,7 @@ School Project in HTML and CSS, now implemented with Javascript!
 ---
 
 ### To website: 
-- Main branch (Netlify): [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tore-hirth-rainy-days.netlify.app)
+- Main branch (Netlify): [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tmh-rainydays.netlify.app)
 - Development branch (GitHub): [![Dev](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://torehirth.github.io/Rainy-Days)
 
 <p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of mountain with several mountains in the horizon" /></p>
