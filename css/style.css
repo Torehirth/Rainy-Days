@@ -1114,7 +1114,7 @@ footer .fa-arrow-up {
 
 .qty-container {
   gap: 15px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .minus-btn,
@@ -2061,6 +2061,7 @@ footer .fa-arrow-up {
 
   .qty-container {
     flex-direction: column-reverse;
+    text-align: center;
     gap: 7.5px;
   }
 
