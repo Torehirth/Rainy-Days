@@ -1117,13 +1117,19 @@ footer .fa-arrow-up {
   /* align-items: center; */
 }
 
+.qty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .minus-btn,
 .plus-btn,
 .del-btn {
   border: 0;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
+  /* cursor: pointer; */
   width: fit-content;
   max-height: 2rem;
 }
@@ -1135,7 +1141,7 @@ footer .fa-arrow-up {
 
 .qty-circle {
   color: var(--light-grey-btn-color);
-  position: static;
+  position: relative;
 }
 
 .qty-minus,
@@ -1256,6 +1262,11 @@ footer .fa-arrow-up {
 .checkout-qty-container p {
   font-size: 0.875rem;
 }
+
+/* .delete-btn {
+  display: flex;
+  justify-content: center;
+} */
 
 /* shipping and billing information */
 
