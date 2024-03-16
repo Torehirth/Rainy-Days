@@ -1114,13 +1114,18 @@ footer .fa-arrow-up {
 
 .qty-container {
   gap: 15px;
-  /* align-items: center; */
+  align-items: center;
 }
 
-.qty-container {
+.qty-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+
+.delete-button {
+  display: flex;
 }
 
 .minus-btn,
@@ -1130,24 +1135,20 @@ footer .fa-arrow-up {
   padding: 0;
   background-color: transparent;
   /* cursor: pointer; */
-  width: fit-content;
-  max-height: 2rem;
-}
-
-.del-btn {
-  font-size: 0.625rem;
-  max-height: 1.25rem;
+  /* width: fit-content; */
+  /* font-size: 0.5rem; */
+  vertical-align: baseline;
 }
 
 .qty-circle {
   color: var(--light-grey-btn-color);
-  position: relative;
 }
 
 .qty-minus,
 .qty-plus,
 .qty-del {
   color: black;
+  vertical-align: baseline;
 }
 
 /* cost container */
@@ -2072,13 +2073,12 @@ footer .fa-arrow-up {
 
   .qty-container {
     flex-direction: column-reverse;
-    text-align: center;
+    /* text-align: center; */
     gap: 7.5px;
   }
 
-  .plus-btn,
-  .minus-btn {
-    font-size: 0.875rem;
+  .qty-container p {
+    font-size: 1.25rem;
   }
 
   /* cost container */
