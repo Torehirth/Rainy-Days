@@ -665,23 +665,6 @@ footer .fa-arrow-up {
   flex-direction: column;
 }
 
-/* .filter_menu {
-  display: flex;
-  justify-content: left;
-  padding-bottom: 1.875em;
-} */
-
-/* .filter_menu select {
-  border: 0;
-  border-bottom: #000 solid 1px;
-  padding: 0.25rem 2.8rem 0.3125rem 1rem;
-  background-color: transparent;
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-} */
-
 .jackets-container {
   display: flex;
   flex-wrap: wrap;
@@ -1134,9 +1117,6 @@ footer .fa-arrow-up {
   border: 0;
   padding: 0;
   background-color: transparent;
-  /* cursor: pointer; */
-  /* width: fit-content; */
-  /* font-size: 0.5rem; */
   vertical-align: baseline;
 }
 
@@ -1263,11 +1243,6 @@ footer .fa-arrow-up {
 .checkout-qty-container p {
   font-size: 0.875rem;
 }
-
-/* .delete-btn {
-  display: flex;
-  justify-content: center;
-} */
 
 /* shipping and billing information */
 
@@ -1548,8 +1523,6 @@ footer .fa-arrow-up {
 .cart-icon,
 .header-heart-icon,
 .hamburger-icon,
-/* .header_searchbox_mobile, */
-/* .header_searchbox_tab */ 
 .header_searchbox {
   color: #fff;
   cursor: pointer;
@@ -1588,8 +1561,6 @@ footer .fa-arrow-up {
 @media (width <= 1180px) {
   .Desktop_version,
   .header_icon_text,
-  /* .product-small-slider-outer-container, */
-  /* .big-slider-container, */ 
   .header_searchbox,
   header {
     display: none;
@@ -1638,7 +1609,6 @@ footer .fa-arrow-up {
 
   .header_icon_buttons {
     display: flex;
-    /* font-size: 1.5rem; delete for origin design(made bigger than Figma design) */
   }
 
   .header_nav_tab {
@@ -1726,10 +1696,6 @@ footer .fa-arrow-up {
   .outer_product_container {
     scroll-snap-align: start;
   }
-
-  /* .last_slider_group:last-child {
-    scroll-snap-align: start;
-  } */
 
   /*--------------Category Card ----------------*/
 
@@ -1819,8 +1785,6 @@ footer .fa-arrow-up {
 
   .header_logo_mobile {
     display: flex;
-    /* width: 8.75em; */ /*original Figma size (looks to small on web browser)*/
-    /* height: 2.125em; */ /*original Figma size (looks to small on web browser)*/
     width: 10em;
     height: 3em;
   }
@@ -1831,22 +1795,12 @@ footer .fa-arrow-up {
     right: 0;
   }
 
-  /* .header_searchbox_mobile {
-    display: flex;
-    position: static;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 5px;
-    border-bottom: solid 1px #fff;
-  } */
-
   #mobile_search {
     width: 100%;
   }
 
   .header_icon_buttons {
     display: flex;
-    /* font-size: 1.5rem; delete for origin design(made bigger than Figma design) */
   }
   /* ------------Footer mobile version -------------*/
 
@@ -1943,10 +1897,6 @@ footer .fa-arrow-up {
     max-width: 300px;
     padding-bottom: 0em;
   }
-
-  /* .filter_menu {
-    justify-content: center;
-  } */
 
   .jackets-container {
     display: flex;
@@ -2096,7 +2046,6 @@ footer .fa-arrow-up {
 
   .qty-container {
     flex-direction: column-reverse;
-    /* text-align: center; */
     gap: 7.5px;
   }
 
