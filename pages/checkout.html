@@ -103,10 +103,10 @@
           <section class="order-summary-container">
             <h2>order summary</h2>
             <div class="checkout-item-container">
-              <a href="./product.html" class="cart-item-container-img">
+              <a href="/" class="cart-item-container-img">
                 <img src="../assets/images/main-product-1.jpg" alt="small image of item added to checkout" />
               </a>
-              <a href="./product.html" class="cart-item-info-container">
+              <a href="/" class="cart-item-info-container">
                 <h3 class="item-name">supreme alpine jacket m's</h3>
                 <div class="color-container">
                   <p>color:</p>
@@ -141,6 +141,14 @@
                 <label for="full-name-shipping">full name</label>
                 <input type="text" name="full name shipping" id="full-name-shipping" required />
               </div>
+              <div class="email-container">
+                <label for="email-address">Email</label>
+                <input type="email" name="email address" id="email-address" required />
+              </div>
+              <div class="phone-container">
+                <label for="phone-number">phone number</label>
+                <input type="number" name="phone number" id="phone-number" required min="10000" />
+              </div>
               <div class="address-container">
                 <label for="street-address">street address</label>
                 <input type="text" name="street address" id="street-address" required />
@@ -168,15 +176,15 @@
               </div>
               <div class="card-container">
                 <label for="card-number">card number</label>
-                <input type="number" name="card number" id="card-number" required min="999999999999" max="99999999999999999999" />
+                <input type="number" name="card number" id="card-number" required min="50" max="99999999999999999" />
               </div>
               <div class="expiration-container">
                 <label for="expiration-date">expiration date</label>
-                <input type="date" name="expiration date" id="expiration-date" required min="2023-05-07" />
+                <input type="date" name="expiration date" id="expiration-date" required min="2024-03-17" />
               </div>
               <div class="CVV-container">
                 <label for="cvv-code">c<span>vv</span> code</label>
-                <input type="number" name="cvv code" id="cvv-code" required min="000" max="999" />
+                <input type="number" name="cvv code" id="cvv-code" required min="001" max="999" />
               </div>
             </form>
           </section>
