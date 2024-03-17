@@ -81,14 +81,11 @@ body {
 .hamburger_container,
 .nav-checkbox,
 .header_searchbox,
-/* .header_searchbox_tab, */
-/* .header_searchbox_mobile, */
 .popular_products_slider_mobile,
 .header_nav_mobile,
 .to-top-button-mobile,
 .header_logo_mobile,
 #fav1,
-/* .mobile-image-slider, */
 .prod-mob-hdline {
   display: none;
 }
@@ -1600,6 +1597,11 @@ footer .fa-arrow-up {
     margin: 0;
     padding-left: 0;
     gap: 1.9375em;
+  }
+
+  .border-bottom::before {
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
   }
 
   .cart-icon-mob {
