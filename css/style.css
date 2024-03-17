@@ -1554,7 +1554,7 @@ footer .fa-arrow-up {
   color: black;
   font-size: 1rem;
   position: relative;
-  right: 0;
+  right: 1px;
   bottom: 4px;
   vertical-align: top;
 }
@@ -1619,9 +1619,8 @@ footer .fa-arrow-up {
   }
 
   .number {
-    font-size: 1rem;
-    bottom: 3px;
-    left: 0;
+    font-size: 12px;
+    bottom: 0px;
   }
 
   .header_icon_buttons {
@@ -2066,7 +2065,7 @@ footer .fa-arrow-up {
   }
 
   .qty-container p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   /* cost container */
