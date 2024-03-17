@@ -12,6 +12,7 @@ export async function splitTextIntoWords(container) {
 
     return filteredWords;
   } catch (error) {
+    console.error(error);
     container.innerHTML = message("error", "can't extract filteredWords at the moment");
   }
 }

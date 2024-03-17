@@ -13,6 +13,7 @@ export async function handleMenJackets(container) {
 
     displayJacketsByGender("male", jackets, menContainer);
   } catch (error) {
+    console.error(error);
     container.innerHTML = message("error", "Something went wrong displaying the jackets.. Try again shortly!");
   }
 }

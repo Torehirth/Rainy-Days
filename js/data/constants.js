@@ -36,3 +36,4 @@ export const desiredWords = [
 
 export const menContainer = document.querySelector("#men-container");
 export const womenContainer = document.querySelector("#women-container");
+
