@@ -212,7 +212,8 @@ header {
   gap: 1.875rem;
   align-items: center;
   width: 100%;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  /* font-size: 14px; */
   padding: 0;
 }
 
@@ -246,11 +247,16 @@ header {
   margin-bottom: -15px;
 }
 
+.border-bottom-nav {
+  border-bottom: 1px solid white;
+}
+
 .header_category_container {
   display: flex;
   gap: 7.5rem;
   letter-spacing: 0.05rem;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
+  font-size: 1.25rem;
   padding: 0;
   /* padding-left: 15rem; */
   margin-bottom: -4px;
@@ -783,6 +789,7 @@ footer .fa-arrow-up {
   background-position: center 65%;
   background-repeat: no-repeat;
   color: #fff;
+  height: 100vh;
 }
 
 .background-text-contact {
@@ -1547,9 +1554,10 @@ footer .fa-arrow-up {
 }
 
 .number {
-  font-size: 1.05rem;
+  color: black;
+  font-size: 1rem;
   position: relative;
-  right: 1px;
+  right: 0;
   bottom: 4px;
   vertical-align: top;
 }
