@@ -252,11 +252,10 @@ header {
   display: flex;
   gap: 7.5rem;
   letter-spacing: 0.05rem;
-  /* font-size: 1.125rem; */
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   padding: 0;
-  /* padding-left: 15rem; */
   margin-bottom: -4px;
+  margin-right: 10rem;
 }
 
 .header_category_buttons {
@@ -301,7 +300,8 @@ header {
 }
 
 .header_icon_text {
-  font-size: 0.625rem;
+  /* font-size: 0.625rem; */
+  font-size: 12px;
 }
 
 /* ------------------------Header and footer------------------------ */
