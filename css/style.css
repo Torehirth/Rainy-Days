@@ -1,29 +1,29 @@
 /* Text fonts and font face rules */
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara.ttf);
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara_Bold.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara_Bold.ttf);
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara_Italic.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara_Italic.ttf);
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara_Bold_Italic.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara_Bold_Italic.ttf);
   font-style: italic;
   font-weight: bold;
 }
@@ -2169,7 +2169,6 @@ footer .fa-arrow-up {
   }
 
   .fav-empty-headline {
-    padding: 4, 375em 0 6.25em 0;
     text-align: center;
   }
 
