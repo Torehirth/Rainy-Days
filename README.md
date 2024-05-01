@@ -16,8 +16,8 @@ School Project in HTML, CSS and Javascript!
 - Semantic and neat HTML.
 - CSS must follow DRY principles.
 - Clean Javascript.
-- Make a WordPress site locally, make products through the WooCommerse plugin, and deploy to a remote dynamic host.
-- Fetch jackets through WordPress API.
+- Make a WordPress site locally, make products through the WooCommerse plugin, and deploy to a remote dynamic host(One.com).
+- Fetch jackets through WordPress API and deploy the Rainy Days site through a static host (Netlify.com).
 
 ---
 
