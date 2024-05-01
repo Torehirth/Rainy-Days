@@ -1,6 +1,6 @@
 export function displayJacketsByGender(gender, jackets, container) {
   jackets.forEach((jacket) => {
-    if (jacket.gender.toLowerCase() === gender) {
+    if (jacket.categories[0].slug.toLowerCase()) {
       // could have used innerHTML and template literals, this would have been less code, but wanted to use the createElement and append method. Will improve this later to have a function with arguments to create the elements, resulting in less lines of code.
 
       const productCard = document.createElement("div");
@@ -19,18 +19,18 @@ export function displayJacketsByGender(gender, jackets, container) {
 
       const productImage = document.createElement("img");
       productImage.classList.add("img_supreme_alpine_jacket_m");
-      productImage.src = jacket.image;
-      productImage.alt = jacket.title;
+      productImage.src = jacket.images[0].src;
+      productImage.alt = jacket.name;
 
       const productTextContainer = document.createElement("div");
       productTextContainer.classList.add("slider_text_container");
 
       const productTitle = document.createElement("p");
-      productTitle.textContent = jacket.title;
+      productTitle.textContent = jacket.name;
 
       const productPrice = document.createElement("p");
       productPrice.classList.add("slider_price");
-      productPrice.textContent = `$${jacket.price}`;
+      productPrice.textContent = `$${jacket.prices.price}`;
 
       // append elements in hierarchy order the same way as the hard-coded html was written.
       // container (parameter) on top of hierarchy.
