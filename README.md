@@ -1,14 +1,13 @@
 # Rainy Days ☔
 ### An online store for all-weather jackets.
-School Project in HTML and CSS, now implemented with Javascript!
+School Project in HTML, CSS and Javascript!
 
 ---
 
 ### To website: 
-- Main branch (Netlify): [![Rainy Days Website](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tmh-rainydays.netlify.app)
-- Development branch (Netlify): [![Dev](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tmh-rainydays-dev.netlify.app/)
+- CMS branch (Netlify): [![Dev](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tmh-rainydays-cms.netlify.app/)
 
-<p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of mountain with several mountains in the horizon" /></p>
+<p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of a mountain with several mountains in the horizon" /></p>
 
 ### Requirements:
 
@@ -17,9 +16,8 @@ School Project in HTML and CSS, now implemented with Javascript!
 - Semantic and neat HTML.
 - CSS must follow DRY principles.
 - Clean Javascript.
-- Fetch jackets through API.
-
-API docs: [Noroff API documentation](https://docs.noroff.dev/)
+- Make a WordPress site locally, make products through the WooCommerse plugin, and deploy to a remote dynamic host.
+- Fetch jackets through WordPress API.
 
 ---
 
