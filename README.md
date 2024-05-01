@@ -7,7 +7,7 @@ School Project in HTML, CSS and Javascript!
 ### To website: 
 - CMS branch (Netlify): [![Dev](https://img.shields.io/badge/Rainy_Days-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tmh-rainydays-cms.netlify.app/)
 
-- WordPress site (One.com): [![Dev](https://img.shields.io/badge/WordPress-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://tmh-rainydays-cms.netlify.app/)
+- WordPress site (One.com): [![Dev](https://img.shields.io/badge/WordPress-40F8FF?logo=netlify&logoColor=40F8FF&style=flat&labelColor=grey)](https://cms.torehirth.no/)
 
 
 <p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="screenprint of homepage" /></p>
