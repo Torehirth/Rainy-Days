@@ -1,5 +1,7 @@
 // ------------URLs--------------
-export const URL = "https://api.noroff.dev/api/v1/rainy-days";
+// export const URL = "https://api.noroff.dev/api/v1/rainy-days";
+// https://cors.noroff.dev/
+export const URL = "http://jacket-empire/wp-json/wc/store/products";
 
 // -----------Popular product slider--------
 export const productSliderContainer = document.querySelector("#slider-container");
@@ -36,4 +38,3 @@ export const desiredWords = [
 
 export const menContainer = document.querySelector("#men-container");
 export const womenContainer = document.querySelector("#women-container");
-
