@@ -10,8 +10,10 @@ export async function fetchJacket() {
     // if falsy redirect back to index.html.
     document.location.href = "/";
   }
+
   // adding the id as query parameter after the base URL (could've called the getQueryParameter function, with id as argument, inside fetch method also).
   const jacketUrl = `${URL}/${id}`;
+
   try {
     const response = await fetch(jacketUrl);
 
@@ -26,6 +28,7 @@ export async function fetchJacket() {
     }
 
     const jacket = await response.json();
+
     return jacket;
   } catch (error) {
     console.error(error);
