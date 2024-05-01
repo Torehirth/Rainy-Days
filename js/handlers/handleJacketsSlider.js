@@ -11,6 +11,7 @@ export async function handleJacketsSlider(container) {
 
     displayJacketsSlider(jackets, productSliderContainer);
   } catch (error) {
+    console.error(error);
     container.innerHTML = message("error", "Something went wrong displaying the jackets.. Try again shortly!");
   }
 }

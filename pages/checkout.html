@@ -45,29 +45,19 @@
         <div class="header_bottom_menu header_bottom_menu_tab header_bottom_menu_mobile">
           <div class="header_bottom_container">
             <div class="header_logo_container">
-              <a href="../index.html" class="header_logo header_logo_mobile"
-                ><img src="../assets/logo/Rainy-Days-vector-logo.svg" alt="Rainy Days logo" title="to home" class="header_logo header_logo_mobile"
-              /></a>
+              <a href="../" class="header_logo header_logo_mobile"
+                ><img src="../assets/logo/Rainy-Days-vector-logo.svg" alt="Rainy Days logo" title="to home" class="header_logo header_logo_mobile" />
+              </a>
             </div>
             <nav class="category_menu">
               <ul class="header_category_container Desktop_version">
                 <li class="header_category_buttons">
-                  <a href="./men.html" title="to men's jackets">men's</a>
+                  <a href="./men.html" title="to men jackets">men's</a>
                 </li>
                 <li class="header_category_buttons">
-                  <a href="./women.html" title="to women's jackets">women's</a>
+                  <a href="./women.html" title="to women jackets">women's</a>
                 </li>
               </ul>
-              <div class="header_searchbox">
-                <label
-                  title="search"
-                  aria-label="magnifying glass icon for search bar"
-                  class="fa-solid fa-magnifying-glass search-icon"
-                  for="desktop_search"
-                  ><span hidden>#</span></label
-                >
-                <input type="search" name="search" id="desktop_search" placeholder="search" title="search" class="searchbox" />
-              </div>
               <div>
                 <ul class="header_icons">
                   <li class="header_icon_buttons favorites">
@@ -101,16 +91,6 @@
           </ul>
         </nav>
       </div>
-      <div class="header_searchbox_mobile header_searchbox_tab">
-        <label
-          title="search"
-          aria-label="magnifying glass icon for search bar"
-          class="fa-solid fa-magnifying-glass searchbox_mobile"
-          for="mobile_search"
-          ><span hidden>#</span></label
-        >
-        <input type="search" name="Search" id="mobile_search" title="search" class="searchbox" placeholder="search" />
-      </div>
     </header>
     <main>
       <section class="page_content">
@@ -119,10 +99,10 @@
           <section class="order-summary-container">
             <h2>order summary</h2>
             <div class="checkout-item-container">
-              <a href="./product.html" class="cart-item-container-img">
+              <a href="/" class="cart-item-container-img">
                 <img src="../assets/images/main-product-1.jpg" alt="small image of item added to checkout" />
               </a>
-              <a href="./product.html" class="cart-item-info-container">
+              <a href="/" class="cart-item-info-container">
                 <h3 class="item-name">supreme alpine jacket m's</h3>
                 <div class="color-container">
                   <p>color:</p>
@@ -141,10 +121,10 @@
                 <p>qty:</p>
                 <p>1</p>
               </div>
-              <div>
+              <div class="delete-btn">
                 <button class="fa-stack fa-1x del-btn">
                   <i class="fa-solid fa-circle fa-stack-2x qty-circle"></i>
-                  <i class="fa-solid fa-xmark fa-stack-1x qty-del"></i>
+                  <i class="fa-solid fa-xmark fa-stack qty-del"></i>
                   <span hidden>#</span>
                 </button>
               </div>
@@ -156,6 +136,14 @@
               <div class="name-shipping-container">
                 <label for="full-name-shipping">full name</label>
                 <input type="text" name="full name shipping" id="full-name-shipping" required />
+              </div>
+              <div class="email-container">
+                <label for="email-address">Email</label>
+                <input type="email" name="email address" id="email-address" required />
+              </div>
+              <div class="phone-container">
+                <label for="phone-number">phone number</label>
+                <input type="number" name="phone number" id="phone-number" required min="10000" />
               </div>
               <div class="address-container">
                 <label for="street-address">street address</label>
@@ -184,15 +172,15 @@
               </div>
               <div class="card-container">
                 <label for="card-number">card number</label>
-                <input type="number" name="card number" id="card-number" required min="999999999999" max="99999999999999999999" />
+                <input type="number" name="card number" id="card-number" required min="50" max="99999999999999999" />
               </div>
               <div class="expiration-container">
                 <label for="expiration-date">expiration date</label>
-                <input type="date" name="expiration date" id="expiration-date" required min="2023-05-07" />
+                <input type="date" name="expiration date" id="expiration-date" required min="2024-03-17" />
               </div>
               <div class="CVV-container">
                 <label for="cvv-code">c<span>vv</span> code</label>
-                <input type="number" name="cvv code" id="cvv-code" required min="000" max="999" />
+                <input type="number" name="cvv code" id="cvv-code" required min="001" max="999" />
               </div>
             </form>
           </section>

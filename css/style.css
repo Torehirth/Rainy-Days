@@ -1,29 +1,29 @@
 /* Text fonts and font face rules */
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara.ttf);
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara_Bold.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara_Bold.ttf);
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara_Italic.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara_Italic.ttf);
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "candara", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  src: url(../candara-font-family/Candara_Bold_Italic.ttf);
+  font-family: "candara", "Verdana", "sans-serif";
+  src: url(../assets/candara-font-family/Candara_Bold_Italic.ttf);
   font-style: italic;
   font-weight: bold;
 }
@@ -81,14 +81,11 @@ body {
 .hamburger_container,
 .nav-checkbox,
 .header_searchbox,
-.header_searchbox_tab,
-.header_searchbox_mobile,
 .popular_products_slider_mobile,
 .header_nav_mobile,
 .to-top-button-mobile,
 .header_logo_mobile,
 #fav1,
-/* .mobile-image-slider, */
 .prod-mob-hdline {
   display: none;
 }
@@ -212,7 +209,8 @@ header {
   gap: 1.875rem;
   align-items: center;
   width: 100%;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  /* font-size: 14px; */
   padding: 0;
 }
 
@@ -246,13 +244,18 @@ header {
   margin-bottom: -15px;
 }
 
+.border-bottom-nav {
+  border-bottom: 1px solid white;
+}
+
 .header_category_container {
   display: flex;
   gap: 7.5rem;
   letter-spacing: 0.05rem;
-  font-size: 1.125rem;
-  padding-left: 7.5rem;
+  font-size: 1.375rem;
+  padding: 0;
   margin-bottom: -4px;
+  margin-right: 12rem;
 }
 
 .header_category_buttons {
@@ -281,6 +284,7 @@ header {
 
 .header_icons {
   display: flex;
+  align-items: flex-end;
   padding: 0;
   padding-left: 8.25em;
   margin-bottom: -2px;
@@ -292,10 +296,12 @@ header {
 .header_icon_buttons {
   font-size: 1.125rem;
   text-align: center;
+  height: 32px;
 }
 
 .header_icon_text {
-  font-size: 0.625rem;
+  /* font-size: 0.625rem; */
+  font-size: 12px;
 }
 
 /* ------------------------Header and footer------------------------ */
@@ -659,27 +665,11 @@ footer .fa-arrow-up {
   padding-bottom: 2.5rem;
 }
 
-.filter_card_container {
+.product_card_container {
   display: flex;
   flex-direction: column;
 }
 
-.filter_menu {
-  display: flex;
-  justify-content: left;
-  padding-bottom: 1.875em;
-}
-
-.filter_menu select {
-  border: 0;
-  border-bottom: #000 solid 1px;
-  padding: 0.25rem 2.8rem 0.3125rem 1rem;
-  background-color: transparent;
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
 .jackets-container {
   display: flex;
   flex-wrap: wrap;
@@ -796,6 +786,7 @@ footer .fa-arrow-up {
   background-position: center 65%;
   background-repeat: no-repeat;
   color: #fff;
+  height: 100vh;
 }
 
 .background-text-contact {
@@ -1115,31 +1106,35 @@ footer .fa-arrow-up {
   align-items: center;
 }
 
+.qty-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.delete-button {
+  display: flex;
+}
+
 .minus-btn,
 .plus-btn,
 .del-btn {
   border: 0;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
-  width: fit-content;
-  max-height: 2rem;
-}
-
-.del-btn {
-  font-size: 0.625rem;
-  max-height: 1.25rem;
+  vertical-align: baseline;
 }
 
 .qty-circle {
   color: var(--light-grey-btn-color);
-  position: static;
 }
 
 .qty-minus,
 .qty-plus,
 .qty-del {
   color: black;
+  vertical-align: baseline;
 }
 
 /* cost container */
@@ -1277,6 +1272,8 @@ footer .fa-arrow-up {
 }
 
 .name-shipping-container,
+.phone-container,
+.email-container,
 .address-container,
 .zip-code-container,
 .city-container,
@@ -1291,6 +1288,8 @@ footer .fa-arrow-up {
 }
 
 .name-shipping-container input,
+.phone-container input,
+.email-container input,
 .address-container input,
 .zip-code-container input,
 .city-container input,
@@ -1530,9 +1529,7 @@ footer .fa-arrow-up {
 .cart-icon,
 .header-heart-icon,
 .hamburger-icon,
-.header_searchbox,
-.header_searchbox_tab,
-.header_searchbox_mobile {
+.header_searchbox {
   color: #fff;
   cursor: pointer;
 }
@@ -1542,6 +1539,26 @@ footer .fa-arrow-up {
   opacity: 70%;
 }
 
+.circle {
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--orange-btn-color);
+  bottom: 45px;
+  left: 10px;
+}
+
+.number {
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  right: 1px;
+  bottom: 4px;
+  vertical-align: top;
+}
+
 /* -------------------------tablet/mobile version----------------------- */
 
 @media (width <= 1180px) {
@@ -1549,8 +1566,6 @@ footer .fa-arrow-up {
   .header_icon_text,
   .header_searchbox,
   header {
-    /* .product-small-slider-outer-container, */
-    /* .big-slider-container { */
     display: none;
   }
 
@@ -1560,7 +1575,7 @@ footer .fa-arrow-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.25em 1.875em 0 1.875em;
+    padding: 1.25em 1.875em 1.675em 1.875em;
   }
 
   .header_bottom_menu_tab {
@@ -1578,37 +1593,44 @@ footer .fa-arrow-up {
     margin-left: 0.625em;
   }
 
-  .header_searchbox_tab {
-    display: flex;
-    position: relative;
-    bottom: 1.625em;
-    align-items: center;
-    width: 30%;
-    padding-bottom: 5px;
-    border-bottom: solid 1px #fff;
-  }
-
-  .header_searchbox_mobile label,
-  .header_searchbox_tab label {
-    cursor: pointer;
-  }
-
   .header_icons {
     margin: 0;
     padding-left: 0;
     gap: 1.9375em;
   }
 
+  .border-bottom::before {
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+  }
+
+  .cart-icon-mob {
+    flex-direction: column;
+  }
+
+  .cart-icon-qty {
+    bottom: 13px;
+    left: -6px;
+  }
+
+  .circle {
+    bottom: 30px;
+    left: 13px;
+  }
+
+  .number {
+    font-size: 12px;
+    bottom: 0px;
+  }
+
   .header_icon_buttons {
     display: flex;
-    /* font-size: 1.5rem; delete for origin design(made bigger than Figma design) */
   }
 
   .header_nav_tab {
     position: absolute;
     top: 7.625em;
     right: 0;
-    z-index: 2;
   }
 
   .header_nav_mobile ul {
@@ -1690,10 +1712,6 @@ footer .fa-arrow-up {
     scroll-snap-align: start;
   }
 
-  /* .last_slider_group:last-child {
-    scroll-snap-align: start;
-  } */
-
   /*--------------Category Card ----------------*/
 
   .category_card_container_index {
@@ -1772,7 +1790,7 @@ footer .fa-arrow-up {
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 1.5em 1.875em 0.5625em 1.875em;
+    padding: 1.5em 1.875em 0em 1.875em;
   }
 
   .header_bottom_menu_mobile {
@@ -1782,8 +1800,6 @@ footer .fa-arrow-up {
 
   .header_logo_mobile {
     display: flex;
-    /* width: 8.75em; */ /*original Figma size (looks to small on web browser)*/
-    /* height: 2.125em; */ /*original Figma size (looks to small on web browser)*/
     width: 10em;
     height: 3em;
   }
@@ -1794,22 +1810,12 @@ footer .fa-arrow-up {
     right: 0;
   }
 
-  .header_searchbox_mobile {
-    display: flex;
-    position: static;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 5px;
-    border-bottom: solid 1px #fff;
-  }
-
   #mobile_search {
     width: 100%;
   }
 
   .header_icon_buttons {
     display: flex;
-    /* font-size: 1.5rem; delete for origin design(made bigger than Figma design) */
   }
   /* ------------Footer mobile version -------------*/
 
@@ -1907,16 +1913,14 @@ footer .fa-arrow-up {
     padding-bottom: 0em;
   }
 
-  .filter_menu {
+  .jackets-container {
+    display: flex;
     justify-content: center;
+    gap: 1em;
   }
 
   .product_card_list {
     padding-bottom: 4.375em;
-  }
-
-  .jackets-container {
-    gap: 1em;
   }
 
   /* ------------About Us---------- */
@@ -2060,9 +2064,8 @@ footer .fa-arrow-up {
     gap: 7.5px;
   }
 
-  .plus-btn,
-  .minus-btn {
-    font-size: 0.875rem;
+  .qty-container p {
+    font-size: 1rem;
   }
 
   /* cost container */
@@ -2166,7 +2169,6 @@ footer .fa-arrow-up {
   }
 
   .fav-empty-headline {
-    padding: 4, 375em 0 6.25em 0;
     text-align: center;
   }
 

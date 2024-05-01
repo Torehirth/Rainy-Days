@@ -28,6 +28,7 @@ export async function fetchJacket() {
     const jacket = await response.json();
     return jacket;
   } catch (error) {
+    console.error(error);
     productSliderContainer.innerHTML = message("error", "Something went wrong fetching the jacket.. Try again shortly!");
   }
 }

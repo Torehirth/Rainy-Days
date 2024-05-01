@@ -24,6 +24,7 @@ export async function handleJacketInformation(container) {
     displayJacketInformation("details", jacket, productDetailsContainer);
     displayJacketInformation("details", jacket, productDetailsContainer);
   } catch (error) {
+    console.error(error);
     container.innerHTML = message("error", "Something went wrong fetching the jacket.. Try again shortly!");
   }
 }
