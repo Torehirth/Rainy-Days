@@ -1,6 +1,6 @@
 # Rainy Days ☔
 ### An online store for all-weather jackets.
-School Project in HTML, CSS and Javascript!
+School Project in front-end development
 
 ---
 
