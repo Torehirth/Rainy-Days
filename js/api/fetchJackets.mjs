@@ -1,5 +1,5 @@
-import { message } from "../components/message.js";
-import { URL } from "../data/constants.js";
+import { message } from "../components/message.mjs";
+import { URL } from "../data/constants.mjs";
 
 export async function fetchJackets(container) {
   try {

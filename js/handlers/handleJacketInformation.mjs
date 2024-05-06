@@ -5,11 +5,11 @@ import {
   productSizeContainer,
   productPriceContainer,
   productDetailsContainer,
-} from "../data/constants.js";
+} from "../data/constants.mjs";
 
-import { message } from "../components/message.js";
-import { fetchJacket } from "../api/fetchJacket.js";
-import { displayJacketInformation } from "../ui/displayJacketInformation.js";
+import { message } from "../components/message.mjs";
+import { fetchJacket } from "../api/fetchJacket.mjs";
+import { displayJacketInformation } from "../ui/displayJacketInformation.mjs";
 
 export async function handleJacketInformation(container) {
   const jacket = await fetchJacket();

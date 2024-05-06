@@ -1,7 +1,3 @@
-// ------------URLs--------------
-// export const URL = "https://api.noroff.dev/api/v1/rainy-days";
-// https://cors.noroff.dev/
-// export const URL = "http://jacket-empire/wp-json/wc/store/products";
 export const URL = "https://cms.torehirth.no/wp-json/wc/store/products";
 
 // -----------Popular product slider--------

@@ -1,4 +1,4 @@
-import { message } from "../components/message.js";
+import { message } from "../components/message.mjs";
 
 // using a switch statement to render the HTML.
 export function displayJacketInformation(type, jacket, container) {

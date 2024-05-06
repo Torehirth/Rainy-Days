@@ -1,7 +1,7 @@
-import { URL, productSliderContainer } from "../data/constants.js";
+import { URL, productSliderContainer } from "../data/constants.mjs";
 
-import { message } from "../components/message.js";
-import { getQueryParameter } from "../helper/getQueryParameter.js";
+import { message } from "../components/message.mjs";
+import { getQueryParameter } from "../helper/getQueryparameter.mjs";
 
 // fetching specific jacket and calling functions to render HTML
 export async function fetchJacket() {
