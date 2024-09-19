@@ -7,7 +7,7 @@ This project is part of my front-end development coursework, where I developed a
 
 You can view the live project here: https://tmh-rainydays.netlify.app
 
-<p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="girls on top of mountain with several mountains in the horizon" /></p>
+<p align="left"><img height="250px" src="https://github.com/Torehirth/Rainy-Days/assets/116200852/8aa17248-3275-4d20-86bb-ad0c634c93f1" alt="home page" /></p>
 
 ## Features
 - **Dynamic product management**: Products are fetched via the WordPress REST API from WooCommerce.
