@@ -5,7 +5,7 @@ This project is part of my front-end development coursework, where I developed a
 ## Project Overview
 **Rainy Days** is an online store that specializes in selling jackets. This project involved setting up a headless WordPress instance with WooCommerce to manage the products. The front-end site fetches product data from the API and displays it dynamically in a grid format, with a detailed view for each product.
 
-You can view the live project here: https://tmh-rainydays.netlify.app
+You can view the live project [here](https://tmh-rainydays.netlify.app)
 
 <p align="left"><img height="350px" src="https://github.com/user-attachments/assets/a31a09fc-4f1c-4253-b38e-5df261f6b5c7" alt="home page" /></p>
 
