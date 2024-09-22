@@ -7,7 +7,7 @@ This project is part of my front-end development coursework, where I developed a
 
 You can view the live project here: https://tmh-rainydays.netlify.app
 
-<p align="left"><img height="350px" src="https://github.com/user-attachments/assets/055337af-3c6e-4111-a4f7-6fa97aad2247" alt="home page" /></p>
+<p align="left"><video height="350px" src="https://github.com/user-attachments/assets/055337af-3c6e-4111-a4f7-6fa97aad2247" alt="home page" /></p>
 
 
 
