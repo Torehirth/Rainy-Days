@@ -4,12 +4,14 @@
 
 You can view the live project [here](https://tmh-rainydays.netlify.app)
 
+</br>
+
 This project is part of my front-end development coursework, where I developed an online store called **Rainy Days** for jackets. The goal was to create a dynamic website that uses the WordPress REST API to manage and display products from WooCommerce. This allows the product data to be fetched dynamically using JavaScript, instead of hardcoding the products into the HTML.
 
 </br>
 
 ## Project Overview
-**Rainy Days** is an online store that specializes in selling jackets. This project involved setting up a headless WordPress instance with WooCommerce to manage the products. The front-end site fetches product data from the API and displays it dynamically in a grid format, with a detailed view for each product.
+This project is part of my Front-End Development coursework, where I developed an online store called Rainy Days, specializing in jackets. The project involved setting up a headless WordPress instance with WooCommerce to manage products. The front-end site dynamically fetches product data using the WordPress REST API and displays it in a grid format, with a detailed view for each item. This approach allows product data to be updated and displayed without hardcoding it into the HTML, leveraging JavaScript for dynamic content.
 
 
 </br>
